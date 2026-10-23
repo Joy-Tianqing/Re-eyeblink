@@ -1,0 +1,2146 @@
+{
+  "schemaVersion": 1,
+  "baseline": {
+    "app": "eyeblink",
+    "version": "3.7.4.0",
+    "platform": "macOS",
+    "architecture": "x86_64",
+    "sha256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db"
+  },
+  "coverage": "bounded-inventory-not-full-runtime-coverage",
+  "features": [
+    {
+      "id": "S001",
+      "module": "shell",
+      "title": "主窗、托盘及后台运行",
+      "evidenceLevel": "behavior-partial",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S001",
+      "observations": [
+        "O01",
+        "O14"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "N095中文应用菜单暂停/恢复及N096菜单退出通过，关闭/工具重开仍同一进程；继续右侧状态图标菜单动作、独立关闭停留、Dock双启动单实例与真实登录启动。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N001",
+        "N005",
+        "N034",
+        "N035",
+        "N082",
+        "N088",
+        "N094",
+        "N095",
+        "N096"
+      ]
+    },
+    {
+      "id": "S002",
+      "module": "shell",
+      "title": "演示模式：暂停全部提醒、测量和屏幕调节",
+      "evidenceLevel": "behavior-observed",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S002",
+      "observations": [
+        "O06"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "核验托盘恢复、退出、单实例、重启和设置持久化；全局暂停后确认设备与任务确实停止。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N013",
+        "N041",
+        "N082",
+        "N095",
+        "N096"
+      ]
+    },
+    {
+      "id": "S003",
+      "module": "shell",
+      "title": "恢复全部功能",
+      "evidenceLevel": "behavior-observed",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S003",
+      "observations": [
+        "O07"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "核验托盘恢复、退出、单实例、重启和设置持久化；全局暂停后确认设备与任务确实停止。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N013",
+        "N041",
+        "N095",
+        "N096"
+      ]
+    },
+    {
+      "id": "S004",
+      "module": "shell",
+      "title": "独立暂停摄像头功能",
+      "evidenceLevel": "behavior-observed",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S004",
+      "observations": [
+        "O08"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "核验托盘恢复、退出、单实例、重启和设置持久化；全局暂停后确认设备与任务确实停止。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N016",
+        "N035"
+      ]
+    },
+    {
+      "id": "S005",
+      "module": "shell",
+      "title": "恢复摄像头功能",
+      "evidenceLevel": "behavior-observed",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S005",
+      "observations": [
+        "O11"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "核验托盘恢复、退出、单实例、重启和设置持久化；全局暂停后确认设备与任务确实停止。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N016",
+        "N035"
+      ]
+    },
+    {
+      "id": "S006",
+      "module": "shell",
+      "title": "退出程序",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S006",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "本机采集中退出延迟已取得修复后两条真实链路；仍需冷启动中途退出、系统注销/关机及最终写入边界验收。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N005",
+        "N034",
+        "N035",
+        "N095",
+        "N096"
+      ]
+    },
+    {
+      "id": "S007",
+      "module": "camera",
+      "title": "选择摄像头",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P3-camera",
+      "staticCandidateId": "S007",
+      "observations": [
+        "O04"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实相机完成一次有效眨眼；检查拒绝权限、占用/拔出、无人脸、多脸、低FPS及释放后重开；预览不得污染统计。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/CameraView.swift",
+          "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N002",
+        "N033"
+      ]
+    },
+    {
+      "id": "S008",
+      "module": "camera",
+      "title": "实时眨眼检测预览、不入统计",
+      "evidenceLevel": "behavior-partial",
+      "scope": "mac-target",
+      "stage": "P3-camera",
+      "staticCandidateId": "S008",
+      "observations": [
+        "O04"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "N096当前包30.2FPS预览不入统计及菜单退出通过；N094相同检测源的暂停恢复/无脸训练停止已观察。继续撤权、占用/拔线、多脸/低FPS及实际平台异常排队重连，完整180秒成功待用户方便。 2026-10-22按用户要求撤回侧置识别，当前只运行原CNN/dlib/光流；真人准确率与180秒实机成功仍待验，见docs/original-recognition-rollback.md。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/CameraView.swift",
+          "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+          "Sources/EyeblinkCore/EyeGeometry.swift",
+          "Sources/EyeblinkCore/DlibShapePredictor.swift",
+          "Sources/CEyeFlow/CEyeFlow.cpp",
+          "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift",
+          "Sources/EyeblinkApp/Platform/CameraEyeTracking.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift",
+          "Sources/CFaceDetector/FaceDetector.cpp",
+          "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameRun.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N007",
+        "N016",
+        "N033",
+        "N035",
+        "N042",
+        "N045",
+        "N046",
+        "N047",
+        "N048",
+        "N050",
+        "N051",
+        "N052",
+        "N053",
+        "N055",
+        "N056",
+        "N057",
+        "N058",
+        "N059",
+        "N060",
+        "N061",
+        "N062",
+        "N063",
+        "N064",
+        "N065",
+        "N066",
+        "N067",
+        "N068",
+        "N069",
+        "N070",
+        "N071",
+        "N072",
+        "N073",
+        "N074",
+        "N075",
+        "N076",
+        "N077",
+        "N078",
+        "N079",
+        "N080",
+        "N081",
+        "N082",
+        "N083",
+        "N084",
+        "N085",
+        "N086",
+        "N087",
+        "N088",
+        "N089",
+        "N090",
+        "N091",
+        "N092",
+        "N093",
+        "N094",
+        "N096",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ],
+      "evidence": [
+        "evidence/native-tests/original-selection-comparison.json",
+        "evidence/native-tests/eye-tracking-comparison.json",
+        "evidence/native-tests/tracked-motion-comparison.json",
+        "evidence/native-tests/frame-normalization-handoff-comparison.json",
+        "evidence/native-tests/frame-clock-comparison.json",
+        "evidence/native-tests/integer-frame-time-comparison.json",
+        "evidence/native-tests/fps-startup-comparison.json",
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/no-face-phase-comparison.json"
+      ]
+    },
+    {
+      "id": "S009",
+      "module": "camera",
+      "title": "预览叠加检测文本",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P3-camera",
+      "staticCandidateId": "S009",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实相机完成一次有效眨眼；检查拒绝权限、占用/拔出、无人脸、多脸、低FPS及释放后重开；预览不得污染统计。 2026-10-22按用户要求撤回侧置识别，当前只运行原CNN/dlib/光流；真人准确率与180秒实机成功仍待验，见docs/original-recognition-rollback.md。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/CameraView.swift",
+          "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N007",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ]
+    },
+    {
+      "id": "S010",
+      "module": "camera",
+      "title": "无脸、多脸、低帧率、被占用、断线及模型异常",
+      "evidenceLevel": "behavior-partial",
+      "scope": "mac-target",
+      "stage": "P3-camera",
+      "staticCandidateId": "S010",
+      "observations": [
+        "O01",
+        "O12"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "N114将运行错误/断开/中断与完成统一capture FIFO及终止门闩，206/119离线回归通过。继续实际AVFoundation到AppModel错误/晚到完成、占用/拔线/撤权、睡眠恢复与释放重开；原应用级异常终态未知。真人识别与180秒成功待用户方便。 2026-10-22按用户要求撤回侧置识别，当前只运行原CNN/dlib/光流；真人准确率与180秒实机成功仍待验，见docs/original-recognition-rollback.md。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/CameraView.swift",
+          "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+          "Sources/EyeblinkApp/Platform/CameraFailureObserver.swift",
+          "Sources/EyeblinkCore/EyeGeometry.swift",
+          "Sources/EyeblinkCore/DlibShapePredictor.swift",
+          "Sources/CEyeFlow/CEyeFlow.cpp",
+          "Sources/EyeblinkApp/Platform/CameraEyeTracking.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift",
+          "Sources/CFaceDetector/FaceDetector.cpp",
+          "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameRun.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N033",
+        "N035",
+        "N039",
+        "N042",
+        "N043",
+        "N045",
+        "N046",
+        "N048",
+        "N050",
+        "N051",
+        "N052",
+        "N053",
+        "N055",
+        "N056",
+        "N057",
+        "N058",
+        "N059",
+        "N060",
+        "N061",
+        "N062",
+        "N063",
+        "N064",
+        "N065",
+        "N066",
+        "N067",
+        "N068",
+        "N069",
+        "N070",
+        "N071",
+        "N072",
+        "N073",
+        "N074",
+        "N075",
+        "N076",
+        "N077",
+        "N078",
+        "N079",
+        "N080",
+        "N081",
+        "N082",
+        "N083",
+        "N084",
+        "N085",
+        "N086",
+        "N087",
+        "N088",
+        "N089",
+        "N090",
+        "N091",
+        "N092",
+        "N093",
+        "N094",
+        "N096",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ],
+      "evidence": [
+        "evidence/native-tests/original-cnn-comparison.json",
+        "evidence/native-tests/original-selection-comparison.json",
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/no-face-phase-comparison.json"
+      ]
+    },
+    {
+      "id": "S011",
+      "module": "camera",
+      "title": "摄像头设置按钮（Mac 实现仅 count，无设置动作）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S011",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实相机完成一次有效眨眼；检查拒绝权限、占用/拔出、无人脸、多脸、低FPS及释放后重开；预览不得污染统计。",
+      "implementation": {
+        "status": "original-mac-noop-or-unreachable",
+        "sources": []
+      }
+    },
+    {
+      "id": "S012",
+      "module": "camera",
+      "title": "相机隐私设置入口（含 Windows 文案，须区分平台）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S012",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实相机完成一次有效眨眼；检查拒绝权限、占用/拔出、无人脸、多脸、低FPS及释放后重开；预览不得污染统计。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/CameraView.swift",
+          "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N002",
+        "N015"
+      ]
+    },
+    {
+      "id": "S013",
+      "module": "training",
+      "title": "眨眼训练开关",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S013",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "观察简单/交互/MGD提醒触发与消失；确定低频阈值、检查窗口、声音、位置保存和鼠标关闭条件。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N031"
+      ]
+    },
+    {
+      "id": "S014",
+      "module": "training",
+      "title": "训练频率（秒）",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S014",
+      "observations": [
+        "O01",
+        "O13"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "观察简单/交互/MGD提醒触发与消失；确定低频阈值、检查窗口、声音、位置保存和鼠标关闭条件。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N030",
+        "N082"
+      ]
+    },
+    {
+      "id": "S015",
+      "module": "training",
+      "title": "定时简单提醒、无需相机",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S015",
+      "observations": [
+        "O01",
+        "O08"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "观察简单/交互/MGD提醒触发与消失；确定低频阈值、检查窗口、声音、位置保存和鼠标关闭条件。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N047"
+      ]
+    },
+    {
+      "id": "S016",
+      "module": "training",
+      "title": "低眨眼频率才出现的交互提醒",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S016",
+      "observations": [
+        "O01",
+        "O11"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "观察简单/交互/MGD提醒触发与消失；确定低频阈值、检查窗口、声音、位置保存和鼠标关闭条件。 2026-10-22按用户要求撤回侧置识别，当前只运行原CNN/dlib/光流；真人准确率与180秒实机成功仍待验，见docs/original-recognition-rollback.md。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift",
+          "Sources/EyeblinkCore/DlibShapePredictor.swift",
+          "Sources/CEyeFlow/CEyeFlow.cpp",
+          "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift",
+          "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameRun.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N045",
+        "N046",
+        "N047",
+        "N048",
+        "N050",
+        "N051",
+        "N052",
+        "N053",
+        "N055",
+        "N056",
+        "N057",
+        "N058",
+        "N059",
+        "N060",
+        "N063",
+        "N064",
+        "N065",
+        "N066",
+        "N067",
+        "N068",
+        "N069",
+        "N070",
+        "N071",
+        "N072",
+        "N073",
+        "N074",
+        "N075",
+        "N076",
+        "N077",
+        "N078",
+        "N079",
+        "N080",
+        "N081",
+        "N083",
+        "N084",
+        "N086",
+        "N087",
+        "N089",
+        "N090",
+        "N091",
+        "N092",
+        "N093",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ],
+      "evidence": [
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/no-face-phase-comparison.json"
+      ]
+    },
+    {
+      "id": "S017",
+      "module": "training",
+      "title": "眨眼关闭提醒",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S017",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "保留用户定制的有效眨眼后微笑眨眼0.7秒、睁眼0.3秒再关闭，以及无脸失败重试；本轮撤回侧置检测、校准进度及质量失败分支，恢复原算法第一次有效眨眼触发。真实相机自然眨眼触发与动画仍需人工验收。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift",
+          "Sources/EyeblinkCore/DlibShapePredictor.swift",
+          "Sources/CEyeFlow/CEyeFlow.cpp",
+          "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift",
+          "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameRun.swift",
+          "Sources/EyeblinkApp/Platform/TrainingFeedbackPlayer.swift",
+          "Tests/EyeblinkCoreTests/TrainingFeedbackTests.swift",
+          "Tests/EyeblinkAppTests/TrainingFeedbackPlayerTests.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N025",
+        "N045",
+        "N046",
+        "N048",
+        "N050",
+        "N051",
+        "N052",
+        "N053",
+        "N055",
+        "N056",
+        "N057",
+        "N058",
+        "N059",
+        "N060",
+        "N063",
+        "N064",
+        "N065",
+        "N066",
+        "N067",
+        "N068",
+        "N069",
+        "N070",
+        "N071",
+        "N072",
+        "N073",
+        "N074",
+        "N075",
+        "N076",
+        "N077",
+        "N078",
+        "N079",
+        "N080",
+        "N081",
+        "N083",
+        "N084",
+        "N086",
+        "N087",
+        "N089",
+        "N090",
+        "N091",
+        "N092",
+        "N093",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ],
+      "evidence": [
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/no-face-phase-comparison.json"
+      ]
+    },
+    {
+      "id": "S018",
+      "module": "training",
+      "title": "MGD 模式：定时出现、眨眼关闭",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S018",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "观察简单/交互/MGD提醒触发与消失；确定低频阈值、检查窗口、声音、位置保存和鼠标关闭条件。 2026-10-22按用户要求撤回侧置识别，当前只运行原CNN/dlib/光流；真人准确率与180秒实机成功仍待验，见docs/original-recognition-rollback.md。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift",
+          "Sources/EyeblinkCore/DlibShapePredictor.swift",
+          "Sources/CEyeFlow/CEyeFlow.cpp",
+          "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift",
+          "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameRun.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N025",
+        "N045",
+        "N046",
+        "N048",
+        "N050",
+        "N051",
+        "N052",
+        "N053",
+        "N055",
+        "N056",
+        "N057",
+        "N058",
+        "N059",
+        "N060",
+        "N063",
+        "N064",
+        "N065",
+        "N066",
+        "N067",
+        "N068",
+        "N069",
+        "N070",
+        "N071",
+        "N072",
+        "N073",
+        "N074",
+        "N075",
+        "N076",
+        "N077",
+        "N078",
+        "N079",
+        "N080",
+        "N081",
+        "N083",
+        "N084",
+        "N086",
+        "N087",
+        "N089",
+        "N090",
+        "N091",
+        "N092",
+        "N093",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ],
+      "evidence": [
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/no-face-phase-comparison.json"
+      ]
+    },
+    {
+      "id": "S019",
+      "module": "training",
+      "title": "提醒音开关",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S019",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "观察简单/交互/MGD提醒触发与消失；确定低频阈值、检查窗口、声音、位置保存和鼠标关闭条件。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift"
+        ]
+      }
+    },
+    {
+      "id": "S020",
+      "module": "training",
+      "title": "拖拽/保存眨眼提醒位置",
+      "evidenceLevel": "behavior-partial",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S020",
+      "observations": [
+        "O09",
+        "O10"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "用户已确认训练提醒手动拖动及同一会话再次预览位置保留；仍需退出/重启后实际窗口位置恢复、多屏边界，以及与原版保存语义对照。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/TrainingView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N011",
+        "N037"
+      ]
+    },
+    {
+      "id": "S021",
+      "module": "training",
+      "title": "鼠标移入/操作关闭提醒（具体触发待体验）",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S021",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "2026-10-22 按用户定制取消鼠标移入自动关闭，保留显式关闭按钮/Escape；训练提醒在有效眨眼后播放完成动画再关闭。原版鼠标触发条件仍未确认，本项不声明行为等价。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift"
+        ]
+      }
+    },
+    {
+      "id": "S022",
+      "module": "exercise",
+      "title": "眼保健操开关、每20分钟",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S022",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "等待20分钟或找到原版支持的测试入口，记录四种练习的顺序/轮换、10秒终态、跳过及自然休息重置。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N031"
+      ]
+    },
+    {
+      "id": "S023",
+      "module": "exercise",
+      "title": "远眺10秒",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S023",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "等待20分钟或找到原版支持的测试入口，记录四种练习的顺序/轮换、10秒终态、跳过及自然休息重置。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N022"
+      ]
+    },
+    {
+      "id": "S024",
+      "module": "exercise",
+      "title": "挤眼睑眨眼10秒",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S024",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "等待20分钟或找到原版支持的测试入口，记录四种练习的顺序/轮换、10秒终态、跳过及自然休息重置。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N023"
+      ]
+    },
+    {
+      "id": "S025",
+      "module": "exercise",
+      "title": "左右转眼10秒",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S025",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "等待20分钟或找到原版支持的测试入口，记录四种练习的顺序/轮换、10秒终态、跳过及自然休息重置。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N024"
+      ]
+    },
+    {
+      "id": "S026",
+      "module": "exercise",
+      "title": "旋转眼球10秒",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S026",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "等待20分钟或找到原版支持的测试入口，记录四种练习的顺序/轮换、10秒终态、跳过及自然休息重置。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N018"
+      ]
+    },
+    {
+      "id": "S027",
+      "module": "exercise",
+      "title": "跳过/终止眼操",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S027",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "等待20分钟或找到原版支持的测试入口，记录四种练习的顺序/轮换、10秒终态、跳过及自然休息重置。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N018",
+        "N022",
+        "N023",
+        "N024"
+      ]
+    },
+    {
+      "id": "S028",
+      "module": "exercise",
+      "title": "眼操浮层拖拽和保存位置",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S028",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "等待20分钟或找到原版支持的测试入口，记录四种练习的顺序/轮换、10秒终态、跳过及自然休息重置。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      }
+    },
+    {
+      "id": "S029",
+      "module": "break",
+      "title": "电脑休息开关与间隔（分钟）",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S029",
+      "observations": [
+        "O01",
+        "O13"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实到期→推迟5分钟→再次到期→人工跳过已验证；仍需连续空闲严格超过阈值并在每分钟采样时自动结束、拖动位置及系统睡眠边界。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N030",
+        "N031",
+        "N049"
+      ]
+    },
+    {
+      "id": "S030",
+      "module": "break",
+      "title": "休息提醒：连续空闲后关闭（默认约4分钟）",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S030",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实到期→推迟5分钟→再次到期→人工跳过已验证；仍需连续空闲严格超过阈值并在每分钟采样时自动结束、拖动位置及系统睡眠边界。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkApp/Platform/ReminderWindowController.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N012",
+        "N026",
+        "N044",
+        "N049"
+      ]
+    },
+    {
+      "id": "S031",
+      "module": "break",
+      "title": "跳过一次休息",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S031",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实到期→推迟5分钟→再次到期→人工跳过已验证；仍需连续空闲严格超过阈值并在每分钟采样时自动结束、拖动位置及系统睡眠边界。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N029",
+        "N044",
+        "N049"
+      ]
+    },
+    {
+      "id": "S032",
+      "module": "break",
+      "title": "休息推迟5分钟",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S032",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实到期→推迟5分钟→再次到期→人工跳过已验证；仍需连续空闲严格超过阈值并在每分钟采样时自动结束、拖动位置及系统睡眠边界。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N012",
+        "N029",
+        "N044",
+        "N049"
+      ]
+    },
+    {
+      "id": "S033",
+      "module": "break",
+      "title": "休息浮层拖拽和位置保存",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S033",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实到期→推迟5分钟→再次到期→人工跳过已验证；仍需连续空闲严格超过阈值并在每分钟采样时自动结束、拖动位置及系统睡眠边界。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N049"
+      ]
+    },
+    {
+      "id": "S034",
+      "module": "break",
+      "title": "纳入自然休息（无键鼠操作）",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S034",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实到期→推迟5分钟→再次到期→人工跳过已验证；仍需连续空闲严格超过阈值并在每分钟采样时自动结束、拖动位置及系统睡眠边界。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N026",
+        "N044",
+        "N049"
+      ]
+    },
+    {
+      "id": "S035",
+      "module": "break",
+      "title": "自然休息认定时长",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P2-reminders",
+      "staticCandidateId": "S035",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实到期→推迟5分钟→再次到期→人工跳过已验证；仍需连续空闲严格超过阈值并在每分钟采样时自动结束、拖动位置及系统睡眠边界。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N026",
+        "N030",
+        "N044",
+        "N049"
+      ]
+    },
+    {
+      "id": "S036",
+      "module": "measurement",
+      "title": "眨眼频率统计开关；约30分钟一次/每次3分钟",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S036",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。 2026-10-22按用户要求撤回侧置识别，当前只运行原CNN/dlib/光流；真人准确率与180秒实机成功仍待验，见docs/original-recognition-rollback.md。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+          "Sources/CEyeFlow/FrameNormalizer.cpp",
+          "Sources/EyeblinkCore/FrameTimestamp.swift",
+          "Sources/CEyeFlow/FrameClock.cpp",
+          "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+          "Sources/EyeblinkApp/AppModel.swift",
+          "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameRun.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N017",
+        "N031",
+        "N053",
+        "N055",
+        "N054",
+        "N056",
+        "N057",
+        "N058",
+        "N059",
+        "N060",
+        "N063",
+        "N064",
+        "N065",
+        "N066",
+        "N067",
+        "N068",
+        "N069",
+        "N070",
+        "N071",
+        "N072",
+        "N073",
+        "N074",
+        "N075",
+        "N076",
+        "N077",
+        "N078",
+        "N079",
+        "N080",
+        "N081",
+        "N082",
+        "N083",
+        "N084",
+        "N085",
+        "N086",
+        "N087",
+        "N089",
+        "N090",
+        "N091",
+        "N092",
+        "N093",
+        "N094",
+        "N096",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ],
+      "evidence": [
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/no-face-phase-comparison.json"
+      ]
+    },
+    {
+      "id": "S037",
+      "module": "measurement",
+      "title": "立即进行首次/下一次测量",
+      "evidenceLevel": "behavior-partial",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S037",
+      "observations": [
+        "O12"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N008",
+        "N038"
+      ]
+    },
+    {
+      "id": "S038",
+      "module": "measurement",
+      "title": "测量完成系统通知开关",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S038",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "真实180秒测量→保存→自动通知→系统按生产记录UUID回读送达已通过；仍需系统拒绝/撤权、直接横幅及Focus策略，且完整原版等价准出继续独立保留。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/BreaksView.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/MeasurementNotifications.swift",
+          "Sources/EyeblinkApp/Views/NotificationSettingsRow.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N036",
+        "N038"
+      ]
+    },
+    {
+      "id": "S039",
+      "module": "measurement",
+      "title": "主图及平均值/健康参考线",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S039",
+      "observations": [
+        "O01"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/StatisticsView.swift",
+          "Sources/EyeblinkCore/Measurements.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N019",
+        "N054"
+      ]
+    },
+    {
+      "id": "S040",
+      "module": "measurement",
+      "title": "独立历史图、悬停值、开始/结束日期筛选",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S040",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/StatisticsView.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkApp/Views/ChartPointerSurface.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N019",
+        "N020",
+        "N021",
+        "N032"
+      ]
+    },
+    {
+      "id": "S041",
+      "module": "measurement",
+      "title": "每分钟眨眼次数和平均眨眼时长（毫秒）",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S041",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。 2026-10-22按用户要求撤回侧置识别，当前只运行原CNN/dlib/光流；真人准确率与180秒实机成功仍待验，见docs/original-recognition-rollback.md。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/StatisticsView.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/Platform/CameraFrameRun.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N008",
+        "N021",
+        "N053",
+        "N055",
+        "N054",
+        "N056",
+        "N057",
+        "N058",
+        "N059",
+        "N060",
+        "N063",
+        "N064",
+        "N065",
+        "N066",
+        "N067",
+        "N068",
+        "N069",
+        "N070",
+        "N071",
+        "N072",
+        "N073",
+        "N074",
+        "N075",
+        "N076",
+        "N077",
+        "N078",
+        "N079",
+        "N080",
+        "N081",
+        "N082",
+        "N083",
+        "N084",
+        "N085",
+        "N086",
+        "N087",
+        "N089",
+        "N090",
+        "N091",
+        "N092",
+        "N093",
+        "N098",
+        "N099",
+        "N100",
+        "N101",
+        "N102",
+        "N103",
+        "N104",
+        "N105",
+        "N106",
+        "N107",
+        "N108",
+        "N109",
+        "N110",
+        "N111",
+        "N112",
+        "N113",
+        "N114",
+        "N115",
+        "N116"
+      ],
+      "evidence": [
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/no-face-phase-comparison.json"
+      ]
+    },
+    {
+      "id": "S042",
+      "module": "measurement",
+      "title": "历史窗口最大化/还原",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S042",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/StatisticsView.swift",
+          "Sources/EyeblinkCore/Measurements.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N019"
+      ]
+    },
+    {
+      "id": "S043",
+      "module": "measurement",
+      "title": "清空历史与确认",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S043",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/StatisticsView.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkCore/MeasurementHistoryCoordinator.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N009",
+        "N036"
+      ]
+    },
+    {
+      "id": "S044",
+      "module": "measurement",
+      "title": "本地 JSON 测量持久化",
+      "evidenceLevel": "static-only",
+      "scope": "mac-target",
+      "stage": "P4-statistics",
+      "staticCandidateId": "S044",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "先取得有效测量，再验BPM/眨眼时长/历史筛选/悬停/最大化/清空取消和确认；样本写入隔离目录。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/StatisticsView.swift",
+          "Sources/EyeblinkCore/Measurements.swift",
+          "Sources/EyeblinkCore/MeasurementHistoryCoordinator.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N010",
+        "N034",
+        "N053",
+        "N055"
+      ]
+    },
+    {
+      "id": "S045",
+      "module": "settings",
+      "title": "使用电池时自动暂停相机（Mac 检测为空方法）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S045",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个设置实测自动触发及恢复；区分用户暂停与自动暂停，重启持久化；不以勾选存在代替效果。",
+      "implementation": {
+        "status": "original-mac-noop-or-unreachable",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/gui-ui-object-offsets.json",
+        "evidence/static/recovered-rules/hotkey-constructor-hide.otool.txt"
+      ]
+    },
+    {
+      "id": "S046",
+      "module": "settings",
+      "title": "按前台/任意窗口标题关键词暂停摄像头",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P5-integrations",
+      "staticCandidateId": "S046",
+      "observations": [
+        "O02"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个设置实测自动触发及恢复；区分用户暂停与自动暂停，重启持久化；不以勾选存在代替效果。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      }
+    },
+    {
+      "id": "S047",
+      "module": "settings",
+      "title": "按运行进程关键词暂停全部功能",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P5-integrations",
+      "staticCandidateId": "S047",
+      "observations": [
+        "O02"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个设置实测自动触发及恢复；区分用户暂停与自动暂停，重启持久化；不以勾选存在代替效果。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N013",
+        "N041"
+      ]
+    },
+    {
+      "id": "S048",
+      "module": "settings",
+      "title": "按窗口标题关键词暂停全部功能",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P5-integrations",
+      "staticCandidateId": "S048",
+      "observations": [
+        "O02"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个设置实测自动触发及恢复；区分用户暂停与自动暂停，重启持久化；不以勾选存在代替效果。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkCore/EyeblinkEngine.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      }
+    },
+    {
+      "id": "S049",
+      "module": "settings",
+      "title": "镜像屏幕时暂停全部功能（Mac 检测为空方法）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S049",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个设置实测自动触发及恢复；区分用户暂停与自动暂停，重启持久化；不以勾选存在代替效果。",
+      "implementation": {
+        "status": "original-mac-noop-or-unreachable",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/gui-ui-object-offsets.json",
+        "evidence/static/recovered-rules/hotkey-constructor-hide.otool.txt"
+      ]
+    },
+    {
+      "id": "S050",
+      "module": "settings",
+      "title": "快捷键总开关、亮度增减、色温切换（Mac构造时隐藏）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S050",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "原Mac构造路径已确认隐藏widget_hotkeys，启用处理函数仅日志；按键编辑仍有Qxt绑定代码，不能称整个库无实现。保留候选，若发现其他显示入口或运行证据再恢复重建，不新增原Mac未公开的硬件调节功能。",
+      "implementation": {
+        "status": "original-mac-hidden-ui",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/entrypoint-reachability-findings.md",
+        "evidence/static/recovered-rules/hotkey-constructor-hide.otool.txt",
+        "evidence/static/recovered-rules/entrypoint-qt-strings.json",
+        "evidence/static/recovered-rules/entrypoint-handlers.otool.txt",
+        "evidence/static/recovered-rules/gui-ui-object-offsets.json"
+      ]
+    },
+    {
+      "id": "S051",
+      "module": "settings",
+      "title": "开机自启动",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P5-integrations",
+      "staticCandidateId": "S051",
+      "observations": [
+        "O02"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个设置实测自动触发及恢复；区分用户暂停与自动暂停，重启持久化；不以勾选存在代替效果。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N027"
+      ]
+    },
+    {
+      "id": "S052",
+      "module": "settings",
+      "title": "上传眨眼测量以供研究",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P5-integrations",
+      "staticCandidateId": "S052",
+      "observations": [
+        "O02"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "用户2026-10-19明确选择保留本机完整功能，旧研究上传、Beta及云更新服务暂不接入；重新启用时需新的服务配置及验收。",
+      "implementation": {
+        "status": "excluded-by-user-cloud-services",
+        "sources": []
+      }
+    },
+    {
+      "id": "S053",
+      "module": "settings",
+      "title": "语言选择与动态翻译",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P5-integrations",
+      "staticCandidateId": "S053",
+      "observations": [
+        "O03"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个设置实测自动触发及恢复；区分用户暂停与自动暂停，重启持久化；不以勾选存在代替效果。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/EyeblinkApp.swift",
+          "Sources/EyeblinkApp/AppModel.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N014",
+        "N015",
+        "N082"
+      ]
+    },
+    {
+      "id": "S054",
+      "module": "settings",
+      "title": "Beta 更新开关和版本检查",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P5-integrations",
+      "staticCandidateId": "S054",
+      "observations": [
+        "O02"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "用户2026-10-19明确选择保留本机完整功能，旧研究上传、Beta及云更新服务暂不接入；重新启用时需新的服务配置及验收。",
+      "implementation": {
+        "status": "excluded-by-user-cloud-services",
+        "sources": []
+      }
+    },
+    {
+      "id": "S055",
+      "module": "legacy-screen",
+      "title": "屏幕调节开关（Mac 调用仅存状态/日志）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S055",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "追踪实际调用链及Mac平台分支；当前UI无入口且部分方法空实现，首版延后，不直接重现Windows能力。",
+      "implementation": {
+        "status": "original-mac-noop-or-unreachable",
+        "sources": []
+      }
+    },
+    {
+      "id": "S056",
+      "module": "legacy-screen",
+      "title": "色温预设4500/5500/6600K（Mac 控制仅日志）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S056",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "追踪实际调用链及Mac平台分支；当前UI无入口且部分方法空实现，首版延后，不直接重现Windows能力。",
+      "implementation": {
+        "status": "original-mac-noop-or-unreachable",
+        "sources": []
+      }
+    },
+    {
+      "id": "S057",
+      "module": "legacy-screen",
+      "title": "软件-8~0/硬件0~10亮度（Mac setter为空方法）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S057",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "追踪实际调用链及Mac平台分支；当前UI无入口且部分方法空实现，首版延后，不直接重现Windows能力。",
+      "implementation": {
+        "status": "original-mac-noop-or-unreachable",
+        "sources": []
+      }
+    },
+    {
+      "id": "S058",
+      "module": "legacy-license",
+      "title": "Basic/Premium/试用及到期状态；当前关于页声称免费",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S058",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "确认免费3.7.4是否可达；重现不依赖旧远程授权服务，保留历史分析资料。",
+      "implementation": {
+        "status": "pending",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/entrypoint-reachability-findings.md",
+        "evidence/static/recovered-rules/license-init-and-gui.otool.txt"
+      ]
+    },
+    {
+      "id": "S059",
+      "module": "legacy-license",
+      "title": "输入/校验许可证及错误状态",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S059",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "确认免费3.7.4是否可达；重现不依赖旧远程授权服务，保留历史分析资料。",
+      "implementation": {
+        "status": "pending",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/entrypoint-reachability-findings.md",
+        "evidence/static/recovered-rules/license-init-and-gui.otool.txt"
+      ]
+    },
+    {
+      "id": "S060",
+      "module": "legacy-license",
+      "title": "HTTP/HTTPS 代理设置与连接验证",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S060",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "确认免费3.7.4是否可达；重现不依赖旧远程授权服务，保留历史分析资料。",
+      "implementation": {
+        "status": "pending",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/entrypoint-reachability-findings.md",
+        "evidence/static/recovered-rules/license-init-and-gui.otool.txt"
+      ]
+    },
+    {
+      "id": "S061",
+      "module": "about",
+      "title": "关于、FAQ、隐私、支持邮箱、Facebook、合作组织、捐赠",
+      "evidenceLevel": "ui-visible",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S061",
+      "observations": [
+        "O01",
+        "O05"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "新版关于页已接线7个原作参考外链和独立项目声明，既有N028已确认入口可见；仍需逐一验证实际打开目的地，不能将原站内容当作新版政策。",
+      "implementation": {
+        "status": "implemented-awaiting-acceptance",
+        "sources": [
+          "Sources/EyeblinkApp/Views/AboutView.swift"
+        ]
+      },
+      "nativeObservations": [
+        "N028"
+      ]
+    },
+    {
+      "id": "S062",
+      "module": "about",
+      "title": "第三方许可 notices.pdf",
+      "evidenceLevel": "behavior-partial",
+      "scope": "mac-target",
+      "stage": "P1-shell",
+      "staticCandidateId": "S062",
+      "observations": [
+        "O15"
+      ],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "逐个验证只读外链/本地声明；新版内容使用重现项目身份，原作者与依赖归属单独保留。",
+      "implementation": {
+        "status": "partial",
+        "sources": [
+          "Sources/EyeblinkApp/Views/AboutView.swift",
+          "scripts/build-app.sh"
+        ]
+      },
+      "nativeObservations": [
+        "N028"
+      ]
+    },
+    {
+      "id": "S063",
+      "module": "internal-candidate",
+      "title": "休息期间相机判断在席（尚无已知 UI 入口）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S063",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "定位真实调用者及入口；确认是否参与当前Mac行为，不凭符号名纳入用户功能。",
+      "implementation": {
+        "status": "pending",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/entrypoint-reachability-findings.md"
+      ]
+    },
+    {
+      "id": "S064",
+      "module": "internal-candidate",
+      "title": "相机 backend 切换信号（尚无已知 UI 入口）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S064",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "定位真实调用者及入口；确认是否参与当前Mac行为，不凭符号名纳入用户功能。",
+      "implementation": {
+        "status": "pending",
+        "sources": []
+      }
+    },
+    {
+      "id": "S065",
+      "module": "internal-candidate",
+      "title": "自动亮度调节信号（非 Mac 有效功能证据）",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": "S065",
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "定位真实调用者及入口；确认是否参与当前Mac行为，不凭符号名纳入用户功能。",
+      "implementation": {
+        "status": "original-mac-noop-or-unreachable",
+        "sources": []
+      },
+      "evidence": [
+        "evidence/static/recovered-rules/gui-ui-object-offsets.json",
+        "evidence/static/recovered-rules/hotkey-constructor-hide.otool.txt"
+      ]
+    },
+    {
+      "id": "S066",
+      "module": "updater",
+      "title": "版本提示、下载进度、取消、损坏重下和安装流程",
+      "evidenceLevel": "static-only",
+      "scope": "deferred-platform-or-legacy",
+      "stage": "deferred",
+      "staticCandidateId": null,
+      "evidence": [
+        "evidence/static/localization-source-catalog.json"
+      ],
+      "observations": [],
+      "acceptanceStatus": "not-accepted",
+      "remainingExperiment": "用户2026-10-19明确选择保留本机完整功能，旧研究上传、Beta及云更新服务暂不接入；重新启用时需新的服务配置及验收。",
+      "implementation": {
+        "status": "excluded-by-user-cloud-services",
+        "sources": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,2397 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "inputManifestSHA256": "a6f00dc266851d5bc7e5d309b4ede084aabe86906aed7078821bc0d25e4886f2",
+  "modelSHA256": "c4b1e9804792707d3a405c2c16a80a20269e6675021f64a41d30fffafbc41888",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "syntheticFrameInterval": 0.03125,
+  "noFaceTimeoutDisabledForComponent": true,
+  "cases": [
+    {
+      "name": "singleRecovery",
+      "sessions": [
+        {
+          "inputSHA256": "ccdb3a3f4b9ec16f6c73972d4ccca784e57f9efeed6be44e1f6c09cabdf229c4",
+          "file": "singleRecovery-0.frames",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 1,
+              "sourceSHA256": "c6c614c5a063d23236572207eaecd1a3422cd9afdb6e152e1b64e8f3e1635489",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.03125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.02355590233242967,
+                0.012998607313156088
+              ],
+              "rightStats": [
+                0.040535663687106635,
+                0.024387262318897644
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "dce211571a88f844161d296d2e4095bcd6d131c1c3b0444d3cdddcc7feb04f31"
+            },
+            {
+              "frame": 2,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.024457005940429453,
+                0.012007605019271119
+              ],
+              "rightStats": [
+                -0.04135975213307473,
+                0.02684464727348403
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 3,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.09375,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 4,
+              "sourceSHA256": "db496190a0e86e0213cff5e4dca68b28ea3cdaccd8374e2f56a1a9cd30aef182",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": false,
+              "time": 0.125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0005444946978946063,
+                0.00052550460918353
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "e0ca6c58d52c5604d67657d878e33216bd0da65cd941984f8b850880101eb29d"
+            },
+            {
+              "frame": 5,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.15625,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 6,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.1875,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.00018861985955558196,
+                0.000904358979722167
+              ],
+              "rightStats": [
+                -3.333977452221118e-05,
+                0.0004963015686089951
+              ],
+              "emissions": [
+                0.1875
+              ],
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.012007605019271119
+                  ]
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.02684464727348403
+                  ]
+                }
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 7,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.21875,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.00018861985955558196,
+                0.000904358979722167
+              ],
+              "rightStats": [
+                -3.333977452221118e-05,
+                0.0004963015686089951
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 8,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.25,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.00018861985955558196,
+                0.000904358979722167
+              ],
+              "rightStats": [
+                -3.333977452221118e-05,
+                0.0004963015686089951
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 9,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.28125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "name": "threeMissingFrames",
+      "sessions": [
+        {
+          "inputSHA256": "6a8f90838302b75dce5462a173dfd7ee7674b6723e771f361033fb0b7240d986",
+          "file": "threeMissingFrames-0.frames",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 1,
+              "sourceSHA256": "c6c614c5a063d23236572207eaecd1a3422cd9afdb6e152e1b64e8f3e1635489",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.03125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.02355590233242967,
+                0.012998607313156088
+              ],
+              "rightStats": [
+                0.040535663687106635,
+                0.024387262318897644
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "dce211571a88f844161d296d2e4095bcd6d131c1c3b0444d3cdddcc7feb04f31"
+            },
+            {
+              "frame": 2,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.024457005940429453,
+                0.012007605019271119
+              ],
+              "rightStats": [
+                -0.04135975213307473,
+                0.02684464727348403
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 3,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.09375,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 4,
+              "sourceSHA256": "db496190a0e86e0213cff5e4dca68b28ea3cdaccd8374e2f56a1a9cd30aef182",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": false,
+              "time": 0.125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0005444946978946063,
+                0.00052550460918353
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "e0ca6c58d52c5604d67657d878e33216bd0da65cd941984f8b850880101eb29d"
+            },
+            {
+              "frame": 5,
+              "sourceSHA256": "db496190a0e86e0213cff5e4dca68b28ea3cdaccd8374e2f56a1a9cd30aef182",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": false,
+              "time": 0.15625,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "e0ca6c58d52c5604d67657d878e33216bd0da65cd941984f8b850880101eb29d"
+            },
+            {
+              "frame": 6,
+              "sourceSHA256": "db496190a0e86e0213cff5e4dca68b28ea3cdaccd8374e2f56a1a9cd30aef182",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": false,
+              "time": 0.1875,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "e0ca6c58d52c5604d67657d878e33216bd0da65cd941984f8b850880101eb29d"
+            },
+            {
+              "frame": 7,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.21875,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 8,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.25,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.00018861985955558196,
+                0.000904358979722167
+              ],
+              "rightStats": [
+                -3.333977452221118e-05,
+                0.0004963015686089951
+              ],
+              "emissions": [
+                0.1875
+              ],
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.012007605019271119
+                  ]
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.02684464727348403
+                  ]
+                }
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 9,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.28125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 10,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.3125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 11,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.34375,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "name": "reopenBeforeDeferredMerge",
+      "sessions": [
+        {
+          "inputSHA256": "cdaf9d452eddb41c866955f8a77fe54db7e6040efe898283398b4fa86c4f679e",
+          "file": "reopenBeforeDeferredMerge-0.frames",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 1,
+              "sourceSHA256": "c6c614c5a063d23236572207eaecd1a3422cd9afdb6e152e1b64e8f3e1635489",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.03125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.02355590233242967,
+                0.012998607313156088
+              ],
+              "rightStats": [
+                0.040535663687106635,
+                0.024387262318897644
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "dce211571a88f844161d296d2e4095bcd6d131c1c3b0444d3cdddcc7feb04f31"
+            },
+            {
+              "frame": 2,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.024457005940429453,
+                0.012007605019271119
+              ],
+              "rightStats": [
+                -0.04135975213307473,
+                0.02684464727348403
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 3,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.09375,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 4,
+              "sourceSHA256": "db496190a0e86e0213cff5e4dca68b28ea3cdaccd8374e2f56a1a9cd30aef182",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": false,
+              "time": 0.125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0005444946978946063,
+                0.00052550460918353
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "e0ca6c58d52c5604d67657d878e33216bd0da65cd941984f8b850880101eb29d"
+            },
+            {
+              "frame": 5,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.15625,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            }
+          ]
+        },
+        {
+          "inputSHA256": "75b8d5181480e1ea7412bbdaf501c9eb410992c65a434406a72875b788e2ddc5",
+          "file": "reopenBeforeDeferredMerge-1.frames",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 1,
+              "sourceSHA256": "c6c614c5a063d23236572207eaecd1a3422cd9afdb6e152e1b64e8f3e1635489",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.03125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.02355590233242967,
+                0.012998607313156088
+              ],
+              "rightStats": [
+                0.040535663687106635,
+                0.024387262318897644
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "dce211571a88f844161d296d2e4095bcd6d131c1c3b0444d3cdddcc7feb04f31"
+            },
+            {
+              "frame": 2,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.024457005940429453,
+                0.012007605019271119
+              ],
+              "rightStats": [
+                -0.04135975213307473,
+                0.02684464727348403
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 3,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.09375,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 4,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 5,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.15625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [
+                0.1875
+              ],
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.012007605019271119
+                  ]
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.02684464727348403
+                  ]
+                }
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 6,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.1875,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            }
+          ]
+        }
+      ],
+      "resetBlocks": [
+        {
+          "facesCleared": true,
+          "preReadExecuted": true,
+          "scannerReset": true,
+          "candidatePreserved": true,
+          "totalsPreserved": true
+        }
+      ]
+    },
+    {
+      "name": "normalPositive",
+      "sessions": [
+        {
+          "inputSHA256": "75b8d5181480e1ea7412bbdaf501c9eb410992c65a434406a72875b788e2ddc5",
+          "file": "normalPositive-0.frames",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 1,
+              "sourceSHA256": "c6c614c5a063d23236572207eaecd1a3422cd9afdb6e152e1b64e8f3e1635489",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.03125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.02355590233242967,
+                0.012998607313156088
+              ],
+              "rightStats": [
+                0.040535663687106635,
+                0.024387262318897644
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "dce211571a88f844161d296d2e4095bcd6d131c1c3b0444d3cdddcc7feb04f31"
+            },
+            {
+              "frame": 2,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.024457005940429453,
+                0.012007605019271119
+              ],
+              "rightStats": [
+                -0.04135975213307473,
+                0.02684464727348403
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 3,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.09375,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 4,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 5,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.15625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [
+                0.1875
+              ],
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.012007605019271119
+                  ]
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.02684464727348403
+                  ]
+                }
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 6,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.1875,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "name": "blackDropoutControl",
+      "sessions": [
+        {
+          "inputSHA256": "e3f3ef639bce97d0c72b2916ba1e21c38cb6a41f3c66b2f41533e5ad95072038",
+          "file": "blackDropoutControl-0.frames",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 1,
+              "sourceSHA256": "c6c614c5a063d23236572207eaecd1a3422cd9afdb6e152e1b64e8f3e1635489",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.03125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.02355590233242967,
+                0.012998607313156088
+              ],
+              "rightStats": [
+                0.040535663687106635,
+                0.024387262318897644
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "dce211571a88f844161d296d2e4095bcd6d131c1c3b0444d3cdddcc7feb04f31"
+            },
+            {
+              "frame": 2,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.0625,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.024457005940429453,
+                0.012007605019271119
+              ],
+              "rightStats": [
+                -0.04135975213307473,
+                0.02684464727348403
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 3,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.09375,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 4,
+              "sourceSHA256": "0b150fd32588b1daca5569992ebe559c0102c837306b1af4c44d35128ec58366",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": false,
+              "time": 0.125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.005168330365688437,
+                0.013338060521575731
+              ],
+              "rightStats": [
+                0.0041495965348763595,
+                0.019749259529991323
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "7818f5542a0404157573be6cffc0e0c8e68ce3c0f5d17d07ccdd9313fb700baf"
+            },
+            {
+              "frame": 5,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.15625,
+              "flowSkippedForMissingPreviousFace": true,
+              "leftStats": [
+                0.0,
+                0.0
+              ],
+              "rightStats": [
+                0.0,
+                0.0
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 6,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.1875,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.00018861985955558196,
+                0.000904358979722167
+              ],
+              "rightStats": [
+                -3.333977452221118e-05,
+                0.0004963015686089951
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 7,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                164.0,
+                252.0,
+                50
+              ],
+              "rightEye": [
+                208.0,
+                252.0,
+                50
+              ],
+              "time": 0.21875,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.00018861985955558196,
+                0.000904358979722167
+              ],
+              "rightStats": [
+                -3.333977452221118e-05,
+                0.0004963015686089951
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 8,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 1,
+              "predictorPoints": [
+                [
+                  221,
+                  254
+                ],
+                [
+                  204,
+                  254
+                ],
+                [
+                  160,
+                  255
+                ],
+                [
+                  177,
+                  255
+                ],
+                [
+                  191,
+                  286
+                ]
+              ],
+              "predictorRectangle": [
+                136,
+                208,
+                236,
+                336
+              ],
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.25,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                0.00018861985955558196,
+                0.000904358979722167
+              ],
+              "rightStats": [
+                -3.333977452221118e-05,
+                0.0004963015686089951
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            },
+            {
+              "frame": 9,
+              "sourceSHA256": "dc9ba2102d4ca0117b1abae04b56be54168bedc25d69fdb4a3599dccae66370d",
+              "cnnCalls": 0,
+              "predictorPoints": null,
+              "predictorRectangle": null,
+              "selected": true,
+              "rect": [
+                136,
+                208,
+                100,
+                128
+              ],
+              "leftEye": [
+                212.5,
+                254.0,
+                34
+              ],
+              "rightEye": [
+                168.5,
+                255.0,
+                34
+              ],
+              "time": 0.28125,
+              "flowSkippedForMissingPreviousFace": false,
+              "leftStats": [
+                -0.00025070321996079455,
+                0.00032562256910861827
+              ],
+              "rightStats": [
+                -0.0004083022063438572,
+                0.0002948363653554267
+              ],
+              "emissions": [],
+              "candidates": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "cachedPreviousSHA256": "b9dd931f57b147ff1d83b14ccc2ebc64be24d6b9f98efe3db295adc22009d2d9"
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    }
+  ],
+  "blockedReadTimerErrorHits": [
+    0,
+    0,
+    0
+  ],
+  "limitations": [
+    "Fixed public crop/artificial eye motion/context masks/black;not real blink ground truth",
+    "Actual tracking/flow/scanner/swap plus one actual cleanup/pre-read/scanner-reset;not whole camera loop",
+    "No image normalization beyond640x480 identity,device clocks/no-face timeout/Qt controller/physical capture/UI acceptance"
+  ]
+}

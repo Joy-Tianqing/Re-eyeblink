@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "provenance": "CUA操作结果的人工转录；snapshot是相关状态证据，不保证覆盖每个前后态。未单独保存的过渡文本以本账本为转录记录。",
+  "observations": [
+    {
+      "id": "O01",
+      "precondition": "主界面可见",
+      "action": "打开已安装应用",
+      "postcondition": "呈现眨眼训练/眼部练习/离屏休息/统计四模块；所见30秒/20分钟/50分钟/自然休息3分钟是本机当前值，非全部出厂默认值。",
+      "evidence": [
+        "evidence/ui/01-main.txt",
+        "evidence/ui/01-main.png"
+      ]
+    },
+    {
+      "id": "O02",
+      "precondition": "主界面",
+      "action": "点击设置",
+      "postcondition": "设置页呈现相机窗口关键词、全局进程与窗口关键词、Beta、自启、研究上传及语言。",
+      "evidence": [
+        "evidence/ui/02-settings.txt",
+        "evidence/ui/02-settings.png"
+      ]
+    },
+    {
+      "id": "O03",
+      "precondition": "设置页",
+      "action": "展开语言列表",
+      "postcondition": "列出 American English、čeština、Deutsch、slovenčina；未切换语言。",
+      "evidence": [
+        "evidence/ui/03-language-options.txt"
+      ]
+    },
+    {
+      "id": "O04",
+      "precondition": "设置页",
+      "action": "点击相机测试",
+      "postcondition": "进入实时检测测试页，可见FaceTime及iPhone设备候选；说明不会记录测量，未切换设备，未观察到成功眨眼识别。",
+      "evidence": [
+        "evidence/ui/04-camera-test.txt"
+      ]
+    },
+    {
+      "id": "O05",
+      "precondition": "主界面",
+      "action": "点击关于",
+      "postcondition": "可见3.7.4.0、FAQ、隐私、支持、合作组织及NOTICES；未提交邮件或捐赠。",
+      "evidence": [
+        "evidence/ui/05-about.txt",
+        "evidence/ui/05-about.png"
+      ]
+    },
+    {
+      "id": "O06",
+      "precondition": "正常主界面",
+      "action": "点击Pause eyeblink",
+      "postcondition": "标题变为presentation mode，各模块值保留而交互控件禁用；停止测量/亮度仅为按钮说明，未独立测量效果。",
+      "evidence": [
+        "evidence/ui/06-presentation-paused.txt",
+        "evidence/ui/06-presentation-paused.png"
+      ]
+    },
+    {
+      "id": "O07",
+      "precondition": "演示模式",
+      "action": "点击Use eyeblink",
+      "postcondition": "标题恢复premium，模块控件恢复可操作。",
+      "evidence": [
+        "evidence/ui/06-presentation-paused.txt"
+      ]
+    },
+    {
+      "id": "O08",
+      "precondition": "交互眨眼模式",
+      "action": "点击Stop camera use",
+      "postcondition": "标题变camera use paused，Simple选中，Interactive/MGD/统计主开关禁用，其他提醒设置仍可操作；未独立核验相机硬件资源释放。",
+      "evidence": [
+        "evidence/ui/07-camera-paused.txt",
+        "evidence/ui/07-camera-paused.png"
+      ]
+    },
+    {
+      "id": "O09",
+      "precondition": "相机暂停",
+      "action": "点击CHANGE REMINDER POSITION",
+      "postcondition": "按钮变SAVE NEW POSITION；未观察到浮层完整截图，未实际拖拽。",
+      "evidence": [
+        "evidence/ui/08-reminder-position-preview.txt",
+        "evidence/ui/08-reminder-position-preview.png"
+      ]
+    },
+    {
+      "id": "O10",
+      "precondition": "位置编辑中",
+      "action": "再次点击SAVE NEW POSITION",
+      "postcondition": "按钮恢复CHANGE REMINDER POSITION；未移动位置。",
+      "evidence": [
+        "evidence/ui/08-reminder-position-preview.txt"
+      ]
+    },
+    {
+      "id": "O11",
+      "precondition": "相机暂停、原为交互模式",
+      "action": "点击Use camera",
+      "postcondition": "标题恢复premium，Interactive恢复选中，相关控件启用。",
+      "evidence": [
+        "evidence/ui/07-camera-paused.txt"
+      ]
+    },
+    {
+      "id": "O12",
+      "precondition": "主界面未有测量",
+      "action": "点击TAKE FIRST MEASUREMENT",
+      "postcondition": "先出现Measurement will start shortly，随后Measurement in progress。之后观察回Face not detected，未得到有效统计样本。",
+      "evidence": [
+        "evidence/ui/09-measurement-requested.txt",
+        "evidence/ui/09-measurement-requested.png"
+      ]
+    },
+    {
+      "id": "O13",
+      "precondition": "主界面",
+      "action": "尝试将休息周期输入为1或5",
+      "postcondition": "AX setValue/键盘输入后所见仍50；坐标操作报noWindowsAvailable。未成功缩短，不能据此确定最小值。",
+      "evidence": [
+        "evidence/ui/01-main.txt"
+      ]
+    },
+    {
+      "id": "O14",
+      "precondition": "主窗口可见",
+      "action": "点击Minimize to tray icon",
+      "postcondition": "后续AX读取超时，进程仍在；无法通过当前CUA入口重新打开托盘菜单，恢复窗口和托盘菜单完整链待补。",
+      "evidence": [
+        "evidence/ui/01-main.txt"
+      ]
+    },
+    {
+      "id": "O15",
+      "precondition": "关于页",
+      "action": "点击NOTICES",
+      "postcondition": "当前主窗口AX无变化；包中存在notices.pdf，但本次未确认外部PDF查看器成功打开。",
+      "evidence": [
+        "evidence/ui/05-about.txt"
+      ]
+    }
+  ]
+}

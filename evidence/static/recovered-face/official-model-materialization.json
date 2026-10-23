@@ -1,0 +1,7 @@
+{
+  "officialSourceURL": "https://raw.githubusercontent.com/ShiqiYu/libfacedetection/77b54ba85601191b1ce61772e735b694faeaf714/src/facedetectcnn-int8data.cpp",
+  "sourceSHA256": "7a7f8e8b1a16a4d865565fe7d4e1983a507309a1990e7e11e3afdc6dc75e9108",
+  "serializedModelSHA256": "835305bfac324d22102580f598a7df6419378b7d68138c085c43665a977d7767",
+  "matchesOriginalExtractedModel": true,
+  "requiresOriginalApplicationToMaterialize": false
+}

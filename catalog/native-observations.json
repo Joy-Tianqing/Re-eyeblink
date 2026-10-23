@@ -1,0 +1,1798 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-22",
+  "scope": "rebuild-observations-and-scoped-function-comparisons-not-whole-app-equivalence",
+  "observations": [
+    {
+      "id": "N001",
+      "precondition": "Release arm64 app bundled and signed; prior process quit",
+      "action": "Launch build/Eyeblink.app through CUA",
+      "postcondition": "Chinese training page shown with single main window identifier main",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/01-training.txt"
+      ]
+    },
+    {
+      "id": "N002",
+      "precondition": "Training page visible",
+      "action": "Navigate to Camera",
+      "postcondition": "FaceTime camera listed; access not authorized; preview disabled and privacy entry visible",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/02-camera-permission.txt"
+      ]
+    },
+    {
+      "id": "N003",
+      "precondition": "Camera page visible",
+      "action": "Navigate to Breaks and exercise",
+      "postcondition": "Break, natural rest, exercise sections visible; duplicate numeric input labels found and subsequently fixed in source",
+      "status": "partial-awaiting-fixed-build-visual-check",
+      "evidence": [
+        "evidence/native-ui/03-breaks.txt"
+      ]
+    },
+    {
+      "id": "N004",
+      "precondition": "Training and break pages visible",
+      "action": "Click reminder preview",
+      "postcondition": "Main-window AX tree did not expose separate nonactivating panel; visible terminal result not verified",
+      "status": "unknown",
+      "evidence": [
+        "evidence/native-ui/03-breaks.txt"
+      ]
+    },
+    {
+      "id": "N005",
+      "precondition": "Rebuilt app running, no active measurement shown",
+      "action": "Command-Q through CUA",
+      "postcondition": "CUA returned App quit; subsequent launch succeeded",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/01-training.txt"
+      ]
+    },
+    {
+      "id": "N006",
+      "precondition": "Final build prepared for layout recheck",
+      "action": "Launch through CUA",
+      "postcondition": "CUA reported Mac locked; automatic unlock paused because physical input detected",
+      "status": "blocked-until-manual-unlock",
+      "evidence": []
+    },
+    {
+      "id": "N007",
+      "precondition": "User authorized rebuilt app camera access",
+      "action": "Enable preview",
+      "postcondition": "Real FaceTime camera: detecting blinks, 39.9 FPS, 5 blinks observed; preview then stopped and camera idle shown",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/04-real-camera-preview.txt"
+      ]
+    },
+    {
+      "id": "N008",
+      "precondition": "Native original-pipeline camera measurement started at 0%",
+      "action": "Keep production 180-second measurement running",
+      "postcondition": "24%,46%,86% observed; completed with 15 blink events and 5.0/min; second record persisted",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/05-measurement-running.txt",
+        "evidence/native-ui/06-measurement-complete.txt",
+        "evidence/native-tests/real-measurement.json"
+      ]
+    },
+    {
+      "id": "N009",
+      "precondition": "Two real/prototype history records present",
+      "action": "Open Clear measurements confirmation then cancel",
+      "postcondition": "Destructive confirmation shown; both records retained",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/08-clear-confirmation.txt"
+      ]
+    },
+    {
+      "id": "N010",
+      "precondition": "New measurement completed and saved",
+      "action": "Quit normally and restart",
+      "postcondition": "Two records restored, newest 5.0/min; record ID and file hash retained across quit",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/12-history-after-restart.txt",
+        "evidence/native-tests/real-measurement.json"
+      ]
+    },
+    {
+      "id": "N011",
+      "precondition": "Training page, reminders active",
+      "action": "Preview blink reminder and drag panel",
+      "postcondition": "Floating preview visible and captured; training position persisted in preferences; preview expired after 15 seconds",
+      "status": "partial-position-restart-check-pending",
+      "evidence": [
+        "evidence/native-ui/09-training-overlay.txt",
+        "evidence/native-ui/training-overlay.png"
+      ]
+    },
+    {
+      "id": "N012",
+      "precondition": "Breaks page visible",
+      "action": "Preview break reminder, choose Remind in 5 minutes",
+      "postcondition": "Break panel displayed skip/snooze; preview closed after snooze; production timer not changed by preview",
+      "status": "observed-preview-only",
+      "evidence": [
+        "evidence/native-ui/10-break-overlay.txt"
+      ]
+    },
+    {
+      "id": "N013",
+      "precondition": "No process rules, app active",
+      "action": "Enter temporary Eyeblink process keyword",
+      "postcondition": "All features auto-paused; adding manual pause, removing process rule retains manual pause; manual resume clears remaining pause",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/15-auto-paused.txt",
+        "evidence/native-ui/16-user-pause-retained.txt"
+      ]
+    },
+    {
+      "id": "N014",
+      "precondition": "Chinese settings visible",
+      "action": "Select English language",
+      "postcondition": "Application views and toolbar changed immediately; system menus still follow system locale",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/14-english-settings.txt"
+      ]
+    },
+    {
+      "id": "N015",
+      "precondition": "Apple Development signed app camera authorized, language English saved",
+      "action": "Update signed build and restart",
+      "postcondition": "English restored; camera authorization retained; language restored to Chinese",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/17-settings-after-update.txt",
+        "evidence/native-ui/18-camera-authorized-after-update.txt"
+      ]
+    },
+    {
+      "id": "N016",
+      "precondition": "Real preview detecting blinks",
+      "action": "Pause camera then resume",
+      "postcondition": "Preview removed and camera paused state shown; resume starts a new live stream at 27.3 FPS",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/19-camera-paused.txt",
+        "evidence/native-ui/20-camera-resumed.txt"
+      ]
+    },
+    {
+      "id": "N017",
+      "precondition": "Regular measurement enabled and app resumed",
+      "action": "Allow automatically scheduled 180-second measurement to complete",
+      "postcondition": "Third record added, 24 detected blinks, displayed 8.0/min",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/22-automatic-measurement-complete.txt",
+        "evidence/native-tests/real-measurement.json"
+      ]
+    },
+    {
+      "id": "N018",
+      "precondition": "Breaks page, preview exercise menu open",
+      "action": "Choose Rotate eyes, then Escape",
+      "postcondition": "Rotate-eyes ten-second prompt shown; Escape closes preview and restores main window",
+      "status": "observed-preview-only",
+      "evidence": [
+        "evidence/native-ui/23-rotate-exercise.txt"
+      ]
+    },
+    {
+      "id": "N019",
+      "precondition": "Statistics page contains history and records",
+      "action": "Open independent history window and maximize it",
+      "postcondition": "A separate history window with native zoom and date/chart/history controls was observed",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/24-independent-history.txt"
+      ]
+    },
+    {
+      "id": "N020",
+      "precondition": "First hover implementation in independent history window",
+      "action": "Human moves pointer over chart",
+      "postcondition": "User explicitly reported no details; marked failed and replaced with native AppKit tracking",
+      "status": "failed-before-fix-superseded-by-N021",
+      "evidence": [
+        "evidence/native-ui/hover-user-report.txt"
+      ]
+    },
+    {
+      "id": "N021",
+      "precondition": "Updated native-tracking chart, four existing records",
+      "action": "CUA clicks two plot positions; human moves pointer into and out of the plot",
+      "postcondition": "Different dates/rates/durations shown for clicks; human confirms hover enter displays details and exit clears them",
+      "status": "observed-click-and-human-hover",
+      "evidence": [
+        "evidence/native-ui/25-chart-selection-and-hover.txt"
+      ]
+    },
+    {
+      "id": "N022",
+      "precondition": "Breaks page, exercise preview menu open",
+      "action": "Choose Look far, then Escape",
+      "postcondition": "Look far ten-second prompt shown; Escape closes preview and restores main window",
+      "status": "observed-preview-only",
+      "evidence": [
+        "evidence/native-ui/26-remaining-exercise-previews.txt"
+      ]
+    },
+    {
+      "id": "N023",
+      "precondition": "Breaks page, exercise preview menu open",
+      "action": "Choose Squeeze blink, then Escape",
+      "postcondition": "Squeeze blink ten-second prompt shown; Escape closes preview and restores main window",
+      "status": "observed-preview-only",
+      "evidence": [
+        "evidence/native-ui/26-remaining-exercise-previews.txt"
+      ]
+    },
+    {
+      "id": "N024",
+      "precondition": "Breaks page, exercise preview menu open",
+      "action": "Choose Look sideways, then Escape",
+      "postcondition": "Look sideways ten-second prompt shown; Escape closes preview and restores main window",
+      "status": "observed-preview-only",
+      "evidence": [
+        "evidence/native-ui/26-remaining-exercise-previews.txt"
+      ]
+    },
+    {
+      "id": "N025",
+      "precondition": "Real camera authorized; training active with 30-second interval; MGD off",
+      "action": "Enable MGD; human waits and blinks while leaving pointer in main window; restore MGD off",
+      "postcondition": "Human confirms production reminder appeared and closed on blink; AX confirms MGD restored off",
+      "status": "observed-human-production",
+      "evidence": [
+        "evidence/native-ui/27-real-mgd-blink-dismissal.txt"
+      ]
+    },
+    {
+      "id": "N026",
+      "precondition": "Earlier rebuild exposed a duration that affected only the rest message",
+      "action": "Remove independent duration/countdown and verify recovered sampled-idle completion with focused regressions",
+      "postcondition": "62 tests pass; corrected native UI exposes editable idle threshold even when credits are off; old settings still decode",
+      "status": "observed-ui-and-regression-not-production-completion",
+      "evidence": [
+        "evidence/native-ui/28-rest-semantics-fix.txt",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N027",
+      "precondition": "Login item initially off, stable signed app running",
+      "action": "Enable through UI; inspect system item; disable through UI; inspect system item again",
+      "postcondition": "System item enabled/allowed at generation 1, then disabled/allowed at generation 2; UI preference off restored",
+      "status": "observed-registration-not-actual-login-start",
+      "evidence": [
+        "evidence/native-tests/login-item-registration.json"
+      ]
+    },
+    {
+      "id": "N028",
+      "precondition": "About page visible",
+      "action": "Open third-party licenses",
+      "postcondition": "Finder opens app Licenses folder with all four expected files; close this created window and return",
+      "status": "observed",
+      "evidence": [
+        "evidence/native-ui/29-about-and-licenses.txt"
+      ]
+    },
+    {
+      "id": "N029",
+      "precondition": "Production rest running with temporary experimental schedule; later original UI ranges restored",
+      "action": "Snooze real rest for five minutes; observe return; human skips returned rest",
+      "postcondition": "Full five-minute countdown and active rest observed; user confirms Skip this break; baseline preferences restored",
+      "status": "observed-production-and-human-skip-not-idle-completion",
+      "evidence": [
+        "evidence/native-ui/30-production-rest-snooze-and-skip.txt"
+      ]
+    },
+    {
+      "id": "N030",
+      "precondition": "Original binary range setters recovered; rebuilt UI updated",
+      "action": "Enter values below/above all three ranges; use break increment/decrement; restore baseline",
+      "postcondition": "Training2-60,break15-80,idle2-9 endpoints and break step1 observed;65 tests pass;window-title permission explicitly deferred by user",
+      "status": "observed-boundaries-and-regression",
+      "evidence": [
+        "evidence/native-ui/31-original-control-bounds.txt",
+        "evidence/static/recovered-rules/spinbox-ranges.otool.json",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N031",
+      "precondition": "Original fixed timings and 20-second training timer confirmed from bounded controller disassembly",
+      "action": "Correct prototype timing controls and feature handoff; build and launch signed app; inspect Breaks and Statistics",
+      "postcondition": "Original19-minute exercises and30/3-minute measurements displayed read-only;3 regressions fail before and pass after;68 tests pass",
+      "status": "observed-ui-and-regression-not-long-cycle-acceptance",
+      "evidence": [
+        "evidence/native-ui/32-fixed-schedule.txt",
+        "evidence/native-tests/fixed-schedule-before.log",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N032",
+      "precondition": "Five real records all dated2026-10-19; custom date controls available",
+      "action": "Filter through previous day, restore today, use same-day range, use tomorrow-only range, restore7days",
+      "postcondition": "Empty for prior-day and tomorrow-only ranges;five records for today-inclusive and same-day;baseline range restored;history unchanged",
+      "status": "observed-date-range-not-midnight-or-dst",
+      "evidence": [
+        "evidence/native-ui/33-date-range.txt"
+      ]
+    },
+    {
+      "id": "N033",
+      "precondition": "Signed rebuild with runtime-error and device-disconnect observers",
+      "action": "Exercise real preview start/stop/reopen and test isolated NotificationCenter failure delivery",
+      "postcondition": "Real frames26.1/23FPS observed;4 observer tests and prior-failure preview regression pass;history remains byte-identical;physical disconnect remains pending",
+      "status": "observed-preview-and-notification-tests-not-physical-disconnect",
+      "evidence": [
+        "evidence/native-ui/34-camera-session-failures.txt",
+        "evidence/native-tests/camera-failure-observer.log",
+        "evidence/native-tests/camera-failure-sdk.json"
+      ]
+    },
+    {
+      "id": "N034",
+      "precondition": "Real quit enters a modal run loop;pending writes use MainActor tasks",
+      "action": "Reproduce modal-loop drain failure;fix background work and completion delivery;test real menu quits",
+      "postcondition": "74 tests pass including new real modal-run-loop regression;idle menu quit terminal;active-camera quit eventually terminal but10.567-second drain latency unresolved;5 historical records unchanged",
+      "status": "regression-fixed-with-production-latency-still-open",
+      "evidence": [
+        "evidence/native-ui/35-modal-termination.txt",
+        "evidence/native-tests/termination-modal-before.log",
+        "evidence/native-tests/termination-modal-hang.txt",
+        "evidence/native-tests/real-preview-quit.json",
+        "evidence/native-tests/termination-stage-timing.json",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N035",
+      "precondition": "Active-camera shutdown latency diagnosed with phase logs; session work shares frame-delivery queue",
+      "action": "Separate serial session management from ordered frame analysis; test real menu quit and preview pause/resume then Command-Q",
+      "postcondition": "74 tests pass;25.1FPS menu-quit drain0.157712s;27.3FPS preview paused with correct status then resumed22.6FPS and Command-Q drain0.096390s;both processes terminated;history byte-identical",
+      "status": "observed-two-production-session-chains-not-all-platform-lifecycle",
+      "evidence": [
+        "evidence/native-ui/36-camera-session-queue.txt",
+        "evidence/native-tests/camera-stop-before-stages.json",
+        "evidence/native-tests/camera-stop-after-run1.json",
+        "evidence/native-tests/camera-stop-after-run2.json",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N036",
+      "precondition": "Signed native app has existing authorized notification permission;five real history records",
+      "action": "Add explicit authorization state and lifecycle-safe notification adapter;send test;open system settings read-only;toggle preference off and restore",
+      "postcondition": "OS delivered-notification query confirms test reached Notification Center;system pane points to rebuilt Eyeblink;no permissions or system settings changed;preference restored;78 tests pass;production180-second completion-to-notification remains pending",
+      "status": "observed-system-test-delivery-and-regression-not-production-completion-or-direct-banner",
+      "evidence": [
+        "evidence/native-ui/37-measurement-notifications.txt",
+        "evidence/native-tests/notification-system-readback.json",
+        "evidence/native-tests/notification-late-error-before.log",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N037",
+      "precondition": "Training reminder has native drag region; previous automated drag was inconclusive",
+      "action": "User opens training preview, manually drags top blank area, then previews again",
+      "postcondition": "User confirms movement and retained position on repreview; no across-process restart or exercise/rest placement claimed",
+      "status": "user-confirmed-training-drag-and-same-session-repreview-not-restart",
+      "evidence": [
+        "evidence/native-ui/38-training-reminder-manual-drag.txt"
+      ]
+    },
+    {
+      "id": "N038",
+      "precondition": "Signed arm64 rebuild;existing authorized notifications;6 real records before second run;production completion notifications enabled",
+      "action": "Run full180-second production measurement without test notifications;observe final history and exact production-ID system delivery readback",
+      "postcondition": "History6 to7;latest4 detected events over180 seconds;UI confirms production notification reached Notification Center;all prior records unchanged;80 tests pass;direct banner remains unobserved",
+      "status": "observed-production-measure-save-and-system-delivery-not-direct-banner",
+      "evidence": [
+        "evidence/native-ui/39-production-measurement-notification.txt",
+        "evidence/native-tests/production-notification-readback.json",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N039",
+      "precondition": "Frozen public320x240 BGR fixture;original installed executable SHA verified;all file-backed sections of independent debugger copy identical",
+      "action": "Stop copy before main;call original shipped facedetect_cnn at0x10018efb0;compare its output with arm64 reconstruction",
+      "postcondition": "22 faces and330 meaningful integers match exactly;probe killed;original5 user data files unchanged;full blink pipeline and more fixtures remain pending",
+      "status": "observed-single-fixture-shipped-cnn-function-in-signature-only-copy-not-full-app-parity",
+      "evidence": [
+        "evidence/native-tests/original-cnn-probe-identity.json",
+        "evidence/native-tests/original-cnn-comparison.json",
+        "evidence/native-tests/original-cnn-result.json",
+        "evidence/native-tests/original-cnn-debug-run.log",
+        "evidence/static/recovered-face/original_cnn_debug_probe.py",
+        "evidence/static/recovered-face/prepare_original_cnn_probe.py"
+      ]
+    },
+    {
+      "id": "N040",
+      "precondition": "Production clock;UI-configured15-minute break,natural credit off,idle threshold3minutes",
+      "action": "Observe full countdown through expiry;request clarification of possible manual dismissal",
+      "postcondition": "Next cycle resets but reminder appearance/disappearance not captured;user uncertain about manual dismissal;entire original settings restored;automatic idle completion remains unaccepted",
+      "status": "observed-countdown-inconclusive-end-cause-not-pass",
+      "evidence": [
+        "evidence/native-ui/40-rest-idle-inconclusive.txt"
+      ]
+    },
+    {
+      "id": "N041",
+      "precondition": "New signed arm64 app;empty rules;window permission remains ungranted",
+      "action": "Regression-test lazy source reads;add own process rule;add manual pause;remove rule;manually resume",
+      "postcondition": "Automatic pause observed;manual pause survives rule removal;manual resume enables previews and countdown;all baseline settings restored;81 tests pass",
+      "status": "observed-process-rule-lifecycle-and-provider-regression-not-window-permission-or-performance-benchmark",
+      "evidence": [
+        "evidence/native-ui/41-lazy-pause-providers.txt",
+        "evidence/native-tests/pause-provider-before.log",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/lazy-pause-and-cleanup.json"
+      ]
+    },
+    {
+      "id": "N042",
+      "precondition": "Frozen full-size public BGR and black inputs;signature-only probe has identical original code sections;main stopped before execution",
+      "action": "Call shipped Model::detectBestNearestFace2 for6 prior-face conditions per image;call shipped detectEyes for8 five-point ABI fixtures;compare production arm64 API and Core geometry",
+      "postcondition": "12 selection conditions and8 eye geometries match;production pipeline uses extracted Float geometry;83 Swift tests and2 release geometry tests pass;bundle excludes test fixtures;original5 user files unchanged",
+      "status": "observed-scoped-original-component-parity-not-complete-blink-pipeline",
+      "evidence": [
+        "evidence/native-ui/42-face-selection-and-eye-geometry.txt",
+        "evidence/native-tests/original-selection-comparison.json",
+        "evidence/native-tests/original-selection-results.json",
+        "evidence/native-tests/original-eye-geometry-results.json",
+        "evidence/native-tests/original-selection-run.log",
+        "evidence/native-tests/arm64-selection-full.json",
+        "evidence/native-tests/arm64-selection-black.json",
+        "evidence/native-tests/eye-geometry-release.log",
+        "evidence/static/recovered-face/original_selection_probe.py",
+        "evidence/static/recovered-face/selection_pipeline_contract.cpp",
+        "evidence/static/recovered-face/selection-cases.txt",
+        "evidence/static/recovered-rules/eye-normalizer-float-order.txt"
+      ]
+    },
+    {
+      "id": "N043",
+      "precondition": "Latest signed arm64 package;camera already authorized;preview off;8 existing records",
+      "action": "Temporarily disable training;start immediate production measurement;observe camera status and FPS through failure;restore training and quit normally",
+      "postcondition": "Measuring with no-face and28.5FPS observed;measurement-stopped failure observed;immediate measurement restored;8 records byte-identical;baseline settings restored;process gone",
+      "status": "observed-live-no-face-measurement-failure-not-no-frame-low-fps-or-blink-accuracy",
+      "evidence": [
+        "evidence/native-ui/43-real-no-face-measurement.txt",
+        "evidence/native-tests/real-no-face-measurement.json"
+      ]
+    },
+    {
+      "id": "N044",
+      "precondition": "N040 rest end cause inconclusive;no production timing changes authorized or made",
+      "action": "Emit typed rest transition effects from actual engine branches;consume through local OSLog;run boundary/cause regressions and launch signed release",
+      "postcondition": "Started/idle completion/skip/snooze/disable/pause/camera preview distinguishable in code;86 tests pass;release starts and quits;new production15minute event capture still pending",
+      "status": "tested-rest-cause-diagnostics-not-live-idle-completion-acceptance",
+      "evidence": [
+        "evidence/native-ui/44-rest-end-cause-trace.txt",
+        "Tests/EyeblinkCoreTests/RestTransitionTests.swift",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N045",
+      "precondition": "Code-identical signature-only probe;model SHA verified;main not executed",
+      "action": "Call actual shipped deserializer and predictor using real Model gray array on8 frozen images;run direct arm64 Swift golden regression",
+      "postcondition": "40 landmarks and input gray hashes match;87 Swift tests pass;5 original user files unchanged;probe gone",
+      "status": "observed-shipped-predictor-component-on-frozen-inputs-not-full-blink-sequence",
+      "evidence": [
+        "evidence/native-ui/45-shipped-predictor.txt",
+        "evidence/native-tests/original-predictor-results.json",
+        "evidence/native-tests/original-predictor-comparison.json",
+        "evidence/native-tests/original-predictor-run.log",
+        "evidence/native-tests/original-predictor-abi-before.log",
+        "evidence/static/recovered-rules/original_predictor_probe.py",
+        "Tests/EyeblinkCoreTests/Fixtures/OriginalShapePredictor.json",
+        "evidence/native-tests/shipped-predictor-release.log"
+      ]
+    },
+    {
+      "id": "N046",
+      "precondition": "Shipped Model flow-stat function and9 canonical frozen float32 vector fields;baseline production math differs",
+      "action": "Call original function;compare shared production stats helper;restore two-pass variance threshold and column-major accumulation;repeat exact comparison and UBSAN",
+      "postcondition": "Before4/9 exact;after9/9 exact mean and dispersion;27 image-flow contracts under UBSAN and87 Swift tests pass;full Farneback/blink sequence remains pending",
+      "status": "observed-scoped-original-statistics-parity-and-production-fidelity-fix",
+      "evidence": [
+        "evidence/native-ui/46-flow-dispersion-fidelity.txt",
+        "evidence/native-tests/original-flow-stats-results.json",
+        "evidence/native-tests/original-flow-stats-run.log",
+        "evidence/native-tests/arm64-flow-stats-before.json",
+        "evidence/native-tests/flow-statistics-before-comparison.json",
+        "evidence/native-tests/flow-statistics-comparison.json",
+        "evidence/native-tests/flow-statistics-ubsan.log",
+        "evidence/native-tests/flow-contract.log",
+        "evidence/static/recovered-rules/original_flow_stats_probe.py",
+        "evidence/static/recovered-rules/original_probe_runtime.py",
+        "evidence/static/recovered-rules/flow-stat-cases.json",
+        "evidence/static/recovered-rules/build-flow-stats-and-check.sh"
+      ]
+    },
+    {
+      "id": "N047",
+      "precondition": "Original preview dispatch calls completion handlers;rebuild only cleared active reminder",
+      "action": "Add3 original-duration regressions;observe8 failed assertions;reuse proper completion/reset handlers when camera preview interrupts a feature",
+      "postcondition": "Production timers and exercise rotation preserved;rest trace distinguishes cameraPreview;real UI interruption chain remains pending",
+      "status": "tested-recovered-preview-interruption-semantics-not-new-live-camera-acceptance",
+      "evidence": [
+        "evidence/native-ui/47-preview-interruption-cycles.txt",
+        "evidence/native-tests/preview-interruption-before.log",
+        "Tests/EyeblinkCoreTests/PreviewInterruptionTests.swift",
+        "evidence/native-tests/swift-test.log"
+      ]
+    },
+    {
+      "id": "N048",
+      "precondition": "Original executable/core/imgproc identities verified;3 synthetic color inputs with padded strides",
+      "action": "Call actual original cvtColor/blur using recovered Model parameters;compare production BGRA gray interface under UBSAN",
+      "postcondition": "153520 pixels and307040 output bytes equal;no camera images;debugserver cleanup warning retained;probe gone and5 original user files unchanged",
+      "status": "observed-shipped-opencv-gray-components-not-whole-model-frame-sequence",
+      "evidence": [
+        "evidence/native-ui/48-shipped-gray-blur.txt",
+        "evidence/native-tests/gray-inputs.json",
+        "evidence/native-tests/original-gray-results.json",
+        "evidence/native-tests/original-gray-run.log",
+        "evidence/native-tests/gray-comparison.json",
+        "evidence/native-tests/gray-ubsan.log",
+        "evidence/static/recovered-rules/original_gray_probe.py",
+        "evidence/static/recovered-rules/materialize_gray_inputs.py",
+        "evidence/static/recovered-rules/gray_contract.cpp",
+        "evidence/static/recovered-rules/build-gray-and-check.sh",
+        "evidence/static/recovered-rules/check_gray.py"
+      ]
+    },
+    {
+      "id": "N049",
+      "precondition": "Interrupted production15minute rest run;original process/config/binary identified;natural credits disabled and idle threshold180seconds",
+      "action": "Recover original private OSLog;pair lifecycle events;restore all temporary settings through UI and quit",
+      "postcondition": "34 events:17 starts,2 user-confirmed snoozes,15 idle completions;first idle end188.533935seconds;8 history records byte-identical;settings exactly restored;contemporaneous visual panel closing not captured",
+      "status": "observed-production-rest-idle-cause-from-recovered-log-not-visual-dismissal-or-platform-coverage",
+      "evidence": [
+        "evidence/native-ui/49-rest-idle-log-recovered.txt",
+        "evidence/native-tests/rest-traced-events.json",
+        "evidence/native-tests/rest-traced-comparison.json",
+        "evidence/static/recovered-rules/collect_rest_trace.py"
+      ]
+    },
+    {
+      "id": "N050",
+      "precondition": "Old experiment process normally quit;baseline settings restored;current source flow and preview-interruption fixes not previously packaged",
+      "action": "Build and strictly verify new signed arm64 release;rerun90 Swift tests and original-component regressions;observe live camera AX without images;quit",
+      "postcondition": "90 tests pass;9 flow fields and307040 gray bytes match;39.4FPS/0→36.7FPS/1 detected event;models/config/Package.swift snapshot verified;8 history records unchanged and process gone",
+      "status": "observed-current-package-live-capture-smoke-not-ground-truth-accuracy-or-full-equivalence",
+      "evidence": [
+        "evidence/native-ui/50-latest-package-live-smoke.txt",
+        "evidence/native-tests/latest-package-live-smoke.json",
+        "evidence/native-build.json",
+        "evidence/native-tests/release-build.log",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/flow-statistics-ubsan.log",
+        "evidence/native-tests/gray-ubsan.log"
+      ]
+    },
+    {
+      "id": "N051",
+      "precondition": "Original executable/core/imgproc/video identity verified;frozen synthetic inputs only;main/camera never run",
+      "action": "Execute shipped Farneback plus Model stats on6 ROI pairs and shipped resize on32 float fixtures;preserve failures;pin no-FMA and four-lane pairwise compatibility patch",
+      "postcondition": "6/6 flow fields (39684 floats) and mean/dispersion exact;resize18/32 before→32/32 after;UBSAN;gray/stats/CNN unchanged;original5 user files preserved",
+      "status": "observed-shipped-farneback-and-resize-components-not-full-model-or-blink-sequence",
+      "evidence": [
+        "evidence/native-ui/51-shipped-farneback-float-resize.txt",
+        "evidence/native-tests/original-farneback-results.json",
+        "evidence/native-tests/original-farneback-six-run.log",
+        "evidence/native-tests/farneback-before-comparison.json",
+        "evidence/native-tests/farneback-no-contract-comparison.json",
+        "evidence/native-tests/farneback-after-fp-before-pyramid-fix.json",
+        "evidence/native-tests/farneback-pairwise-experiment.json",
+        "evidence/native-tests/farneback-comparison.json",
+        "evidence/native-tests/farneback-ubsan.log",
+        "evidence/native-tests/original-resize-abi-before.log",
+        "evidence/native-tests/original-resize-results.json",
+        "evidence/native-tests/original-resize-run.log",
+        "evidence/native-tests/resize-before-comparison.json",
+        "evidence/native-tests/resize-comparison.json",
+        "evidence/native-tests/resize-ubsan.log",
+        "evidence/native-tests/opencv-pairwise-build.log",
+        "evidence/static/recovered-rules/original_farneback_probe.py",
+        "evidence/static/recovered-rules/original_resize_probe.py",
+        "evidence/static/recovered-rules/resize_cases.py",
+        "evidence/static/recovered-rules/build-farneback-and-check.sh",
+        "evidence/static/recovered-rules/build-resize-and-check.sh",
+        "scripts/opencv/patch.json",
+        "scripts/opencv/resize-half-float.patch",
+        "scripts/patch-opencv.py"
+      ]
+    },
+    {
+      "id": "N052",
+      "precondition": "Mac unlocked;production OpenCV patch rebuilt;baseline settings/history preserved;old app quit",
+      "action": "Relink release from changed archive fingerprints;strictly verify signed arm64 bundle;open camera preview through CUA AX only;close preview and normally quit",
+      "postcondition": "90 Swift tests0 failures;system-only dynamic dependencies;34.4FPS/1→32.3FPS/4 detected events;permission retained;8 history records byte-identical;settings exact;process gone",
+      "status": "observed-current-patched-package-live-smoke-not-ground-truth-accuracy-or-full-equivalence",
+      "evidence": [
+        "evidence/native-ui/52-farneback-package-live-smoke.txt",
+        "evidence/native-tests/farneback-package-live-smoke.json",
+        "evidence/native-tests/n052-native-build.json",
+        "evidence/native-tests/release-build.log",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/face-after-pairwise.log"
+      ]
+    },
+    {
+      "id": "N053",
+      "precondition": "Previous merger comparison only statically inferred;fixed original identity;no main/camera execution",
+      "action": "Execute actual merger8 candidate pairs and original inline scanners with173 frozen feature frames;capture22 candidates and emitted register durations;fix comparison/seed/lifetime and preserve all same-frame events",
+      "postcondition": "13 sequences exact per frame and candidate tuple;8 pair outputs exact;new tests96 assertions failed before→pass after;-O gate passes;94 suite pass at this stage",
+      "status": "observed-shipped-temporal-blocks-on-fixed-features-not-full-image-or-live-sequence",
+      "evidence": [
+        "evidence/native-ui/53-shipped-temporal-sequences.txt",
+        "evidence/native-tests/original-merge-results.json",
+        "evidence/native-tests/original-merge-run.log",
+        "evidence/native-tests/original-temporal-breakpoint-before.log",
+        "evidence/native-tests/original-temporal-results.json",
+        "evidence/native-tests/original-temporal-run.log",
+        "evidence/native-tests/temporal-stream-before.log",
+        "evidence/native-tests/temporal-first-full-suite.log",
+        "evidence/native-tests/temporal-after.log",
+        "evidence/native-tests/n053-swift-test.log",
+        "evidence/native-tests/temporal-comparison.json",
+        "evidence/native-tests/temporal-release.log",
+        "evidence/static/recovered-rules/original_merge_probe.py",
+        "evidence/static/recovered-rules/original_temporal_probe.py",
+        "evidence/static/recovered-rules/temporal-cases.json",
+        "evidence/static/recovered-rules/build-temporal-and-check.sh",
+        "Tests/EyeblinkCoreTests/OriginalTemporalTests.swift",
+        "Tests/EyeblinkCoreTests/MultipleBlinkFrameTests.swift"
+      ]
+    },
+    {
+      "id": "N054",
+      "precondition": "Native output used multiply-before-divide milliseconds and Double frequency;original ABI/range known",
+      "action": "Execute actual original output arithmetic range on6 fixed totals;capture Float/esi;add failing regression and correct production operation order and Float conversion",
+      "postcondition": "5 failed assertions before→6/6 exact after;debug and-O pass;95 whole Swift tests0 failures;history untouched",
+      "status": "observed-shipped-output-arithmetic-not-new-real180second-measurement",
+      "evidence": [
+        "evidence/native-ui/54-shipped-measurement-arithmetic.txt",
+        "evidence/native-tests/original-measurement-stats-results.json",
+        "evidence/native-tests/original-measurement-stats-run.log",
+        "evidence/native-tests/measurement-stats-before.log",
+        "evidence/native-tests/measurement-stats-comparison.json",
+        "evidence/native-tests/measurement-stats-release.log",
+        "evidence/static/recovered-rules/original_measurement_stats_probe.py",
+        "evidence/static/recovered-rules/build-measurement-stats-and-check.sh",
+        "Tests/EyeblinkCoreTests/Fixtures/OriginalMeasurementStats.json",
+        "Sources/EyeblinkCore/Measurements.swift"
+      ]
+    },
+    {
+      "id": "N055",
+      "precondition": "User requests offline work while display is off;current temporal/statistics fixes not live-verified",
+      "action": "Run95 Swift tests and optimized component gates;build/relink/sign/strictly inspect arm64 release without launching UI/camera",
+      "postcondition": "Offline gates pass;source snapshot current;baseline settings/8 history records and5 original files unchanged;no app/probe processes;new live acceptance deferred",
+      "status": "tested-offline-current-package-not-live-camera-or-full-original-equivalence",
+      "evidence": [
+        "evidence/native-ui/55-temporal-offline-package.txt",
+        "evidence/native-tests/temporal-offline-package.json",
+        "evidence/native-tests/n055-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N056",
+      "precondition": "Original identity fixed;ROI/flow/stats connection not directly observed;10 padded fixed gray frame pairs and known prior eye geometry",
+      "action": "Execute original joint ROI→OpenCV Farneback→Model stats blocks;compare production eye_region/sample_flow and Swift EyeGeometry normalizer underUBSAN/-O",
+      "postcondition": "10/10 exact both ROIs/effective normalizer/both-eye stats including boundary/zero/tiny/pyramid cases;no tolerance",
+      "status": "observed-shipped-joint-roi-flow-statistics-not-full-image-or-tracking",
+      "evidence": [
+        "evidence/native-ui/56-shipped-roi-flow-statistics.txt",
+        "evidence/native-tests/roi-pair-inputs.json",
+        "evidence/native-tests/original-roi-pair-results.json",
+        "evidence/native-tests/original-roi-pair-run.log",
+        "evidence/native-tests/roi-pair-comparison.json",
+        "evidence/native-tests/roi-pair-ubsan.log",
+        "evidence/static/recovered-rules/original_roi_pair_probe.py",
+        "evidence/static/recovered-rules/roi-pair-cases.json",
+        "evidence/static/recovered-rules/build-roi-pairs-and-check.sh",
+        "evidence/static/recovered-rules/roi_pair_contract.cpp",
+        "evidence/static/recovered-rules/roi_normalizer_contract.swift"
+      ]
+    },
+    {
+      "id": "N057",
+      "precondition": "Native warmup blurred first valid gray based on earlier incomplete static inference;fixed fresh Model no-previous-face branch",
+      "action": "Execute original color→gray/pre-face gate/ROI/flow/stats/Mat-swap blocks on5 fixed640×480 color frames;compare caches/features;remove native warmup extra blur",
+      "postcondition": "3/5 before→5/5 exact frame status/features and5 cached-gray SHA (1536000 bytes);UBSAN and27 C checks pass",
+      "status": "observed-fresh-model-downstream-frame-sequence-not-resize-cnn-tracking-or-temporal-end-to-end",
+      "evidence": [
+        "evidence/native-ui/57-shipped-gray-flow-warmup.txt",
+        "evidence/native-tests/gray-flow-sequence-input.json",
+        "evidence/native-tests/original-gray-flow-sequence-results.json",
+        "evidence/native-tests/original-gray-flow-sequence-run.log",
+        "evidence/native-tests/gray-flow-sequence-before-comparison.json",
+        "evidence/native-tests/gray-flow-sequence-before.log",
+        "evidence/native-tests/gray-flow-sequence-comparison.json",
+        "evidence/native-tests/gray-flow-sequence-ubsan.log",
+        "evidence/native-tests/flow-contract.log",
+        "evidence/static/recovered-rules/original_gray_flow_sequence_probe.py",
+        "evidence/static/recovered-rules/build-gray-flow-sequence-and-check.sh",
+        "evidence/static/recovered-rules/gray_flow_sequence_contract.cpp",
+        "Sources/CEyeFlow/CEyeFlow.cpp"
+      ]
+    },
+    {
+      "id": "N058",
+      "precondition": "User defers screen/camera validation until display on;fresh-face warmup correction requires new package",
+      "action": "Rerun95 Swift and affected C/joint-frame gates;build/sign/strictly inspect arm64 release without UI/camera",
+      "postcondition": "Offline gates pass,current source snapshot bound;settings/8 history records/5 original files preserved;no processes;live validation remains deferred",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/58-gray-flow-offline-package.txt",
+        "evidence/native-tests/gray-flow-offline-package.json",
+        "evidence/native-tests/n058-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N059",
+      "precondition": "Gray/flow warmup aligned but no positive image→temporal linkage;production skipped EF_WARMUP;fixed original identity and supplied eyes/clock",
+      "action": "Execute actual original downstream color/flow/scanner/merge blocks on7 synthetic patch-motion frames;add failing production handoff regression;forward warmup baseline and compare actual native stages",
+      "postcondition": "5 failed assertions before→debug/release pass;original event.1875 at frame5 matched;7/7 exact features/cache/status/events/count/total underC++UBSAN andSwift-O",
+      "status": "observed-downstream-positive-image-event-linkage-with-supplied-eyes-not-full-tracking-or-live-camera",
+      "evidence": [
+        "evidence/native-ui/59-positive-flow-motion-handoff.txt",
+        "evidence/native-tests/motion-flow-sequence-input.json",
+        "evidence/native-tests/original-motion-flow-sequence-results.json",
+        "evidence/native-tests/original-motion-flow-sequence-run.log",
+        "evidence/native-tests/motion-flow-handoff-before.log",
+        "evidence/native-tests/motion-flow-handoff-release.log",
+        "evidence/native-tests/motion-flow-comparison.json",
+        "evidence/native-tests/motion-flow-release.log",
+        "evidence/native-tests/motion-flow-build.json",
+        "evidence/native-tests/native-motion-flow-features.json",
+        "evidence/native-tests/native-motion-flow-events.json",
+        "evidence/static/recovered-rules/original_motion_flow_probe.py",
+        "evidence/static/recovered-rules/materialize_motion_flow_sequence.py",
+        "evidence/static/recovered-rules/build-motion-flow-and-check.sh",
+        "evidence/static/recovered-rules/check_motion_flow.py",
+        "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift",
+        "Tests/EyeblinkAppTests/CameraMotionAnalysisTests.swift",
+        "Tests/EyeblinkAppTests/Fixtures/OriginalMotionFlow.json"
+      ]
+    },
+    {
+      "id": "N060",
+      "precondition": "User defers screen/camera validation;warmup handoff fix requires new signed package",
+      "action": "Run96 Swift tests,release handoff test andoptimized joint gate;build/sign/strictly inspect arm64 app with new test resource exclusion",
+      "postcondition": "All offline gates pass;current source/package bound;settings/8 history records/5 original files preserved;no app/probes;new live acceptance deferred",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/60-motion-handoff-offline-package.txt",
+        "evidence/native-tests/motion-flow-offline-package.json",
+        "evidence/native-tests/n060-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N061",
+      "precondition": "User defers UI/camera; original fixed identity; no runtime tracking linkage; native refines every CNN reacquisition",
+      "action": "Execute actual original gray/CNN/dlib/reuse/swap blocks on14 frozen public crop/black frames; extract actual production tracker; fail coarse recovery regression then preserve fourth-frame refinement cadence",
+      "postcondition": "12 failed eye assertions before;14 frames and12 selected left/right geometries exact after in debug/release;3 original fine calls,2 coarse recoveries,7 reused frames,2 no-face;production reset exercised between sequences",
+      "status": "observed-fixed-image-cnn-dlib-tracking-linkage-not-normalization-flow-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/61-shipped-eye-tracking.txt",
+        "evidence/native-tests/eye-tracking-input.json",
+        "evidence/native-tests/original-eye-tracking-results.json",
+        "evidence/native-tests/eye-tracking-comparison.json",
+        "evidence/native-tests/eye-tracking-before.log",
+        "evidence/native-tests/eye-tracking-release.log",
+        "evidence/static/recovered-rules/original-eye-tracking.log",
+        "evidence/static/recovered-rules/original-eye-tracking-noface-attempt.log",
+        "evidence/native-tests/original-eye-tracking-noface-attempt.json",
+        "evidence/static/recovered-rules/original_eye_tracking_probe.py",
+        "evidence/static/recovered-rules/materialize_eye_tracking.py",
+        "evidence/static/recovered-rules/build-eye-tracking-and-check.sh",
+        "evidence/static/recovered-rules/check_eye_tracking.py",
+        "Sources/EyeblinkApp/Platform/CameraEyeTracking.swift",
+        "Tests/EyeblinkAppTests/CameraEyeTrackingTests.swift",
+        "Tests/EyeblinkAppTests/Fixtures/OriginalEyeTracking.json"
+      ]
+    },
+    {
+      "id": "N062",
+      "precondition": "User defers UI/camera;fourth-frame tracking correction requires current signed package",
+      "action": "Run97 Swift and release tracking regression;build/sign/strictly inspect arm64 app without UI/camera/display-state access",
+      "postcondition": "Offline gates pass;source/package bound;settings,8 history records and5 original files unchanged;current package live acceptance remains deferred",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/62-eye-tracking-offline-package.txt",
+        "evidence/native-tests/eye-tracking-offline-package.json",
+        "evidence/native-tests/n062-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N063",
+      "precondition": "User defers UI/camera;tracking and supplied-eye positive event proven separately;native clears flow/temporal at no-face",
+      "action": "Execute original full tracked-image downstream blocks on6 sequences/50 fixed public/artificial-motion frames;extract actual production frame stage;fail7 assertions then preserve prior-face flow gate and temporal history across transient loss",
+      "postcondition": "50/50 exact frame eyes/status/mean/deviation/validity/events/count/total debug/release;47 selected eyes,3 no-face frames,two original.1875 events;98 Swift and37 C UBSAN checks pass;masked input still selected and not claimed dropout",
+      "status": "observed-fixed-image-tracking-flow-positive-events-not-normalization-camera-ground-truth-or-full-app",
+      "evidence": [
+        "evidence/native-ui/63-shipped-tracked-motion.txt",
+        "evidence/native-tests/tracked-motion-input.json",
+        "evidence/native-tests/original-tracked-motion-results.json",
+        "evidence/native-tests/tracked-motion-comparison.json",
+        "evidence/native-tests/tracked-motion-before.log",
+        "evidence/native-tests/tracked-motion-release.log",
+        "evidence/native-tests/flow-contract.log",
+        "evidence/static/recovered-rules/original-tracked-motion.log",
+        "evidence/static/recovered-rules/original-tracked-motion-timeout-attempt.log",
+        "evidence/static/recovered-rules/original-tracked-motion-32frames.log",
+        "evidence/native-tests/original-tracked-motion-32frames-results.json",
+        "evidence/static/recovered-rules/original-tracked-motion-41frames.log",
+        "evidence/native-tests/original-tracked-motion-41frames-results.json",
+        "evidence/static/recovered-rules/original_tracked_motion_probe.py",
+        "evidence/static/recovered-rules/materialize_tracked_motion.py",
+        "evidence/static/recovered-rules/check_tracked_motion.py",
+        "evidence/static/recovered-rules/build-tracked-motion-and-check.sh",
+        "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+        "Sources/CEyeFlow/CEyeFlow.cpp",
+        "Sources/CEyeFlow/include/CEyeFlow.h",
+        "Tests/EyeblinkAppTests/CameraFrameAnalysisTests.swift",
+        "Tests/EyeblinkAppTests/Fixtures/OriginalTrackedMotion.json"
+      ]
+    },
+    {
+      "id": "N064",
+      "precondition": "User defers UI/camera;new prior-face gray/flow gate needs current signed package",
+      "action": "Run98 Swift,release production-frame regression and37 C UBSAN checks;build/sign/strictly verify arm64 package without UI/camera/display-state access",
+      "postcondition": "Offline gates pass,package/source snapshot bound;settings/8 history records/5 original files unchanged;current package live acceptance deferred",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/64-tracked-motion-offline-package.txt",
+        "evidence/native-tests/tracked-motion-offline-package.json",
+        "evidence/native-tests/n064-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N065",
+      "precondition": "User defers screen/camera;N063 fixed640 frame linkage proven but native only requests VGA and analyzes returned raw frames directly",
+      "action": "Execute original camera-open/cached-scale resize/gray blocks on22 fixed inputs;compare exact native bytes;join7 raw1280 positive frames to N063 by original BGR/gray SHA;add failing handoff regression and native normalization/preset fallback",
+      "postcondition": "31 failed assertions before→debug/release pass;22/22 coefficient bits/dimensions and25518080 color/gray bytes exact;7 raw1280→native full detector→.1875 event;99 Swift and144 normalization C UBSAN checks pass;physical fallback deferred",
+      "status": "observed-original-normalization-joined-to-fixed-frame-positive-events-not-camera-read-real-clock-or-full-app",
+      "evidence": [
+        "evidence/native-ui/65-shipped-frame-normalization.txt",
+        "evidence/native-tests/frame-normalization-input.json",
+        "evidence/native-tests/original-frame-normalization-results.json",
+        "evidence/native-tests/frame-normalization-comparison.json",
+        "evidence/native-tests/frame-normalization-contract.log",
+        "evidence/native-tests/frame-normalization-handoff-before.log",
+        "evidence/native-tests/frame-normalization-handoff-release.log",
+        "evidence/native-tests/frame-normalization-handoff-comparison.json",
+        "evidence/native-tests/native-frame-normalization-results.json",
+        "evidence/static/recovered-rules/original-frame-normalization.log",
+        "evidence/static/recovered-rules/original-frame-normalization-15cases.log",
+        "evidence/native-tests/original-frame-normalization-15cases-results.json",
+        "evidence/static/recovered-rules/original-frame-normalization-stop-attempt.log",
+        "evidence/native-tests/frame-normalization-preset-compile-attempt.log",
+        "evidence/static/recovered-rules/materialize_frame_normalization.py",
+        "evidence/static/recovered-rules/original_frame_normalization_probe.py",
+        "evidence/static/recovered-rules/frame_normalization_contract.cpp",
+        "evidence/static/recovered-rules/check_frame_normalization.py",
+        "evidence/static/recovered-rules/check_normalization_handoff.py",
+        "evidence/static/recovered-rules/build-frame-normalization-and-check.sh",
+        "Sources/CEyeFlow/FrameNormalizer.cpp",
+        "Sources/CEyeFlow/include/CEyeFlow.h",
+        "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+        "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+        "Tests/EyeblinkAppTests/CameraFrameAnalysisTests.swift"
+      ]
+    },
+    {
+      "id": "N066",
+      "precondition": "User defers UI/camera;new raw-frame normalization and supported-preset choice require current signed package",
+      "action": "Run99 Swift,two release frame-stage tests,22 exact normalization cases/144 C UBSAN checks and50 original tracked-image gate;build/sign/strictly verify arm64 package",
+      "postcondition": "Offline gates pass;source/package bound;settings/8 history records/5 original files preserved;no UI/camera/display-state access;current package live acceptance deferred",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/66-frame-normalization-offline-package.txt",
+        "evidence/native-tests/frame-normalization-offline-package.json",
+        "evidence/native-tests/n066-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N067",
+      "precondition": "User defers UI/camera;normalization proven;native timestamps callback entry whereas original samples afterresize",
+      "action": "Execute actual original resize/tick/store/integer-delta blocks on3 fixed frames;add failing clock-on-normalization-failure regression;sample production clock after successful normalization and share result uptime with motion/observation/FPS",
+      "postcondition": "Original3 ticks bounded afterresize/beforegray;3 actual dt slots exact integerdelta/frequency;1 failed assertion before→debug/release pass;100 Swift and3 release frame-stage tests pass;integer precision/startup baseline remain pending",
+      "status": "observed-original-clock-placement-and-native-handoff-not-full-timing-or-live-camera",
+      "evidence": [
+        "evidence/native-ui/67-shipped-frame-clock.txt",
+        "evidence/native-tests/original-frame-clock-results.json",
+        "evidence/static/recovered-rules/original-frame-clock.log",
+        "evidence/static/recovered-rules/original_frame_clock_probe.py",
+        "evidence/native-tests/frame-clock-before.log",
+        "evidence/native-tests/frame-clock-release.log",
+        "evidence/native-tests/n068-frame-clock-comparison.json",
+        "evidence/static/recovered-rules/check_frame_clock.py",
+        "evidence/static/recovered-rules/build-frame-clock-and-check.sh",
+        "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+        "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+        "Tests/EyeblinkAppTests/CameraFrameAnalysisTests.swift"
+      ]
+    },
+    {
+      "id": "N068",
+      "precondition": "User defers UI/camera;post-normalization clock handoff needs current signed package",
+      "action": "Run100 Swift,3 release frame-stage regressions andprior22 normalization/50 tracked-image gates;build/sign/strictly inspect arm64 package without UI/camera/display-state access",
+      "postcondition": "Offline gates pass;source/package bound;settings/8 history records/5 original files preserved;live acceptance andinteger clock/startup window audit remain pending",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/68-frame-clock-offline-package.txt",
+        "evidence/native-tests/frame-clock-offline-package.json",
+        "evidence/native-tests/n068-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N069",
+      "precondition": "User defers UI/camera;original3 tick deltas differ from subtracting converted absolute seconds;native uses latter for motion/FPS",
+      "action": "Add6 failing assertions over exact shipped deltas,large counters andexplicit interval consumers;preserve raw native ticks/frequency andpass integer-first intervals through production motion/scanner/FPS;verify reset/new origin andOS clock domain",
+      "postcondition": "107 Swift and13 release tests pass;3 actual original deltas andlarge-counter interval exact under-O;native clock24000000 shares scheduler domain;13 old temporal sequences/173frames/22candidates and50 image/7 raw positive gates pass;startup/FPS-order still pending",
+      "status": "observed-integer-tick-precision-and-production-interval-handoff-not-startup-window-or-real-camera",
+      "evidence": [
+        "evidence/native-ui/69-integer-frame-time.txt",
+        "evidence/native-tests/integer-frame-time-before.log",
+        "evidence/native-tests/integer-frame-time-decimal-interval-attempt.log",
+        "evidence/native-tests/integer-frame-time-release.log",
+        "evidence/native-tests/native-integer-frame-time-results.json",
+        "evidence/native-tests/integer-frame-time-comparison.json",
+        "evidence/native-tests/integer-frame-time-contract-build.log",
+        "evidence/native-tests/integer-frame-time-temporal-release.log",
+        "evidence/native-tests/temporal-comparison.json",
+        "evidence/static/recovered-rules/integer_frame_time_contract.swift",
+        "evidence/static/recovered-rules/build-integer-frame-time-contract.sh",
+        "evidence/static/recovered-rules/build-integer-frame-time-and-check.sh",
+        "evidence/static/recovered-rules/check_integer_frame_time.py",
+        "Sources/EyeblinkCore/FrameTimestamp.swift",
+        "Sources/CEyeFlow/FrameClock.cpp",
+        "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+        "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift",
+        "Sources/EyeblinkCore/FrameRateMonitor.swift",
+        "Sources/EyeblinkCore/OpticalFlowStream.swift",
+        "Sources/EyeblinkCore/OpticalFlowBlinkDetector.swift",
+        "Tests/EyeblinkCoreTests/FrameTimestampTests.swift",
+        "Tests/EyeblinkCoreTests/Fixtures/OriginalFrameClock.json",
+        "Tests/EyeblinkAppTests/NativeFrameClockTests.swift",
+        "Tests/EyeblinkAppTests/CameraMotionAnalysisTests.swift",
+        "Tests/EyeblinkAppTests/CameraFrameAnalysisTests.swift"
+      ]
+    },
+    {
+      "id": "N070",
+      "precondition": "User defers UI/camera;integer timing/provider andnewstate reset correction require current signed package",
+      "action": "Run107 Swift/13 selected release tests andoptimized original gates;build/sign/strictly verify arm64 package without UI/camera/display-state access",
+      "postcondition": "Offline gates pass,source/package bound;settings/8 history records/5 original files preserved;startup/FPS-order audit andlive acceptance remain pending",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/70-integer-frame-time-offline-package.txt",
+        "evidence/native-tests/integer-frame-time-offline-package.json",
+        "evidence/native-tests/n070-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N071",
+      "precondition": "User defers screen/camera;integer intervals proven butFPS division/cadence andnew-model pre-read unknown;native analyzes first raw image",
+      "action": "Execute actual18 FPS gate/ring/mean/reciprocal/branch cases andfresh-model pre-read setup;fix4 FPS boundary assertions and3 priming assertions;route ready separately without sampling it;preserve metadata FIFO andready-without-analysis deadlines",
+      "postcondition": "112 Swift/21 release pass;18 FPS outputs exact-O;fresh original pre-read counter0/no detection;native31 analyzed intervals andprimed positive7 frames pass;FIFO33 andno-frame cancel/no-save pass;real callback andlowFPS/event-order unaccepted",
+      "status": "observed-fps-window-and-fresh-model-pre-read-with-native-priming-regressions-not-full-capture-or-reopen",
+      "evidence": [
+        "evidence/native-ui/71-shipped-fps-startup.txt",
+        "evidence/native-tests/original-fps-window-results.json",
+        "evidence/static/recovered-rules/original-fps-window.log",
+        "evidence/static/recovered-rules/original_fps_window_probe.py",
+        "evidence/static/recovered-rules/fps_window_cases.py",
+        "evidence/native-tests/original-startup-prime-results.json",
+        "evidence/static/recovered-rules/original-startup-prime.log",
+        "evidence/static/recovered-rules/original_startup_prime_probe.py",
+        "evidence/native-tests/fps-window-before.log",
+        "evidence/native-tests/startup-prime-before.log",
+        "evidence/native-tests/startup-prime-test-compile-attempt.log",
+        "evidence/native-tests/fps-startup-release.log",
+        "evidence/native-tests/fps-startup-comparison.json",
+        "evidence/native-tests/native-fps-window-results.json",
+        "evidence/static/recovered-rules/fps_window_contract.swift",
+        "evidence/static/recovered-rules/check_fps_startup.py",
+        "evidence/static/recovered-rules/build-fps-startup-and-check.sh",
+        "Sources/EyeblinkCore/FrameRateMonitor.swift",
+        "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+        "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+        "Sources/EyeblinkApp/Platform/CameraObservationDelivery.swift",
+        "Sources/EyeblinkApp/AppModel.swift",
+        "Tests/EyeblinkCoreTests/Fixtures/OriginalFPSWindow.json",
+        "Tests/EyeblinkCoreTests/FrameRateMonitorTests.swift",
+        "Tests/EyeblinkCoreTests/CameraStartupTests.swift",
+        "Tests/EyeblinkAppTests/CameraFrameAnalysisTests.swift",
+        "Tests/EyeblinkAppTests/CameraObservationDeliveryTests.swift"
+      ]
+    },
+    {
+      "id": "N072",
+      "precondition": "User defers UI/camera;FPS arithmetic/pre-read andordered ready bridge need current package",
+      "action": "Run112 Swift/21 selected release tests andoptimized original FPS18/gates;build/sign/strictly verify arm64 package without UI/camera/display-state access",
+      "postcondition": "Offline gates pass;source/package bound;settings/8 history records/5 original files preserved;full live/lowFPS event/reopen state audits remain pending",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/72-fps-startup-offline-package.txt",
+        "evidence/native-tests/fps-startup-offline-package.json",
+        "evidence/native-tests/n072-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N073",
+      "precondition": "User defers screen/camera;original cleanup/reopen andlowFPS same-frame delivery unresolved after N072",
+      "action": "Execute original3 terminal-cleanup/reopen state cases and2 synthetic32-frame scanner/merge/FPS/preview-consumer gates;compare production numeric-O64 frames and9 targeted release regressions without UI/camera/display-state access",
+      "postcondition": "Faces clear/scanners reset/merger retained;frame31 .1875 precedesFPS9,nonpreview terminal andpreview-only consumer;native numeric64 frames exact;no production change warranted by scoped audit;package/data unchanged;full Qt/platform lifecycle remains pending",
+      "status": "observed-bounded-original-cleanup-and-event-branch-components-with-native-regressions-not-full-camera-or-queued-controller-lifecycle",
+      "evidence": [
+        "evidence/native-ui/73-shipped-reopen-low-fps.txt",
+        "evidence/native-tests/original-reopen-state-results.json",
+        "evidence/static/recovered-rules/original_reopen_state_probe.py",
+        "evidence/static/recovered-rules/original-reopen-state.log",
+        "evidence/native-tests/original-low-fps-event-results.json",
+        "evidence/static/recovered-rules/original_low_fps_event_probe.py",
+        "evidence/static/recovered-rules/original-low-fps-event.log",
+        "evidence/static/recovered-rules/reopen-low-fps-control-flow.otool.txt",
+        "evidence/static/recovered-rules/low_fps_event_contract.swift",
+        "evidence/static/recovered-rules/check_reopen_low_fps.py",
+        "evidence/static/recovered-rules/build-reopen-low-fps-and-check.sh",
+        "evidence/native-tests/low-fps-event-contract-build.log",
+        "evidence/native-tests/native-low-fps-event-results.json",
+        "evidence/native-tests/n073-reopen-low-fps-comparison.json",
+        "evidence/native-tests/reopen-low-fps-native-release.log",
+        "evidence/native-tests/n072-native-build.json",
+        "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+        "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+        "Sources/EyeblinkApp/Platform/CameraEyeTracking.swift",
+        "Sources/EyeblinkApp/AppModel.swift",
+        "Sources/EyeblinkCore/OpticalFlowStream.swift",
+        "Tests/EyeblinkCoreTests/OpticalFlowStreamTests.swift",
+        "Tests/EyeblinkAppTests/CameraEyeTrackingTests.swift",
+        "Tests/EyeblinkAppTests/CameraFrameAnalysisTests.swift"
+      ]
+    },
+    {
+      "id": "N074",
+      "precondition": "User defers screen/camera;native rejects full dimensions below256 orquarterbelow64;original minimum/outcome unknown",
+      "action": "Execute actual Model quarter-resize/CNN/selection29 black/public crops;compare two nativeAPIs andvendor;fix51 failed assertions via valid63/early0-no-face rule;run114 Swift/23 release andUBSAN guards10",
+      "postcondition": "BGRA27/BGR22 mismatches corrected;58 count/face/selection outputs exact;production640x255 face and640x240 no-face no longer throw;physicalcapture/zero-quarter exceptions/extendedmotion remain pending",
+      "status": "observed-original-small-dimension-cnn-with-production-regressions-not-live-camera-or-exhaustive-dimensions",
+      "evidence": [
+        "evidence/native-ui/74-shipped-cnn-dimensions.txt",
+        "evidence/native-tests/cnn-dimensions-input.json",
+        "evidence/native-tests/original-cnn-dimensions-results.json",
+        "evidence/static/recovered-face/materialize_dimension_inputs.py",
+        "evidence/static/recovered-face/original_dimension_probe.py",
+        "evidence/static/recovered-face/original-dimensions.log",
+        "evidence/static/recovered-face/dimension_contract.cpp",
+        "evidence/static/recovered-face/check_dimensions.py",
+        "evidence/static/recovered-face/build-dimensions-and-check.sh",
+        "evidence/native-tests/native-cnn-dimensions-before.json",
+        "evidence/native-tests/native-cnn-dimensions-results.json",
+        "evidence/native-tests/cnn-dimensions-before.log",
+        "evidence/native-tests/cnn-dimensions-contract.log",
+        "evidence/native-tests/cnn-dimension-contract-build.log",
+        "evidence/native-tests/cnn-dimensions-swift-before.log",
+        "evidence/native-tests/cnn-dimensions-release.log",
+        "evidence/native-tests/n074-cnn-dimensions-comparison.json",
+        "Sources/CFaceDetector/FaceDetector.cpp",
+        "Tests/EyeblinkAppTests/FaceInputBoundaryTests.swift",
+        "Tests/EyeblinkAppTests/Fixtures/OriginalCNNDimensions.json"
+      ]
+    },
+    {
+      "id": "N075",
+      "precondition": "Small-dimension correction requires current signedpackage;user defers UI/camera",
+      "action": "Build release/stable-sign/strictlyverify source-bound arm64package after114Swift/23release/UBSAN29 dimensiongates;preserve baseline datawithoutUI/camera/displayaccess",
+      "postcondition": "Current arm64package source/signature verified;settings/8history/original5files unchanged;noapp/debugger processes;live preview/reminder/180second measurement andphysicaldevices pending",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/75-cnn-dimensions-offline-package.txt",
+        "evidence/native-tests/cnn-dimensions-offline-package.json",
+        "evidence/native-tests/cnn-dimensions-package-verification.log",
+        "evidence/native-tests/n075-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log",
+        "evidence/native-tests/cnn-dimensions-release.log",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/fps-startup-comparison.json"
+      ]
+    },
+    {
+      "id": "N076",
+      "precondition": "User defers screen/camera;strict1/8second no-face rule statically recovered butQtms quantization andtimerrestart unknown;nativecomparesDouble seconds",
+      "action": "Execute originalfeature stores/9 actual restart gates/12 Qt integer-ms conversions/24 Model thresholdbranches;fix8 Core assertions andfirst-fix1 addition-order boundary;run116Swift/25release",
+      "postcondition": "Strict >1000/8000 integer-ms means1001/8001ms earliest;first/lostface restart andcontinuousmissing retainclock observed;native24time/recovery/cancel-no-save regressions pass;pre/posttracking timerphase remains pending",
+      "status": "observed-bounded-original-millisecond-and-restart-rules-with-core-regressions-not-full-wallclock-camera-or-controller",
+      "evidence": [
+        "evidence/native-ui/76-shipped-no-face-milliseconds.txt",
+        "evidence/native-tests/original-no-face-timeout-results.json",
+        "evidence/static/recovered-rules/original_no_face_timeout_probe.py",
+        "evidence/static/recovered-rules/original-no-face-timeout.log",
+        "evidence/static/recovered-rules/qt-elapsed-ms.llvm.txt",
+        "evidence/static/recovered-rules/controller-model.disassembly.txt",
+        "evidence/static/recovered-rules/check_no_face_timeout.py",
+        "evidence/static/recovered-rules/build-no-face-timeout-and-check.sh",
+        "evidence/native-tests/no-face-timeout-before.log",
+        "evidence/native-tests/no-face-timeout-first-fix-debug.log",
+        "evidence/native-tests/no-face-timeout-first-fix-release.log",
+        "evidence/native-tests/no-face-timeout-release.log",
+        "evidence/native-tests/n076-no-face-timeout-comparison.json",
+        "Sources/EyeblinkCore/EyeblinkEngine.swift",
+        "Sources/EyeblinkCore/CoreTypes.swift",
+        "Tests/EyeblinkCoreTests/NoFaceTimeoutTests.swift",
+        "Tests/EyeblinkCoreTests/Fixtures/OriginalNoFaceTimeout.json"
+      ]
+    },
+    {
+      "id": "N077",
+      "precondition": "No-face integer-ms correction requires current signedpackage;user defers UI/camera",
+      "action": "Build release/stable-sign/strictverify source-bound arm64package after116Swift/25release and29CNN/18FPS gates;preserve baseline datawithoutUI/camera/displayaccess",
+      "postcondition": "Currentarm64package signature/source verified;settings/8history/original5files unchanged;noapp/debugger processes;no-face timerphase/full live validation remainpending",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/77-no-face-timeout-offline-package.txt",
+        "evidence/native-tests/no-face-timeout-offline-package.json",
+        "evidence/native-tests/no-face-timeout-package-verification.log",
+        "evidence/native-tests/n077-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log",
+        "evidence/native-tests/no-face-timeout-release.log",
+        "evidence/native-tests/n076-no-face-timeout-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/fps-startup-comparison.json"
+      ]
+    },
+    {
+      "id": "N078",
+      "precondition": "User defers screen/camera;nativeusespretrackingframe time forabsence,originaltimeraftertracking;rawphase unresolved",
+      "action": "Execute original2 blackCNN frame-clock→tracking→actualtimerstart/retain beforeflow;fix10 assertions in5 phase/rawtimestamp tests;bridgeoptional rawtime viaFIFO/AppModel;preserveoriginal50frame outputs withfaceClock",
+      "postcondition": "121Swift/30releasepass;rawposttrackingtimestamp controlsCore timerswithoutpollutingframe dt;FIFO33 andlarge-tick finalms pass;preflow timeouttermination/retainedcandidate remainspending",
+      "status": "observed-clock-phase-and-rawmetadata-components-with-native-regressions-not-full-preflow-termination-or-camera",
+      "evidence": [
+        "evidence/native-ui/78-shipped-no-face-clock-phase.txt",
+        "evidence/native-tests/original-face-clock-phase-results.json",
+        "evidence/static/recovered-rules/original_face_clock_phase_probe.py",
+        "evidence/static/recovered-rules/original-face-clock-phase.log",
+        "evidence/static/recovered-rules/original-face-clock-phase-empty-gray-attempt.log",
+        "evidence/native-tests/no-face-phase-before.log",
+        "evidence/native-tests/no-face-phase-compile-attempt.log",
+        "evidence/native-tests/no-face-phase-release.log",
+        "evidence/native-tests/n078-no-face-phase-comparison.json",
+        "evidence/static/recovered-rules/check_no_face_phase.py",
+        "evidence/static/recovered-rules/build-no-face-phase-and-check.sh",
+        "Sources/EyeblinkCore/FaceAbsenceTimer.swift",
+        "Sources/EyeblinkCore/EyeblinkEngine.swift",
+        "Sources/EyeblinkCore/Measurements.swift",
+        "Sources/EyeblinkApp/Platform/CameraFrameAnalysis.swift",
+        "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+        "Sources/EyeblinkApp/AppModel.swift",
+        "Tests/EyeblinkCoreTests/NoFaceClockPhaseTests.swift",
+        "Tests/EyeblinkAppTests/FaceClockPhaseTests.swift",
+        "Tests/EyeblinkAppTests/CameraFrameAnalysisTests.swift",
+        "Tests/EyeblinkAppTests/CameraObservationDeliveryTests.swift"
+      ]
+    },
+    {
+      "id": "N079",
+      "precondition": "Separateposttrackingrawface clock correction requirescurrent signedpackage;user defersUI/camera",
+      "action": "Build release/stable-sign/strictverify source-bound arm64package after121Swift/30release andscopedoriginalgates;preservebaseline datawithoutUI/camera/displayaccess",
+      "postcondition": "Currentarm64package signature/sourceverified;settings/8history/original5files unchanged;noapp/debugger processes;preflow no-face termination/candidate effects andlivevalidation remainpending",
+      "status": "tested-current-offline-package-not-live-camera-or-full-clone",
+      "evidence": [
+        "evidence/native-ui/79-no-face-phase-offline-package.txt",
+        "evidence/native-tests/no-face-phase-offline-package.json",
+        "evidence/native-tests/no-face-phase-package-verification.log",
+        "evidence/native-tests/n079-native-build.json",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/release-build.log",
+        "evidence/native-tests/no-face-phase-release.log",
+        "evidence/native-tests/n078-no-face-phase-comparison.json",
+        "evidence/native-tests/no-face-timeout-comparison.json",
+        "evidence/native-tests/cnn-dimensions-comparison.json",
+        "evidence/native-tests/fps-startup-comparison.json"
+      ]
+    },
+    {
+      "id": "N080",
+      "precondition": "N078/N079 posttracking timing before current single-owner correction",
+      "action": "Execute bounded original/native regressions and bind release package",
+      "postcondition": "Original pre-flow timeout4 and native single-owner/latch/recovery/next-lease control regression7;128 Swift/37 release;physical and scheduler race pending",
+      "status": "tested-scoped-components-not-full-feature-acceptance",
+      "evidence": [
+        "evidence/native-ui/80-shipped-no-face-termination.txt",
+        "evidence/native-tests/n080-no-face-termination-comparison.json",
+        "evidence/native-tests/original-no-face-termination-results.json",
+        "evidence/static/recovered-rules/original_no_face_termination_probe.py",
+        "evidence/static/recovered-rules/original-no-face-termination.log",
+        "evidence/static/recovered-rules/check_no_face_termination.py",
+        "evidence/static/recovered-rules/build-no-face-termination-and-check.sh",
+        "evidence/native-tests/no-face-termination-before.log",
+        "evidence/native-tests/no-face-owner-first-full.log",
+        "evidence/native-tests/swift-test.log",
+        "evidence/native-tests/n080-no-face-termination-release.log",
+        "Tests/EyeblinkAppTests/NoFaceTerminationTests.swift",
+        "Tests/EyeblinkCoreTests/DetectorFailureTests.swift"
+      ]
+    },
+    {
+      "id": "N081",
+      "precondition": "N078/N079 posttracking timing before current single-owner correction",
+      "action": "Build stable-sign and verify release arm64 bundle with data preservation",
+      "postcondition": "Current single-owner signed arm64 package verified;original5 files/settings/8history unchanged;not full live acceptance",
+      "status": "tested-current-package-not-full-live-acceptance",
+      "evidence": [
+        "evidence/native-ui/81-no-face-termination-package.txt",
+        "evidence/native-tests/no-face-termination-package.json",
+        "evidence/native-tests/n081-native-build.json",
+        "evidence/native-tests/no-face-termination-package-verification.log"
+      ]
+    },
+    {
+      "id": "N082",
+      "precondition": "User confirmed display on;N081 signed package and existing camera authorization",
+      "action": "Real preview/start-stop/no-face-scenario measurement,reminder preview,normal quit/reopen,application menu pause andshortcut resume",
+      "postcondition": "31.9FPS/no face/0blinks;measurement stopped without historyappend;8records/settings/positions preserved;quit queues drained/reopen verified;drag andstatus-menu notproven;successful180second measurement deferred by user",
+      "status": "observed-current-package-live-partial-not-full-feature",
+      "evidence": [
+        "evidence/native-ui/82-current-package-live-partial.txt",
+        "evidence/native-tests/n081-live-partial.json",
+        "evidence/native-tests/n081-native-build.json"
+      ]
+    },
+    {
+      "id": "N083",
+      "precondition": "N080 single-owner no-face termination leaves independent measurement-completion race",
+      "action": "Execute actual original pre-read branches andnative serialized finish regressions",
+      "postcondition": "Originalpre-read deadline4/mode2;new9 regressions fix main-ticker/sample premature completion withraw capture-boundary/FIFO completion;137Swift/46release;actual platform lifecycle pending",
+      "status": "tested-scoped-components-not-full-feature-acceptance",
+      "evidence": [
+        "evidence/native-ui/83-shipped-measurement-deadline.txt",
+        "evidence/native-tests/n083-measurement-deadline-comparison.json",
+        "evidence/native-tests/original-measurement-deadline-results.json",
+        "evidence/static/recovered-rules/original_measurement_deadline_probe.py",
+        "evidence/static/recovered-rules/original-measurement-deadline.log",
+        "evidence/static/recovered-rules/check_measurement_deadline.py",
+        "evidence/static/recovered-rules/build-measurement-deadline-and-check.sh",
+        "evidence/native-tests/measurement-completion-order-before.log",
+        "evidence/native-tests/measurement-completion-order-after.log",
+        "evidence/native-tests/measurement-completion-boundary-targeted.log",
+        "evidence/native-tests/n083-measurement-completion-release.log",
+        "evidence/native-tests/swift-test.log",
+        "Tests/EyeblinkCoreTests/MeasurementCompletionOrderTests.swift",
+        "Tests/EyeblinkAppTests/CameraRunBoundaryTests.swift",
+        "Tests/EyeblinkAppTests/CameraObservationDeliveryTests.swift"
+      ]
+    },
+    {
+      "id": "N084",
+      "precondition": "N080 single-owner no-face termination leaves independent measurement-completion race",
+      "action": "Build/sign/strictverify arm64 package andpreserve data",
+      "postcondition": "Currentdeadline-boundary signed arm64package/source verified;settings/8history/original5 preserved;not physical/fullclone acceptance",
+      "status": "tested-current-package-not-full-live-acceptance",
+      "evidence": [
+        "evidence/native-ui/84-measurement-deadline-package.txt",
+        "evidence/native-tests/measurement-deadline-package.json",
+        "evidence/native-tests/n084-native-build.json",
+        "evidence/native-tests/measurement-deadline-package-verification.log"
+      ]
+    },
+    {
+      "id": "N085",
+      "precondition": "N084 exact signed package;display available;user temporarily declines3minute participation",
+      "action": "Realpreview,pause/resume,closepreview;readfixed noFace/stop logs andhistory",
+      "postcondition": "29.9→paused/stop drained→resume transient158.2 thenstable30.1FPS/0blinks;dueautomaticmeasurement afterpreview later noFace/stop;finalMeasureNow/8history,settings/original5 preserved;no completed3minute/notification",
+      "status": "observed-current-package-live-partial-not-full-feature",
+      "evidence": [
+        "evidence/native-ui/85-current-package-camera-resume.txt",
+        "evidence/native-tests/n084-live-partial.json",
+        "evidence/native-tests/n084-detection-boundary-events.json",
+        "evidence/native-tests/n084-native-build.json"
+      ]
+    },
+    {
+      "id": "N086",
+      "precondition": "生产warmup虽保留零值，但仍扫描待提交候选，跨重开影响未知",
+      "action": "执行原previous-face零值/skip、scanner/merge、reset块，并修正生产流扫描门槛",
+      "postcondition": "10cases/11sessions/92frames精确；2回归76失败后139Swift/48release通过；真实待提交像素丢脸恢复与物理全链仍待验收",
+      "status": "tested-scoped-components-not-full-feature-acceptance",
+      "evidence": [
+        "evidence/native-ui/86-shipped-warmup-scanner.txt",
+        "evidence/native-tests/original-warmup-scanner-results.json",
+        "evidence/static/recovered-rules/original_warmup_scanner_probe.py",
+        "evidence/static/recovered-rules/original-warmup-scanner.log",
+        "evidence/static/recovered-rules/warmup-cases.json",
+        "evidence/static/recovered-rules/check_warmup_scanner.py",
+        "evidence/static/recovered-rules/build-warmup-scanner-and-check.sh",
+        "evidence/native-tests/n086-warmup-scanner-comparison.json",
+        "evidence/native-tests/warmup-scanner-before.log",
+        "evidence/native-tests/warmup-scanner-after.log",
+        "evidence/native-tests/n086-warmup-scanner-release.log",
+        "evidence/native-tests/swift-test.log",
+        "Tests/EyeblinkAppTests/Fixtures/OriginalWarmupScanner.json",
+        "Tests/EyeblinkAppTests/WarmupScannerTests.swift",
+        "Sources/EyeblinkCore/OpticalFlowStream.swift",
+        "Sources/EyeblinkApp/Platform/CameraMotionAnalysis.swift"
+      ]
+    },
+    {
+      "id": "N087",
+      "precondition": "N086生产扫描门槛修复及139Swift/48release通过",
+      "action": "release构建、稳定签名、严格包校验与数据核对",
+      "postcondition": "arm64包/源码快照/签名通过，原5文件和设置/8历史保持；实机结果另记N088",
+      "status": "tested-current-package-not-full-live-acceptance",
+      "evidence": [
+        "evidence/native-ui/87-warmup-scanner-package.txt",
+        "evidence/native-tests/warmup-scanner-package.json",
+        "evidence/native-tests/n087-native-build.json",
+        "evidence/native-tests/warmup-scanner-package-verification.log"
+      ]
+    },
+    {
+      "id": "N088",
+      "precondition": "N087精确签名包、相机已授权，用户暂不配合完整测量",
+      "action": "预览启动/关闭、查看统计和正常退出，每步核对AX及本机固定事件日志",
+      "postcondition": "真实预览30.1FPS/0事件→待机；8历史与设置/原5文件保持；退出进程消失、相机/写盘收尾日志通过；非恢复候选像素/准确率/180秒成功验收",
+      "status": "observed-current-package-live-smoke-not-full-feature",
+      "evidence": [
+        "evidence/native-ui/88-warmup-package-preview-smoke.txt",
+        "evidence/native-tests/n087-live-preview-smoke.json",
+        "evidence/native-tests/n087-native-build.json"
+      ]
+    },
+    {
+      "id": "N089",
+      "precondition": "N086固定特征已修warmup扫描，实际图像反例及同Model重开仍缺证",
+      "action": "公开像素有限搜索后，执行原完整tracking/flow/scanner/swap及一次脸清理/预读/扫描重置，固化生产回归",
+      "postcondition": "5cases/6sessions/52实际像素帧精确，6丢脸/12warmup/4事件；140Swift/49release通过；未执行物理read/Qt控制器/超时",
+      "status": "tested-original-and-native-fixed-pixel-components-not-physical-camera",
+      "evidence": [
+        "evidence/native-ui/89-shipped-warmup-continuous-pixels.txt",
+        "evidence/native-tests/original-warmup-pixel-results.json",
+        "evidence/static/recovered-rules/original_warmup_pixel_probe.py",
+        "evidence/static/recovered-rules/original-warmup-pixel.log",
+        "evidence/native-tests/warmup-pixel-input.json",
+        "evidence/static/recovered-rules/materialize_warmup_pixels.py",
+        "evidence/static/recovered-rules/search_warmup_pixels.swift",
+        "evidence/static/recovered-rules/build-search-warmup-pixels.py",
+        "evidence/native-tests/warmup-pixel-native-search.json",
+        "evidence/native-tests/warmup-pixel-native-search.log",
+        "evidence/native-tests/warmup-pixel-search-build.json",
+        "evidence/static/recovered-rules/check_warmup_pixels.py",
+        "evidence/static/recovered-rules/build-warmup-pixels-and-check.sh",
+        "evidence/native-tests/n089-warmup-pixel-comparison.json",
+        "evidence/native-tests/warmup-pixel-targeted.log",
+        "evidence/native-tests/n089-warmup-pixel-release.log",
+        "evidence/native-tests/swift-test.log",
+        "Tests/EyeblinkAppTests/Fixtures/OriginalWarmupPixels.json",
+        "Tests/EyeblinkAppTests/WarmupPixelTests.swift"
+      ]
+    },
+    {
+      "id": "N090",
+      "precondition": "N089仅新增测试和证据，产品源未改",
+      "action": "核对N087签名包/48产品源/运行资源字节及当前140测试快照，严格验证并保留原包",
+      "postcondition": "应用SHA/资源/签名与N087一致，原5文件与设置/8历史保持；不重签；N088旧冒烟仍只作为相同产物启动关闭证明",
+      "status": "verified-unchanged-signed-package-with-test-only-source-update",
+      "evidence": [
+        "evidence/native-ui/90-warmup-pixels-unchanged-package.txt",
+        "evidence/native-tests/warmup-pixel-package.json",
+        "evidence/native-tests/n090-native-build.json",
+        "evidence/native-tests/warmup-pixel-package-verification.log"
+      ]
+    },
+    {
+      "id": "N091",
+      "precondition": "原签名应用和用户文件保持；独立分析副本，实际Model与12组归一化边界黑图",
+      "action": "执行原quarter缩放/CNN分支，以仅分析用的C++调用桥捕获实际展开异常",
+      "postcondition": "6组空轴在CNN前抛cv::Exception(-215/resize)，越过Model；6组正尺寸正常无脸。未执行main/Qt/物理相机，不能推断原应用崩溃终态",
+      "status": "tested-original-function-exception-boundary-not-whole-controller",
+      "evidence": [
+        "evidence/native-ui/91-shipped-zero-quarter-exception.txt",
+        "evidence/native-tests/original-zero-quarter-results.json",
+        "evidence/static/recovered-face/original_zero_quarter_probe.py",
+        "evidence/static/recovered-face/original_exception_bridge.cpp",
+        "evidence/static/recovered-face/original-zero-quarter.log",
+        "Tests/EyeblinkAppTests/Fixtures/OriginalZeroQuarter.json"
+      ]
+    },
+    {
+      "id": "N092",
+      "precondition": "原异常非普通无脸；新版通用catch会持续发送无效样本，可能保存错误零眨眼测量",
+      "action": "完整180秒受控失败流回归，统一有序CameraFrameRun并使处理失败终止；重放正常52帧像素",
+      "postcondition": "7失败断言修正，145 Swift/54 release通过；错误停止取消、排队/晚到完成不保存，2次像素取得/4次clock；正常元数据与重开事件保持。非真实180秒成功或AVFoundation到AppModel物理错误注入",
+      "status": "tested-worker-and-core-regressions-platform-failure-acceptance-pending",
+      "evidence": [
+        "evidence/native-ui/92-processing-failure-zero-result-fix.txt",
+        "evidence/native-tests/zero-quarter-processing-comparison.json",
+        "evidence/static/recovered-face/check_zero_quarter.py",
+        "evidence/static/recovered-face/build-zero-quarter-and-check.sh",
+        "evidence/native-tests/frame-processing-failure-before.log",
+        "evidence/native-tests/frame-processing-failure-after.log",
+        "evidence/native-tests/frame-run-after-targeted.log",
+        "evidence/native-tests/frame-processing-failure-release.log",
+        "evidence/native-tests/swift-test.log",
+        "Sources/EyeblinkApp/Platform/CameraFrameRun.swift",
+        "Sources/EyeblinkApp/Platform/CameraPipeline.swift",
+        "Tests/EyeblinkAppTests/FrameProcessingFailureTests.swift",
+        "Tests/EyeblinkAppTests/WarmupPixelTests.swift"
+      ]
+    },
+    {
+      "id": "N093",
+      "precondition": "N092修正及145全量/54发布专项测试通过",
+      "action": "release构建/稳定签名/严格包和116文件源码快照核对，校验用户数据",
+      "postcondition": "单arm64 Mach-O、仅系统动态依赖，Intel分析桥和Tests夹具不入包；原应用/副本和原5用户文件、新版设置/8历史保持",
+      "status": "tested-current-package-not-full-live-acceptance",
+      "evidence": [
+        "evidence/native-ui/93-processing-failure-native-package.txt",
+        "evidence/native-tests/frame-processing-package.json",
+        "evidence/native-tests/n093-native-build.json",
+        "evidence/native-tests/frame-processing-package-verification.log",
+        "evidence/native-tests/release-build.log"
+      ]
+    },
+    {
+      "id": "N094",
+      "precondition": "N093精确签名包；已有摄像头授权；用户暂不方便正式180秒测量",
+      "action": "真实预览→暂停→恢复→关闭→统计→正常退出，每步AX及固定日志核对",
+      "postcondition": "30.0/恢复31.3FPS无脸0事件，暂停后预览禁用；关闭后到期训练因无脸停止，8历史保持；正常退出排空相机/存储，设置和原5文件保持。非物理处理异常或成功测量验收",
+      "status": "observed-current-package-live-smoke-not-full-feature",
+      "evidence": [
+        "evidence/native-ui/94-processing-package-live-preview.txt",
+        "evidence/native-tests/n093-live-preview-smoke.json",
+        "evidence/native-tests/n093-native-build.json"
+      ]
+    },
+    {
+      "id": "N095",
+      "precondition": "N093真实应用菜单在暂停后仍显示暂停，实际再次点击会恢复",
+      "action": "仅绑定既有手动暂停状态显示恢复/暂停，并在重建后逐项操作中文应用菜单",
+      "postcondition": "运行暂停→已暂停/预览禁用→菜单恢复→守护状态→菜单暂停，原状态恢复；不是状态图标菜单验收",
+      "status": "fixed-and-observed-native-application-menu-label",
+      "evidence": [
+        "evidence/native-ui/95-application-menu-pause-label.txt",
+        "Sources/EyeblinkApp/EyeblinkApp.swift",
+        "evidence/native-tests/menu-pause-package-smoke.json"
+      ]
+    },
+    {
+      "id": "N096",
+      "precondition": "N095仅应用菜单label变更；检测/Core/测试源与N093相同",
+      "action": "编译签名核验、关闭/工具重开同进程、真实30.2FPS预览/统计、菜单正常退出并核对收尾及用户数据",
+      "postcondition": "最终单arm64包通过；8历史/设置/原5文件保持；相机与shutdown排空、进程消失。CUA观察主动重开窗口，未证明独立关闭停留/状态图标恢复；无正式180秒成功测量",
+      "status": "tested-current-package-and-live-smoke-not-full-feature",
+      "evidence": [
+        "evidence/native-ui/96-menu-package-final-smoke.txt",
+        "evidence/native-tests/menu-pause-package-smoke.json",
+        "evidence/native-tests/n096-native-build.json",
+        "evidence/native-tests/menu-pause-release-build.log",
+        "evidence/native-tests/menu-pause-package-verification.log"
+      ]
+    },
+    {
+      "id": "N097",
+      "precondition": "用户新增目标：摄像头右侧约15–30°，自然看屏幕；保留当前原版复刻行为作为对照",
+      "action": "设计侧置增强；使用既有公开640×480裁剪，编译arm64/macOS14 Vision离线探针，对比隐式与显式姿态请求并做黑图控制",
+      "postcondition": "4脸均返回76点/每眼6轮廓；隐式pitch缺失，显式rectangles revision3后姿态字段存在；20次预热请求中位8.1ms/p95约12.0ms，黑图无脸。只验证API可行性，不是侧置/自然眨眼效果或相机FPS；未接入App/访问用户相机或历史",
+      "status": "tested-offline-enhancement-api-feasibility-not-blink-or-side-pose-acceptance",
+      "evidence": [
+        "docs/side-camera-design.md",
+        "experiments/side-camera/README.md",
+        "experiments/side-camera/vision-feasibility.swift",
+        "experiments/side-camera/check-feasibility.py",
+        "evidence/native-tests/side-camera-feasibility-check.json",
+        "evidence/native-tests/side-camera-vision-feasibility.json",
+        "evidence/native-tests/side-camera-vision-implicit-pose.json",
+        "evidence/native-tests/side-camera-vision-black-control.json",
+        "evidence/native-tests/side-camera-vision-build.log",
+        "evidence/native-tests/side-camera-vision-runtime.log",
+        "evidence/native-tests/side-camera-vision-overlay-compile-attempt.log"
+      ]
+    },
+    {
+      "id": "N098",
+      "precondition": "N097仅离线API；用户要求接入右侧15–30°增强并写测试",
+      "action": "接入同一相机租约的Vision分眼校准/几何归一/姿态门槛/时序融合，增加质量与历史版本元数据及19项测试",
+      "postcondition": "164全量/73发布专项通过；旧分支回归保持，增强校准/计数/质量取消契约通过。合成角度和公开静态图不是自然侧置眨眼准确率",
+      "status": "implemented-and-tested-component-contracts-human-acceptance-pending",
+      "evidence": [
+        "evidence/native-ui/98-side-camera-integration-tests.txt",
+        "evidence/native-tests/side-camera-integration-check.json",
+        "evidence/native-tests/side-camera-full-swift.log",
+        "evidence/native-tests/side-camera-release.log",
+        "evidence/native-tests/side-camera-first-targeted-attempt.log",
+        "evidence/native-tests/side-camera-core-first.log",
+        "experiments/side-camera/check-integration.py",
+        "experiments/retired-side-camera/Sources/EyeblinkCore/SideCameraBlinkDetector.swift",
+        "experiments/retired-side-camera/Sources/EyeblinkApp/Platform/SideCameraFrameAnalysis.swift",
+        "Sources/EyeblinkApp/Platform/CameraFrameRun.swift",
+        "experiments/retired-side-camera/Tests/EyeblinkCoreTests/SideCameraBlinkTests.swift",
+        "experiments/retired-side-camera/Tests/EyeblinkCoreTests/SideCameraMeasurementTests.swift",
+        "experiments/retired-side-camera/Tests/EyeblinkAppTests/SideCameraIntegrationTests.swift",
+        "docs/side-camera-design.md"
+      ]
+    },
+    {
+      "id": "N099",
+      "precondition": "N098当前源及164/73测试通过",
+      "action": "release构建/稳定签名/单arm64与源码资源核对，校验旧历史/设置/原5文件",
+      "postcondition": "单arm64、系统动态依赖及122文件快照通过，原自定义icon保持；8历史/设置/原5文件保持。尚无自然侧置准确率验收",
+      "status": "tested-current-package-not-side-camera-effect-acceptance",
+      "evidence": [
+        "evidence/native-ui/99-side-camera-native-package.txt",
+        "evidence/native-tests/n099-native-build.json",
+        "evidence/native-tests/side-camera-package.json",
+        "evidence/native-tests/side-camera-release-build.log",
+        "evidence/native-tests/side-camera-package-verification.log"
+      ]
+    },
+    {
+      "id": "N100",
+      "precondition": "N099精确包和已有相机授权；人工校准/计数问题未回复",
+      "action": "开启真实坐姿校准预览，仅AX文字核对状态/FPS/角度超限提示",
+      "postcondition": "约30FPS、校准0/3、估计38后51度，角度过大时明确停止计数，0事件；8历史保持。人工三次校准/10次眨眼/180秒测量未完成，不能验收右侧15–30效果",
+      "status": "observed-live-startup-and-quality-gate-human-blink-acceptance-pending",
+      "evidence": [
+        "evidence/native-ui/100-side-camera-live-partial.txt",
+        "evidence/native-tests/side-camera-live-partial.json",
+        "evidence/native-tests/n099-native-build.json"
+      ]
+    },
+    {
+      "id": "N101",
+      "precondition": "N100角度阻断、用户要求单眼识别",
+      "action": "4项红测后接入可见眼v2，再跑完整及release回归",
+      "postcondition": "179/88通过，34项增强测试含本轮15项；单眼校准、锁眼、换眼取消候选、来源隔离及原提醒链通过。仅自动化组件，不是人工准确率",
+      "status": "tested-visible-eye-contracts-human-acceptance-pending",
+      "evidence": [
+        "evidence/native-ui/101-visible-eye-regressions.txt",
+        "evidence/native-tests/visible-eye-before.log",
+        "evidence/native-tests/visible-eye-full-swift.log",
+        "evidence/native-tests/visible-eye-release.log",
+        "evidence/native-tests/visible-eye-integration-check.json"
+      ]
+    },
+    {
+      "id": "N102",
+      "precondition": "N101及旧进程正常退出",
+      "action": "release构建/稳定签名/架构和源码快照核对，校验既有数据",
+      "postcondition": "单arm64包、123文件源码快照和4许可证通过；设置/8历史/原5文件/原执行文件/自定义icon保持",
+      "status": "tested-current-package-human-visible-eye-acceptance-pending",
+      "evidence": [
+        "evidence/native-ui/102-visible-eye-native-package.txt",
+        "evidence/native-tests/n102-native-build.json",
+        "evidence/native-tests/visible-eye-package.json",
+        "evidence/native-tests/visible-eye-release-build.log",
+        "evidence/native-tests/visible-eye-package-verification.log"
+      ]
+    },
+    {
+      "id": "N103",
+      "precondition": "N102精确包，当前坐姿/既有相机权限",
+      "action": "开启单眼适配，用户确认校准就绪，再请求十次闭合对照",
+      "postcondition": "用户及AX确认单眼就绪；计数4→8，用户报告明显漏计。后续AX/日志反复退回校准；当前准确率验收失败，继续修复姿态缓存。180秒未开始",
+      "status": "live-calibration-passed-counting-acceptance-failed",
+      "evidence": [
+        "evidence/native-ui/103-visible-eye-live-first-attempt.txt",
+        "evidence/native-tests/n102-native-build.json"
+      ]
+    },
+    {
+      "id": "N104",
+      "precondition": "N103真实单眼明显漏计及状态切换日志",
+      "action": "两项回归4断言失败后修复姿态缓存匹配/已校准基线保留",
+      "postcondition": "181全量/90发布通过，其中36增强专项；只证明回归与组件契约，未证明自然十次准确率",
+      "status": "tested-pose-cache-regressions-live-retest-pending",
+      "evidence": [
+        "evidence/native-ui/104-visible-eye-pose-cache-fix.txt",
+        "evidence/native-tests/visible-eye-pose-cache-before.log",
+        "evidence/native-tests/visible-eye-pose-cache-full-swift.log",
+        "evidence/native-tests/visible-eye-pose-cache-release.log",
+        "evidence/native-tests/visible-eye-pose-cache-integration-check.json"
+      ]
+    },
+    {
+      "id": "N105",
+      "precondition": "N104通过及旧包正常退出",
+      "action": "重建/稳定签名/源码和资源核对，验证既有数据",
+      "postcondition": "当前单arm64包123文件快照通过，设置/8历史/原5文件/自定义icon保持",
+      "status": "tested-current-package-visible-eye-retest-pending",
+      "evidence": [
+        "evidence/native-ui/105-visible-eye-pose-cache-package.txt",
+        "evidence/native-tests/n105-native-build.json",
+        "evidence/native-tests/visible-eye-pose-cache-package.json",
+        "evidence/native-tests/visible-eye-pose-cache-package-verification.log",
+        "evidence/native-tests/visible-eye-pose-cache-release-build.log"
+      ]
+    },
+    {
+      "id": "N106",
+      "precondition": "N105精确包与既有摄像头权限",
+      "action": "重新启动当前坐姿校准，请求十次闭合人工起止计数",
+      "postcondition": "AX单眼就绪、约30FPS、6事件；用户对重校准和十次动作请求回复“可以了”，作主观可用确认。未给起止计数，定量准确率未测。180秒另记N107",
+      "status": "user-confirmed-visible-eye-usability-quantitative-count-unknown",
+      "evidence": [
+        "evidence/native-ui/106-visible-eye-pose-cache-live-retest.txt",
+        "evidence/native-tests/n105-native-build.json"
+      ]
+    },
+    {
+      "id": "N107",
+      "precondition": "N105包，N106用户确认可用，历史8条",
+      "action": "统计页启动正式180秒目标测量，观察0/47/58%及相机识别状态",
+      "postcondition": "后段返回立即测量并明确质量不足未保存；8条历史逐对象保持，无新增结果。早期日志未记录最终覆盖率/质量终止字段，精确终止分支未知，不能标180秒成功",
+      "status": "live-measurement-quality-rejected-no-record",
+      "evidence": [
+        "evidence/native-ui/107-visible-eye-formal-measurement-attempt.txt",
+        "evidence/native-tests/n105-native-build.json"
+      ]
+    },
+    {
+      "id": "N108",
+      "precondition": "N107质量不足取消正式测量",
+      "action": "两项红测4失败断言后修复校准淘汰及相对姿态窗口迟滞，并补完成/失败数值日志",
+      "postcondition": "183全量/92发布通过，38增强专项；容量5、优先淘汰低进度/最久未用，12/16度有限迟滞；85%门槛未降，实机效果待验",
+      "status": "tested-calibration-retention-and-hysteresis-live-retest-pending",
+      "evidence": [
+        "evidence/native-ui/108-visible-eye-cache-retention-fix.txt",
+        "evidence/native-tests/visible-eye-retention-boundary-before.log",
+        "evidence/native-tests/visible-eye-retention-full-swift.log",
+        "evidence/native-tests/visible-eye-retention-release.log",
+        "evidence/native-tests/visible-eye-retention-integration-check.json"
+      ]
+    },
+    {
+      "id": "N109",
+      "precondition": "N108通过及旧包正常退出",
+      "action": "release构建/稳定签名/源码资源核对与数据完整性验证",
+      "postcondition": "单arm64包及123文件快照通过，设置/8历史/原5文件/自定义icon保持",
+      "status": "tested-current-package-formal-measurement-retest-pending",
+      "evidence": [
+        "evidence/native-ui/109-visible-eye-cache-retention-package.txt",
+        "evidence/native-tests/n109-native-build.json",
+        "evidence/native-tests/visible-eye-retention-package.json",
+        "evidence/native-tests/visible-eye-retention-release-build.log",
+        "evidence/native-tests/visible-eye-retention-package-verification.log"
+      ]
+    },
+    {
+      "id": "N110",
+      "precondition": "N109精确包及183/92回归，N107失败保留",
+      "action": "新包摄像头适配坐姿，观察并等待真实校准",
+      "postcondition": "校准1/3约30FPS后人脸不可见；新包未校准完成，未开始正式重测，已询问用户3分钟在席时间；持续无脸后关闭预览唤醒排队自动测量，正常退出清理，进程消失/仍8历史，不计正式重测",
+      "status": "observed-live-partial-calibration-awaiting-user-presence",
+      "evidence": [
+        "evidence/native-ui/110-visible-eye-retention-live-partial.txt",
+        "evidence/native-tests/n109-native-build.json"
+      ]
+    },
+    {
+      "id": "N111",
+      "precondition": "N109精确包，用户明确可在席，真实完成单眼校准",
+      "action": "执行完整180秒正式测量，核对Deadline/覆盖率/历史并询问实际多人条件",
+      "postcondition": "期限完整到达；有效覆盖率74.5364%未达85%，原8条保持无新增；用户确认旁人入镜且无法保证单人，要求先离线工作。5个检测事件不作真值。各失效状态按日志单独保留",
+      "status": "observed-full-duration-quality-rejection-in-multi-person-environment",
+      "evidence": [
+        "evidence/native-ui/111-visible-eye-full-duration-quality-rejection.txt",
+        "evidence/native-tests/n109-native-build.json"
+      ]
+    },
+    {
+      "id": "N112",
+      "precondition": "N111多人场景质量不足，用户无法保证单人且要求先离线工作",
+      "action": "接入保守空间目标跟踪/目标版本/计数与校准/来源及UI反馈；运行模拟及真实公开图Vision回归",
+      "postcondition": "198全量/107发布通过，53相机专项含本轮15项；旁人不抢目标、丢失/重叠不拼接、重获校准、预读与租约边界通过。仅离线组件和公开图，不是实机验收",
+      "status": "tested-offline-primary-target-integration-live-acceptance-deferred-by-user",
+      "evidence": [
+        "evidence/native-ui/112-primary-target-offline-integration.txt",
+        "docs/primary-target-design.md",
+        "evidence/native-tests/primary-target-full-swift.log",
+        "evidence/native-tests/primary-target-release.log",
+        "evidence/native-tests/primary-target-integration-check.json"
+      ]
+    },
+    {
+      "id": "N113",
+      "precondition": "N112及已退出真实相机会话",
+      "action": "原生release构建/稳定签名/架构和源码资源/数据核对，不启动真实相机",
+      "postcondition": "单arm64包及127文件快照通过，8历史/设置/原5文件/原执行文件/自定义icon保持；本包未实机验收",
+      "status": "tested-offline-current-package-live-primary-target-acceptance-pending",
+      "evidence": [
+        "evidence/native-ui/113-primary-target-native-package.txt",
+        "evidence/native-tests/n113-native-build.json",
+        "evidence/native-tests/primary-target-package.json",
+        "evidence/native-tests/primary-target-release-build.log",
+        "evidence/native-tests/primary-target-package-verification.log"
+      ]
+    },
+    {
+      "id": "N114",
+      "precondition": "N113离线包；用户明确暂不做实机验收，优先识别可靠性与系统稳定性",
+      "action": "修复累计漂移确认及渐变姿态学习；平台故障与完成统一capture FIFO/终止门闩，增加中断通知及回归",
+      "postcondition": "206全量/119发布0失败无跳过，新增8测试；几何/轮廓/NotificationCenter/FrameRun/Core及公开图Vision离线通过，未启动真实相机",
+      "status": "tested-offline-recognition-window-and-terminal-ordering-live-deferred-by-user",
+      "evidence": [
+        "evidence/native-ui/114-reliability-stability-offline.txt",
+        "docs/reliability-stability-design.md",
+        "evidence/native-tests/reliability-stability-full-swift.log",
+        "evidence/native-tests/reliability-stability-release.log",
+        "evidence/native-tests/reliability-stability-integration-check.json"
+      ]
+    },
+    {
+      "id": "N115",
+      "precondition": "N114离线回归通过；应用已退出",
+      "action": "原生release构建/稳定签名/架构源码资源及用户数据核对，不启动真实相机",
+      "postcondition": "单arm64签名包SHA前缀2dd05ba84895，129文件快照；8历史/设置/原5文件/原执行文件/自定义icon保持；当前包实机验收暂缓",
+      "status": "tested-offline-reliability-package-live-acceptance-deferred-by-user",
+      "evidence": [
+        "evidence/native-ui/115-reliability-stability-native-package.txt",
+        "evidence/native-tests/n115-native-build.json",
+        "evidence/native-tests/reliability-stability-package.json",
+        "evidence/native-tests/reliability-stability-release-build.log",
+        "evidence/native-tests/reliability-stability-package-verification.log"
+      ]
+    },
+    {
+      "id": "N116",
+      "precondition": "用户报告频繁识别不稳定，并要求所列识别差异全部回归原版；已有恢复的CNN/dlib/光流链路与原函数夹具。",
+      "action": "撤回生产侧置/单眼/校准/目标锁定/质量门槛，保留旧历史解码与无关动画和相机生命周期修复；执行离线回归、构建签名、替换重启并检查摄像头页。",
+      "postcondition": "169全套及36Release选定测试通过；单arm64签名包核验通过；摄像头页无侧置或校准入口；设置、8条历史及原版执行文件保持；自然眨眼准确率未验收。",
+      "status": "tested-original-recognition-rollback-package-ui-not-human-accuracy",
+      "evidence": [
+        "docs/original-recognition-rollback.md",
+        "evidence/native-tests/original-recognition-rollback.json",
+        "evidence/native-tests/original-recognition-full-tests.log",
+        "evidence/native-tests/original-recognition-release-tests.log",
+        "evidence/native-tests/original-recognition-package-verification.log"
+      ]
+    }
+  ],
+  "pending": "2026-10-22按用户要求撤回侧置轮廓/空间锁定/校准/质量门槛，N100-N115识别相关记录仅为历史证据。当前恢复原CNN/dlib/光流，真人自然眨眼、完整180秒记录与通知、拔线及睡眠恢复仍待验。"
+}

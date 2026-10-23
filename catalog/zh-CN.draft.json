@@ -1,0 +1,1665 @@
+{
+  "status": "draft-not-runtime-verified",
+  "source": "evidence/static/localization-source-catalog.json",
+  "messages": [
+    {
+      "context": "BlinkReminderWidget",
+      "source": "just blink ;)",
+      "comment": "",
+      "translation": "眨眨眼吧 ;)",
+      "status": "draft"
+    },
+    {
+      "context": "BreakReminderWidget",
+      "source": "Give me five more minutes",
+      "comment": "",
+      "translation": "再给我五分钟",
+      "status": "draft"
+    },
+    {
+      "context": "BreakReminderWidget",
+      "source": "My work is more important than my veins and eyes.",
+      "comment": "",
+      "translation": "我的工作比我的静脉和眼睛更重要。",
+      "status": "draft"
+    },
+    {
+      "context": "BreakReminderWidget",
+      "source": "SKIP",
+      "comment": "",
+      "translation": "跳过",
+      "status": "draft"
+    },
+    {
+      "context": "BreakReminderWidget",
+      "source": "SNOOZE (5 min.)",
+      "comment": "",
+      "translation": "稍后提醒（5 分钟）",
+      "status": "draft"
+    },
+    {
+      "context": "BreakReminderWidget",
+      "source": "The reminder disappears after you take a 4 minutes break.",
+      "comment": "",
+      "translation": "休息 4 分钟后，提醒会自动消失。",
+      "status": "draft"
+    },
+    {
+      "context": "BreakReminderWidget",
+      "source": "Use drag and drop to change the reminder position.",
+      "comment": "",
+      "translation": "拖动可更改提醒位置。",
+      "status": "draft"
+    },
+    {
+      "context": "BreakReminderWidget",
+      "source": "eyeblink: it is time for your break",
+      "comment": "",
+      "translation": "eyeblink：该休息了",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "CANCEL",
+      "comment": "",
+      "translation": "取消",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "Close",
+      "comment": "",
+      "translation": "关闭",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "Connecting to the server...",
+      "comment": "",
+      "translation": "正在连接服务器……",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "INSERT",
+      "comment": "",
+      "translation": "输入",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "Insert license",
+      "comment": "",
+      "translation": "输入许可证",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "License Error, please contact support.",
+      "comment": "",
+      "translation": "许可证错误，请联系支持人员。",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "License expired on ",
+      "comment": "",
+      "translation": "许可证已于以下时间到期： ",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "License key doesn't exist.",
+      "comment": "",
+      "translation": "许可证密钥不存在。",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "License reached maximum number of users.",
+      "comment": "",
+      "translation": "许可证已达到用户数量上限。",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "License valid, expires: ",
+      "comment": "",
+      "translation": "许可证有效，到期时间： ",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "No Internet connection.",
+      "comment": "",
+      "translation": "未连接到互联网。",
+      "status": "draft"
+    },
+    {
+      "context": "DialogInsertLicense",
+      "source": "insert license",
+      "comment": "",
+      "translation": "输入许可证",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "%1 bytes",
+      "comment": "",
+      "translation": "%1 字节",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "%1 minutes",
+      "comment": "",
+      "translation": "%1 分钟",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "%1 seconds",
+      "comment": "",
+      "translation": "%1 秒",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "1 minute",
+      "comment": "",
+      "translation": "1 分钟",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "1 second",
+      "comment": "",
+      "translation": "1 秒",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Are you sure you want to cancel the download?",
+      "comment": "",
+      "translation": "确定要取消下载吗？",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Click \"OK\" to begin installing the update",
+      "comment": "",
+      "translation": "点击“确定”开始安装更新",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Click the \"Open\" button to apply the update",
+      "comment": "",
+      "translation": "点击“打开”按钮应用更新",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Close",
+      "comment": "",
+      "translation": "关闭",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Download complete!",
+      "comment": "",
+      "translation": "下载完成！",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Downloading Updates",
+      "comment": "",
+      "translation": "正在下载更新",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Downloading updates",
+      "comment": "",
+      "translation": "正在下载更新",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Error",
+      "comment": "",
+      "translation": "错误",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Error, the downloaded update is corrupted!",
+      "comment": "",
+      "translation": "错误：下载的更新文件已损坏！",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Installing the update will terminate the application.",
+      "comment": "",
+      "translation": "安装更新将退出应用程序。",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Open",
+      "comment": "",
+      "translation": "打开",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Press OK to download again.",
+      "comment": "",
+      "translation": "点击“确定”重新下载。",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Stop",
+      "comment": "",
+      "translation": "停止",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "The downloaded update is missing!",
+      "comment": "",
+      "translation": "下载的更新文件丢失！",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "The installer will open separately",
+      "comment": "",
+      "translation": "安装程序将单独打开",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Time remaining",
+      "comment": "",
+      "translation": "剩余时间",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Time remaining: 0 minutes",
+      "comment": "",
+      "translation": "剩余时间：0 分钟",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Unknown",
+      "comment": "",
+      "translation": "未知",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "Updater",
+      "comment": "",
+      "translation": "更新程序",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "about %1 hours",
+      "comment": "",
+      "translation": "约 %1 小时",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "about one hour",
+      "comment": "",
+      "translation": "约一小时",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "of",
+      "comment": "",
+      "translation": "/",
+      "status": "draft"
+    },
+    {
+      "context": "Downloader",
+      "source": "unknown",
+      "comment": "",
+      "translation": "未知",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "Blink while squeezing your lids for 10 sec.",
+      "comment": "",
+      "translation": "用力闭合眼睑并眨眼，持续 10 秒。",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "Look out of the window (or towards any other long distance) for 10 sec.",
+      "comment": "",
+      "translation": "看向窗外（或其他远处），持续 10 秒。",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "Move your eyes from side to side for 10 sec.",
+      "comment": "",
+      "translation": "左右转动眼球，持续 10 秒。",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "My work is more important than my eyes.",
+      "comment": "",
+      "translation": "我的工作比我的眼睛更重要。",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "Rotate your eyes for 10 sec.",
+      "comment": "",
+      "translation": "转动眼球，持续 10 秒。",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "SKIP",
+      "comment": "",
+      "translation": "跳过",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "Use drag and drop to change the reminder position.",
+      "comment": "",
+      "translation": "拖动可更改提醒位置。",
+      "status": "draft"
+    },
+    {
+      "context": "ExerciseReminderWidget",
+      "source": "eyeblink eye exercise",
+      "comment": "",
+      "translation": "eyeblink 眼部练习",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " blinks per minute",
+      "comment": "",
+      "translation": " 次/分钟",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " camera is not connected.",
+      "comment": "",
+      "translation": " 摄像头未连接。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " camera is used by other software or blocked by Windows privacy settings.",
+      "comment": "",
+      "translation": " 摄像头正被其他软件占用，或被 Windows 隐私设置阻止。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " camera is used by other software.",
+      "comment": "",
+      "translation": " 摄像头正被其他软件占用。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " empty frame received, camera unplugged (or bad cable or broken camera or bad driver) or blocked by Windows privacy settings.",
+      "comment": "",
+      "translation": " 收到空图像帧，摄像头已拔出（或线缆损坏、摄像头故障、驱动异常），或被 Windows 隐私设置阻止。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " empty frame received, camera unplugged? (or bad cable or broken camera or bad driver).",
+      "comment": "",
+      "translation": " 收到空图像帧，摄像头是否已拔出？（也可能是线缆损坏、摄像头故障或驱动异常。）",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " insufficient memory RAM or missing data.dat.",
+      "comment": "",
+      "translation": " RAM 内存不足或缺少 data.dat。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " low frame per second, cheap camera or bad light conditions.",
+      "comment": "",
+      "translation": " 帧率过低，可能是摄像头性能较低或光照条件不佳。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": " wmic.exe missing from Windows PATH. Windows installation is corrupted.",
+      "comment": "",
+      "translation": " Windows PATH 中缺少 wmic.exe。Windows 安装已损坏。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Average blink duration:",
+      "comment": "",
+      "translation": "平均眨眼时长：",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Blink measurement completed",
+      "comment": "",
+      "translation": "眨眼测量完成",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Blink rate:",
+      "comment": "",
+      "translation": "眨眼频率：",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Blink rate: ",
+      "comment": "",
+      "translation": "眨眼频率： ",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Blinks per minute",
+      "comment": "",
+      "translation": "每分钟眨眼次数",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "CHANGE REMINDER POSITION",
+      "comment": "",
+      "translation": "更改提醒位置",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Error:",
+      "comment": "",
+      "translation": "错误：",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Eyeblink observes your blinks (blink training is active).",
+      "comment": "",
+      "translation": "Eyeblink 正在观察您的眨眼（眨眼训练已启用）。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Face not detected, please test blink detection performance (webcam icon).",
+      "comment": "",
+      "translation": "未检测到人脸，请测试眨眼检测效果（点击摄像头图标）。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "License Error, please contact support.",
+      "comment": "",
+      "translation": "许可证错误，请联系支持人员。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "License key doesn't exist.",
+      "comment": "",
+      "translation": "许可证密钥不存在。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "License premium",
+      "comment": "",
+      "translation": "高级版许可证",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "License premium expired",
+      "comment": "",
+      "translation": "高级版许可证已到期",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "License reached maximum number of users.",
+      "comment": "",
+      "translation": "许可证已达到用户数量上限。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "License trial premium",
+      "comment": "",
+      "translation": "高级版试用许可证",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "License trial premium expired",
+      "comment": "",
+      "translation": "高级版试用许可证已到期",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Measurement in progress",
+      "comment": "",
+      "translation": "正在测量",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Measurement will start shortly.",
+      "comment": "",
+      "translation": "即将开始测量。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Measurements",
+      "comment": "",
+      "translation": "测量记录",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "More than one face detected.",
+      "comment": "",
+      "translation": "检测到多张人脸。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "No measurement taken yet. Your blink rate is measured approximately every 30 minutes.",
+      "comment": "",
+      "translation": "尚未进行测量。您的眨眼频率大约每 30 分钟测量一次。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Open history",
+      "comment": "",
+      "translation": "打开历史记录",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Problem with camera",
+      "comment": "",
+      "translation": "摄像头出现问题",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "SAVE NEW POSITION",
+      "comment": "",
+      "translation": "保存新位置",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "Test blink detection",
+      "comment": "",
+      "translation": "测试眨眼检测",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "blinks per minute",
+      "comment": "",
+      "translation": "次/分钟",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "error",
+      "comment": "",
+      "translation": "错误",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "eyeblink - about",
+      "comment": "",
+      "translation": "eyeblink - 关于",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "eyeblink - presentation mode",
+      "comment": "",
+      "translation": "eyeblink - 演示模式",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "eyeblink - settings",
+      "comment": "",
+      "translation": "eyeblink - 设置",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "eyeblink basic",
+      "comment": "",
+      "translation": "eyeblink 基础版",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "eyeblink camera use paused",
+      "comment": "",
+      "translation": "eyeblink 已暂停使用摄像头",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "eyeblink premium",
+      "comment": "",
+      "translation": "eyeblink 高级版",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "healthy",
+      "comment": "",
+      "translation": "健康",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "is running in background. You can quit Eyeblink by opening the right-click menu at this tray icon.",
+      "comment": "",
+      "translation": "正在后台运行。右键点击此托盘图标，打开菜单即可退出 Eyeblink。",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "milliseconds",
+      "comment": "",
+      "translation": "毫秒",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "no error",
+      "comment": "",
+      "translation": "无错误",
+      "status": "draft"
+    },
+    {
+      "context": "EyeblinkGUI",
+      "source": "version",
+      "comment": "",
+      "translation": "版本",
+      "status": "draft"
+    },
+    {
+      "context": "Model",
+      "source": "blink detected",
+      "comment": "",
+      "translation": "检测到眨眼",
+      "status": "draft"
+    },
+    {
+      "context": "Model",
+      "source": "camera is occupied or not connected",
+      "comment": "",
+      "translation": "摄像头被占用或未连接",
+      "status": "draft"
+    },
+    {
+      "context": "Model",
+      "source": "camera is occupied or not connected\nor blocked by Windows privacy settings",
+      "comment": "",
+      "translation": "摄像头被占用或未连接\n或被 Windows 隐私设置阻止",
+      "status": "draft"
+    },
+    {
+      "context": "Model",
+      "source": "empty frame received\ncamera disconnected\nor broken or bad cable\nor bad driver",
+      "comment": "",
+      "translation": "收到空图像帧\n摄像头已断开连接\n或摄像头故障、线缆损坏\n或驱动异常",
+      "status": "draft"
+    },
+    {
+      "context": "Model",
+      "source": "empty frame received\ncamera disconnected\nor broken or bad cable\nor bad driver\nor blocked by Windows privacy settings",
+      "comment": "",
+      "translation": "收到空图像帧\n摄像头已断开连接\n或摄像头故障、线缆损坏\n或驱动异常\n或被 Windows 隐私设置阻止",
+      "status": "draft"
+    },
+    {
+      "context": "Model",
+      "source": "loading classifiers",
+      "comment": "",
+      "translation": "正在加载分类器",
+      "status": "draft"
+    },
+    {
+      "context": "Model",
+      "source": "missing file: data.dat or low memory",
+      "comment": "",
+      "translation": "缺少文件：data.dat，或内存不足",
+      "status": "draft"
+    },
+    {
+      "context": "Updater",
+      "source": "Version %1 of %2 has been released!",
+      "comment": "",
+      "translation": "%2 的 %1 版本已发布！",
+      "status": "draft"
+    },
+    {
+      "context": "Updater",
+      "source": "Would you like to download the update now (size %1MB)?",
+      "comment": "",
+      "translation": "是否立即下载更新（大小 %1MB）？",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetProxy",
+      "source": "Server unreachable or network settings has changed. Please provide valid settings or restart eyeblink.",
+      "comment": "",
+      "translation": "无法访问服务器，或网络设置已更改。请提供有效设置，或重启 eyeblink。",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetStatistics",
+      "source": "Are you sure to delete all measurements?",
+      "comment": "",
+      "translation": "确定要删除所有测量记录吗？",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetStatistics",
+      "source": "Average blink duration:",
+      "comment": "",
+      "translation": "平均眨眼时长：",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetStatistics",
+      "source": "Blink rate:",
+      "comment": "",
+      "translation": "眨眼频率：",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetStatistics",
+      "source": "Blinks per minute (bpm)",
+      "comment": "",
+      "translation": "眨眼频率（次/分钟）",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetStatistics",
+      "source": "blinks per minute",
+      "comment": "",
+      "translation": "次/分钟",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetStatistics",
+      "source": "healthy",
+      "comment": "",
+      "translation": "健康",
+      "status": "draft"
+    },
+    {
+      "context": "WidgetStatistics",
+      "source": "milliseconds",
+      "comment": "",
+      "translation": "毫秒",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "CANCEL",
+      "comment": "",
+      "translation": "取消",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "Close",
+      "comment": "",
+      "translation": "关闭",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "Proxy settings",
+      "comment": "",
+      "translation": "代理设置",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "SAVE",
+      "comment": "",
+      "translation": "保存",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "Veryfing connection, please wait...",
+      "comment": "",
+      "translation": "正在验证连接，请稍候……",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "password:",
+      "comment": "",
+      "translation": "密码：",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "port:",
+      "comment": "",
+      "translation": "端口：",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "use these settings",
+      "comment": "",
+      "translation": "使用这些设置",
+      "status": "draft"
+    },
+    {
+      "context": "widgetProxy",
+      "source": "username:",
+      "comment": "",
+      "translation": "用户名：",
+      "status": "draft"
+    },
+    {
+      "context": "widgetStatistics",
+      "source": "Close",
+      "comment": "",
+      "translation": "关闭",
+      "status": "draft"
+    },
+    {
+      "context": "widgetStatistics",
+      "source": "DELETE HISTORY",
+      "comment": "",
+      "translation": "删除历史记录",
+      "status": "draft"
+    },
+    {
+      "context": "widgetStatistics",
+      "source": "End date",
+      "comment": "",
+      "translation": "结束日期",
+      "status": "draft"
+    },
+    {
+      "context": "widgetStatistics",
+      "source": "Maximize",
+      "comment": "",
+      "translation": "最大化",
+      "status": "draft"
+    },
+    {
+      "context": "widgetStatistics",
+      "source": "Start Date",
+      "comment": "",
+      "translation": "开始日期",
+      "status": "draft"
+    },
+    {
+      "context": "widgetStatistics",
+      "source": "Statistics",
+      "comment": "",
+      "translation": "统计",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "<html><head/><body><p><a href=\"https://www.blinkingmatters.com/dry-eye-syndrome#mgd\"><span style=\" text-decoration: underline; color:#0000ff;\">learn more</span></a></p></body></html>",
+      "comment": "",
+      "translation": "<html><head/><body><p><a href=\"https://www.blinkingmatters.com/dry-eye-syndrome#mgd\"><span style=\" text-decoration: underline; color:#0000ff;\">了解更多</span></a></p></body></html>",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "<html><head/><body><p><a href=\"https://www.blinkingmatters.com/features#faq\"><span style=\" text-decoration: underline; color:#0000ff;\">FAQ</span></a></p></body></html>",
+      "comment": "",
+      "translation": "<html><head/><body><p><a href=\"https://www.blinkingmatters.com/features#faq\"><span style=\" text-decoration: underline; color:#0000ff;\">常见问题</span></a></p></body></html>",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "<html><head/><body><p><a href=\"https://www.blinkingmatters.com/terms-and-conditions\"><span style=\" text-decoration: underline; color:#0000ff;\">PRIVACY POLICY</span></a></p></body></html>",
+      "comment": "",
+      "translation": "<html><head/><body><p><a href=\"https://www.blinkingmatters.com/terms-and-conditions\"><span style=\" text-decoration: underline; color:#0000ff;\">隐私政策</span></a></p></body></html>",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "<html><head/><body><p>No internet connection detected on startup. Restart eyeblink to try again. Do you use <a href=\"http://amibehindaproxy.com\"><span style=\" text-decoration: underline; color:#0000ff;\">proxy</span></a>? If you are at work probably your employer blocks some network communication. You can connect your computer by your phone to the Internet or use public wifi hotspot.</p></body></html>",
+      "comment": "",
+      "translation": "<html><head/><body><p>启动时未检测到互联网连接。请重启 eyeblink 后重试。您是否使用了<a href=\"http://amibehindaproxy.com\"><span style=\" text-decoration: underline; color:#0000ff;\">代理</span></a>？如果您在工作场所，您的雇主可能阻止了部分网络通信。您可以通过手机为电脑提供互联网连接，或使用公共 Wi-Fi 热点。</p></body></html>",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "A blink reminder will help you to blink more often",
+      "comment": "",
+      "translation": "眨眼提醒可帮助您更频繁地眨眼",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "ADD LICENSE KEY",
+      "comment": "",
+      "translation": "添加许可证密钥",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "About",
+      "comment": "",
+      "translation": "关于",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "All settings back to normal",
+      "comment": "",
+      "translation": "所有设置恢复正常",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Automatic pause camera based features",
+      "comment": "",
+      "translation": "自动暂停基于摄像头的功能",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "BUY",
+      "comment": "",
+      "translation": "购买",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Back",
+      "comment": "",
+      "translation": "返回",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Blink rate statistics",
+      "comment": "",
+      "translation": "眨眼频率统计",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Blink training",
+      "comment": "",
+      "translation": "眨眼训练",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Brightness",
+      "comment": "",
+      "translation": "亮度",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "CHANGE REMINDER POSITION",
+      "comment": "",
+      "translation": "更改提醒位置",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Camera",
+      "comment": "",
+      "translation": "摄像头",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Change color temperature:",
+      "comment": "",
+      "translation": "切换色温：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Color temperature",
+      "comment": "",
+      "translation": "色温",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Computer breaks",
+      "comment": "",
+      "translation": "离屏休息",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Consider",
+      "comment": "",
+      "translation": "将",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Cooperations",
+      "comment": "",
+      "translation": "合作伙伴",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "DONATE",
+      "comment": "",
+      "translation": "捐赠",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Decrease screen brightness:",
+      "comment": "",
+      "translation": "降低屏幕亮度：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Did you allow camera use?",
+      "comment": "",
+      "translation": "您是否已允许使用摄像头？",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Enable Beta version updates",
+      "comment": "",
+      "translation": "启用 Beta 版更新",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Enable camera-based features",
+      "comment": "",
+      "translation": "启用基于摄像头的功能",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Enable notification on completed blink measurement",
+      "comment": "",
+      "translation": "眨眼测量完成时通知",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Enable sound in the reminder",
+      "comment": "",
+      "translation": "启用提醒声音",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Exit eyeblink",
+      "comment": "",
+      "translation": "退出 eyeblink",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Expires:",
+      "comment": "",
+      "translation": "到期时间：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Eye exercises (20 minutes recommended by eye doctors) are important to prevent tired eyes, we need to change our focus distance for a while. If include no mouse or keyboard activity as a break is enabled, these detected breaks are counted also as an eye exercise. For example, eye lids squeezing helps to fight Meibomian gland dysfunction. You can drag and drop the reminder to find a suitable location for it.",
+      "comment": "",
+      "translation": "眼部练习（眼科医生建议每 20 分钟一次）对预防眼疲劳很重要，我们需要暂时改变注视距离。如果启用了将无鼠标或键盘操作的时间计为休息，检测到的这些休息也会计为眼部练习。例如，用力闭合眼睑有助于应对睑板腺功能障碍。您可以拖动提醒，将其放在合适的位置。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Eye exercises each 20 minutes",
+      "comment": "",
+      "translation": "每 20 分钟进行眼部练习",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Eyeblink is now completely free. The income from premium licenses was not sufficient to cover the costs. If you consider eyeblink useful please make a donation and support the development of the new version (It will be big! Look forward 2022)",
+      "comment": "",
+      "translation": "Eyeblink 现已完全免费。高级版许可证的收入不足以支付成本。如果您觉得 eyeblink 有用，请捐赠并支持新版本的开发（将有重大变化！敬请期待 2022 年）。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Eyeblink takes about 10 to 20% of CPU when processing images from \ncamera. Setting the frequency below 10 seconds increases the average \ncpu load. In such case, set the timer to turn off the screen, when PC inactive, \n(PC Settings -> System -> Power and Sleep ) as low as possible. \nIn such a case, eyeblink will automatically pause its features to save energy.",
+      "comment": "",
+      "translation": "Eyeblink 在处理摄像头图像时，大约占用 10 到 20% 的 CPU。\n将间隔设为少于 10 秒，会增加平均 CPU 负载。\n在这种情况下，请将电脑空闲时关闭屏幕的等待时间\n（电脑设置 -> 系统 -> 电源和睡眠）设得尽可能短。\n这样，eyeblink 会自动暂停其功能以节省电量。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Eyeblink will additionally measure your blink rate every half an hour. The measurement lasts about 3 minutes and the average blink rate will be displayed on the graph below. This measurement doesn't interfere with the Blink training.",
+      "comment": "",
+      "translation": "Eyeblink 还会每半小时测量一次您的眨眼频率。每次测量持续约 3 分钟，平均眨眼频率将显示在下方图表中。此测量不会干扰眨眼训练。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Follow eyeblink on facebook",
+      "comment": "",
+      "translation": "在 Facebook 关注 eyeblink",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Having issues? Please read ",
+      "comment": "",
+      "translation": "遇到问题？请阅读 ",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "High screen brightness compared to room light often decreases the blink rate which leads to dry eye. Brightness control is not compatible with similar tools like f.lux.",
+      "comment": "",
+      "translation": "屏幕亮度相对于室内光线过高时，往往会降低眨眼频率，进而导致干眼。亮度控制与 f.lux 等类似工具不兼容。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Hotkeys",
+      "comment": "",
+      "translation": "快捷键",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "I have Meibomian gland dysfunction",
+      "comment": "",
+      "translation": "我患有睑板腺功能障碍",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "I stand up from my desk and take a break each",
+      "comment": "",
+      "translation": "我起身离桌休息的间隔为",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Include your natural breaks (computer inactivity time) into the break reminder plan.",
+      "comment": "",
+      "translation": "将自然休息（电脑空闲时间）纳入休息提醒计划。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Increase screen brightness:",
+      "comment": "",
+      "translation": "提高屏幕亮度：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "It uses the camera and the reminder goes away with your blink.",
+      "comment": "",
+      "translation": "此模式使用摄像头，眨眼后提醒便会消失。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Language:",
+      "comment": "",
+      "translation": "语言：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "License",
+      "comment": "",
+      "translation": "许可证",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "License information",
+      "comment": "",
+      "translation": "许可证信息",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Minimize to tray icon",
+      "comment": "",
+      "translation": "最小化到托盘图标",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Miscellaneous",
+      "comment": "",
+      "translation": "其他设置",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "NORMAL",
+      "comment": "",
+      "translation": "正常",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "NOTICES",
+      "comment": "",
+      "translation": "第三方声明",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "ON/OFF",
+      "comment": "",
+      "translation": "开/关",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Open eyeblink",
+      "comment": "",
+      "translation": "打开 eyeblink",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "PRIVACY SETTINGS",
+      "comment": "",
+      "translation": "隐私设置",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "PROXY SETTINGS",
+      "comment": "",
+      "translation": "代理设置",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Pause camera-based features",
+      "comment": "",
+      "translation": "暂停基于摄像头的功能",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Pause eyeblink",
+      "comment": "",
+      "translation": "暂停 eyeblink",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Pause eyeblink (all functionalities, all reminders)",
+      "comment": "",
+      "translation": "暂停 eyeblink（所有功能和提醒）",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Presentation mode (No reminders, no measurements, no screen brightness changes)",
+      "comment": "",
+      "translation": "演示模式（不提醒、不测量、不调整屏幕亮度）",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Providing healthier and refreshed eyes. Natural dry eye therapy app.",
+      "comment": "",
+      "translation": "让眼睛更健康、更清爽。自然干眼疗法应用。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Regular breaks are important to prevent tired eyes and varicose veins. You can drag and drop the reminder to find a suitable location for it.",
+      "comment": "",
+      "translation": "定期休息对预防眼疲劳和静脉曲张很重要。您可以拖动提醒，将其放在合适的位置。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "SETTINGS",
+      "comment": "",
+      "translation": "设置",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Screen control",
+      "comment": "",
+      "translation": "屏幕控制",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Select camera",
+      "comment": "",
+      "translation": "选择摄像头",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Select language",
+      "comment": "",
+      "translation": "选择语言",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Select this option if you have healthy blink rate and still suffer from dry eye. The reminder will be shown at regular intervals and dismissed with your blink.",
+      "comment": "",
+      "translation": "如果您的眨眼频率正常，但仍受干眼困扰，请选择此选项。提醒会定期出现，并在您眨眼后消失。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Send blink rate measurements for research",
+      "comment": "",
+      "translation": "发送眨眼频率测量数据以供研究",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Settings",
+      "comment": "",
+      "translation": "设置",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Software (-8 to 0) and hardware (0 to 10) screen brightness adjustment. \nSome monitors and graphics cards do not provide support for HW brightness\nadjustments, in such a case only a SW brightness adjustment is available.",
+      "comment": "",
+      "translation": "软件（-8 到 0）和硬件（0 到 10）屏幕亮度调节。\n部分显示器和显卡不支持硬件亮度调节，\n这种情况下仅可使用软件亮度调节。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Software screen color temperature adjustment",
+      "comment": "",
+      "translation": "软件屏幕色温调节",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Sometimes, there is a big presentation on our laptop, or we are just watching a movie, in such cases it is desired to pause all eyeblink features so no reminders will come out. We can do it manually or define the automatic pause based on rules in settings. Here eyeblink looks only if given application is running or not. For example a media player, game or presentation tool. We can see all our running apps in Task Manager of the operating system.",
+      "comment": "",
+      "translation": "有时，我们在笔记本电脑上进行重要演示或观看电影，希望暂停 eyeblink 的所有功能，避免出现提醒。可以手动暂停，也可以在设置中按规则自动暂停。此时，eyeblink 仅检查指定应用程序是否正在运行，例如媒体播放器、游戏或演示工具。可在操作系统的任务管理器中查看所有正在运行的应用程序。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Sometimes, when we need camera for other things like Skype or Call, the camera based features can be paused, while preserving the other features. The rules for automatic pause can be defined based on the Windows titles. For example, Skype runs in background and only when is running foreground there is a predisposition that it will need camera sooner or later.",
+      "comment": "",
+      "translation": "有时，我们需要将摄像头用于 Skype 或通话等其他用途，可以暂停基于摄像头的功能，同时保留其他功能。可以根据窗口标题设置自动暂停规则。例如，Skype 在后台运行时可能不需要摄像头，而在前台运行时，则可能迟早会用到摄像头。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Standing up is important because of varicose veins prevention.",
+      "comment": "",
+      "translation": "起身活动对预防静脉曲张很重要。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Start on operating system startup",
+      "comment": "",
+      "translation": "随操作系统启动",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Still, having issues? Please contact",
+      "comment": "",
+      "translation": "仍有问题？请联系",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Stop camera use",
+      "comment": "",
+      "translation": "停止使用摄像头",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "TAKE FIRST MEASUREMENT",
+      "comment": "",
+      "translation": "进行首次测量",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Test my camera",
+      "comment": "",
+      "translation": "测试我的摄像头",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "The average from the measurements below",
+      "comment": "",
+      "translation": "下方测量结果的平均值",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "The camera speed is important. Eyeblink works from 20 frames per second (fps). Older or cheaper cameras can suffer from decreased capture speed during low light conditions due to increase of exposure time to balance the image brightness. On the contrary, too much light in camera view (e.g. window) reduces the exposure time and face could be too dark to detect blinks.",
+      "comment": "",
+      "translation": "摄像头帧率很重要。Eyeblink 需要至少 20 帧/秒（fps）。较旧或较低端的摄像头在光线较暗时，可能会延长曝光时间以平衡图像亮度，从而降低拍摄帧率。反之，摄像头视野内光线过强（例如窗户）会缩短曝光时间，使人脸过暗而无法检测眨眼。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "The mission of the dry eye foundation is to improve quality of life for people suffering from dry eye disease. They are working to document our community’s needs and provide much-needed services.",
+      "comment": "",
+      "translation": "干眼基金会致力于改善干眼症患者的生活质量。他们正在记录患者群体的需求，并提供亟需的服务。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "The reminder will be shown to use drag and drop.",
+      "comment": "",
+      "translation": "显示提醒，以便通过拖动调整位置。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "This is a real-time blink detection test only, no measurement will be taken.",
+      "comment": "",
+      "translation": "这仅用于实时测试眨眼检测，不会进行测量。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Training frequency (how often to check for blinks):",
+      "comment": "",
+      "translation": "训练频率（检查眨眼的间隔）：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Use camera",
+      "comment": "",
+      "translation": "使用摄像头",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Use eyeblink",
+      "comment": "",
+      "translation": "启用 eyeblink",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Use the interactive reminder (shows only at low blink rate)",
+      "comment": "",
+      "translation": "使用交互式提醒（仅在眨眼频率较低时显示）",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "Use the simple reminder (no webcam use) at regular intervals",
+      "comment": "",
+      "translation": "定期显示简单提醒（不使用摄像头）",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "WARM",
+      "comment": "",
+      "translation": "暖色",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "WARMER",
+      "comment": "",
+      "translation": "更暖",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "We will be happy to assist you.",
+      "comment": "",
+      "translation": "我们很乐意为您提供帮助。",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "When a keyword is present as part of window title of an app:",
+      "comment": "",
+      "translation": "当某个应用的窗口标题中包含关键词时：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "When a keyword is present as part of window title of foreground running app:",
+      "comment": "",
+      "translation": "当前台运行应用的窗口标题中包含关键词时：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "When one of these processes run:",
+      "comment": "",
+      "translation": "当以下任一进程运行时：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "When running on battery",
+      "comment": "",
+      "translation": "使用电池供电时",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "When the cloned screen is detected (probably a projector is connected)",
+      "comment": "",
+      "translation": "检测到镜像屏幕时（可能连接了投影仪）",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "enable",
+      "comment": "",
+      "translation": "启用",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "eyeblink uses open source:",
+      "comment": "",
+      "translation": "eyeblink 使用的开源软件：",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "https://www.blinkingmatters.com/dry-eye-syndrome#mgd",
+      "comment": "",
+      "translation": "https://www.blinkingmatters.com/dry-eye-syndrome#mgd",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "of no mouse or keyboard activity as a break",
+      "comment": "",
+      "translation": "无鼠标或键盘操作视为一次休息",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "separate by ';', for example: \"Skype;Call;Zoom\"",
+      "comment": "",
+      "translation": "使用“;”分隔，例如：“Skype;Call;Zoom”",
+      "status": "draft"
+    },
+    {
+      "context": "widget_eyeblink",
+      "source": "separate by ';', for example: \"filename.exe;\"",
+      "comment": "",
+      "translation": "使用“;”分隔，例如：“filename.exe;”",
+      "status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "functionVA": "0x100144340",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "cases": [
+    {
+      "id": "identical",
+      "previous": [
+        100,
+        106,
+        0.16,
+        0.02
+      ],
+      "current": [
+        100,
+        106,
+        0.18,
+        0.03
+      ],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "storedCandidate": [
+        100,
+        106,
+        0.18,
+        0.03
+      ]
+    },
+    {
+      "id": "strong_overlap",
+      "previous": [
+        100,
+        106,
+        0.16,
+        0.02
+      ],
+      "current": [
+        102,
+        108,
+        0.18,
+        0.03
+      ],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "storedCandidate": [
+        102,
+        108,
+        0.18,
+        0.03
+      ]
+    },
+    {
+      "id": "weak_overlap",
+      "previous": [
+        100,
+        106,
+        0.16,
+        0.02
+      ],
+      "current": [
+        105,
+        109,
+        0.18,
+        0.03
+      ],
+      "count": 1.0,
+      "totalDuration": 0.16999999999999998,
+      "storedCandidate": [
+        105,
+        109,
+        0.18,
+        0.03
+      ]
+    },
+    {
+      "id": "touching",
+      "previous": [
+        100,
+        106,
+        0.16,
+        0.02
+      ],
+      "current": [
+        106,
+        112,
+        0.18,
+        0.03
+      ],
+      "count": 1.0,
+      "totalDuration": 0.16999999999999998,
+      "storedCandidate": [
+        106,
+        112,
+        0.18,
+        0.03
+      ]
+    },
+    {
+      "id": "disjoint",
+      "previous": [
+        100,
+        106,
+        0.16,
+        0.02
+      ],
+      "current": [
+        110,
+        116,
+        0.18,
+        0.03
+      ],
+      "count": 1.0,
+      "totalDuration": 0.16999999999999998,
+      "storedCandidate": [
+        110,
+        116,
+        0.18,
+        0.03
+      ]
+    },
+    {
+      "id": "threshold_equal",
+      "previous": [
+        100,
+        110,
+        0.16,
+        0.02
+      ],
+      "current": [
+        104,
+        120,
+        0.18,
+        0.03
+      ],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "storedCandidate": [
+        104,
+        120,
+        0.18,
+        0.03
+      ]
+    },
+    {
+      "id": "threshold_below",
+      "previous": [
+        100,
+        110,
+        0.16,
+        0.02
+      ],
+      "current": [
+        105,
+        120,
+        0.18,
+        0.03
+      ],
+      "count": 1.0,
+      "totalDuration": 0.16999999999999998,
+      "storedCandidate": [
+        105,
+        120,
+        0.18,
+        0.03
+      ]
+    },
+    {
+      "id": "threshold_above",
+      "previous": [
+        100,
+        110,
+        0.16,
+        0.02
+      ],
+      "current": [
+        103,
+        120,
+        0.18,
+        0.03
+      ],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "storedCandidate": [
+        103,
+        120,
+        0.18,
+        0.03
+      ]
+    }
+  ]
+}

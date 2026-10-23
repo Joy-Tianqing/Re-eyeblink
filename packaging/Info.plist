@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>CFBundleIdentifier</key><string>org.reeyeblink.app</string>
+  <key>CFBundleDevelopmentRegion</key><string>zh-Hans</string>
+  <key>CFBundleLocalizations</key><array><string>zh-Hans</string><string>en</string></array>
+  <key>CFBundleName</key><string>Eyeblink</string>
+  <key>CFBundleDisplayName</key><string>Eyeblink</string>
+  <key>CFBundleExecutable</key><string>Eyeblink</string>
+  <key>CFBundleIconFile</key><string>Eyeblink</string>
+  <key>CFBundlePackageType</key><string>APPL</string>
+  <key>CFBundleShortVersionString</key><string>1.0.0</string>
+  <key>CFBundleVersion</key><string>2</string>
+  <key>LSMinimumSystemVersion</key><string>14.0</string>
+  <key>NSCameraUsageDescription</key><string>Eyeblink 在本机分析眨眼，用于交互提醒和眨眼频率测量。相机画面不会保存或上传。</string>
+  <key>NSHighResolutionCapable</key><true/>
+  <key>NSPrincipalClass</key><string>NSApplication</string>
+  <key>NSHumanReadableCopyright</key><string>Eyeblink reconstruction. Original eyeblink by Andrej Fogelton.</string>
+</dict></plist>

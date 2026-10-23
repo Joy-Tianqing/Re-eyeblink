@@ -1,0 +1,4 @@
+# Preserve upstream sources, exact translated quotes and unified patch context.
+Sources/CFaceDetector/vendor/* -whitespace
+locales/*.ts -whitespace
+scripts/opencv/*.patch -whitespace

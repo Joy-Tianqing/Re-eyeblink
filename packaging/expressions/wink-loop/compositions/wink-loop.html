@@ -1,0 +1,18 @@
+<template>
+<style>
+#root{width:100%;height:100%;position:relative;background:#fff}
+#root img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#wink-face{opacity:0}
+</style>
+<div data-hf-id="hf-dqr2" id="root" data-composition-id="wink-loop" data-width="368" data-height="368" data-duration="2.9">
+<img data-hf-id="hf-vhhp" id="open-face" src="assets/open.png" alt="睁眼微笑">
+<img data-hf-id="hf-e07y" id="wink-face" src="assets/wink.png" alt="眨眼微笑">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.set('#open-face',{opacity:0},1.9).set('#wink-face',{opacity:1},1.9)
+  .set('#wink-face',{opacity:0},2.6).set('#open-face',{opacity:1},2.6);
+window.__timelines['wink-loop']=tl;
+</script>
+</template>

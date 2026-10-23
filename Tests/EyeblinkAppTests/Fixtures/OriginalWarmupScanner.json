@@ -1,0 +1,2492 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "specificationSHA256": "980250e3dc2900bf95e9c385677bd1499f5d0a18df38b4331cb38d75e9790884",
+  "frameInterval": 0.03125,
+  "cases": [
+    {
+      "id": "bilateral-warmup0",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "bilateral-warmup1",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "bilateral-warmup3",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 8,
+              "time": 0.25,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 9,
+              "time": 0.28125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "left_only-warmup0",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "left_only-warmup1",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "left_only-warmup3",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 8,
+              "time": 0.25,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 9,
+              "time": 0.28125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "right_only-warmup0",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "right_only-warmup1",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "right_only-warmup3",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                -0.004,
+                0.004
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 8,
+              "time": 0.25,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 9,
+              "time": 0.28125,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": []
+    },
+    {
+      "id": "reset-before-deferred-merge",
+      "sessions": [
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": false,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            }
+          ]
+        },
+        {
+          "frames": [
+            {
+              "frame": 0,
+              "time": 0.0,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": false,
+              "warmup": true,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                0,
+                0
+              ],
+              "stateUnchangedOnWarmup": true
+            },
+            {
+              "frame": 1,
+              "time": 0.03125,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 2,
+              "time": 0.0625,
+              "leftStats": [
+                0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 3,
+              "time": 0.09375,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 4,
+              "time": 0.125,
+              "leftStats": [
+                -0.004,
+                0.004
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 5,
+              "time": 0.15625,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [
+                0.1875
+              ],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ]
+                }
+              ],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 6,
+              "time": 0.1875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            },
+            {
+              "frame": 7,
+              "time": 0.21875,
+              "leftStats": [
+                0,
+                0
+              ],
+              "rightStats": [
+                0,
+                0
+              ],
+              "currentFacePresent": true,
+              "previousFacePresent": true,
+              "warmup": false,
+              "emissions": [],
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "scannerEntryHits": [
+                1,
+                1
+              ],
+              "stateUnchangedOnWarmup": null
+            }
+          ]
+        }
+      ],
+      "resetBlocks": [
+        {
+          "candidatePreserved": true,
+          "totalsPreserved": true,
+          "frameCounter": 0
+        }
+      ]
+    }
+  ],
+  "blockedReadFlowErrorTimerHits": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "ranges": [
+    "0x100140e61..0x100141b9c actual previous-face zero/skip",
+    "0x100141a8e..0x100141ab2 scanner/merge",
+    "0x1001403b5..0x10014047e actual scanner reset before timer"
+  ],
+  "limitations": [
+    "Feature streams andface flags injected;no grayscale/CNN/dlib/flow/image or physical camera acceptance",
+    "Warmup entry after no-face wall-clock gate;not timeout ordering orwholeloop",
+    "Only scanner-reset block executed for reopening;no capture/Mat/face cleanup,Qt timers/controller orUI",
+    "Synthetic1/32s feature intervals;not real blink accuracy orperformance"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "relativeSource": "modules/imgproc/src/resize.cpp",
+  "sourceSHA256": "53e35c5eb8875949236173b3af779d3083566bad1efb8ceb17a3a8d35c3aac3c",
+  "patchedSHA256": "afc2c2e5d5ffce2627a01ebed6be5401c5a08a79d2274da23d34e91f6565c140",
+  "patch": "resize-half-float.patch",
+  "patchSHA256": "59e9698966ea9873e8480b82db7306e0ddfc940f9d33a5ee87f4b117fccf837a",
+  "marker": "RESIZE_HALF_FLOAT=PAIRWISE4"
+}

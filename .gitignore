@@ -1,0 +1,26 @@
+.DS_Store
+node_modules/
+build/
+dist/
+evidence/private/
+*.dSYM/
+.build/
+.swiftpm/
+.deps/
+
+# Local acceptance logs, reverse-engineering sessions and machine data stay local.
+# Only the small, reviewed build/test inputs below are versioned from evidence.
+evidence/*
+!evidence/static/
+evidence/static/*
+!evidence/static/recovered-face/
+evidence/static/recovered-face/*
+!evidence/static/recovered-face/official-model-materialization.json
+!evidence/static/recovered-face/materialize_official_model.py
+!evidence/static/recovered-rules/
+evidence/static/recovered-rules/*
+!evidence/static/recovered-rules/dlib-reference-results.json
+.hyperframes/
+.thumbnails/
+__pycache__/
+*.pyc

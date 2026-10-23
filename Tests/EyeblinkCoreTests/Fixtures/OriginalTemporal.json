@@ -1,0 +1,2869 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "specificationSHA256": "01afe3761ee49396886d5747f5698ec64f64b10f9adf29f33100c42bd3f2f3b9",
+  "scannerRanges": [
+    "0x100141e3d..0x1001423d9",
+    "0x100141aa2..0x100141ab2"
+  ],
+  "mergeVA": "0x100144340",
+  "durationRegisterVA": "0x100144424",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "scratchStackAndFeatureBuffersInjected": true,
+  "cases": [
+    {
+      "id": "bilateral",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.125,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": [
+                0.1875
+              ]
+            },
+            {
+              "frame": 6,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "left_only",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.125,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": [
+                0.1875
+              ]
+            },
+            {
+              "frame": 6,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "right_only",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0,
+              0,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              0,
+              0,
+              0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              0,
+              0,
+              -0.004,
+              0.004
+            ],
+            [
+              0.125,
+              0,
+              0,
+              -0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": [
+                0.1875
+              ]
+            },
+            {
+              "frame": 6,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motion_equal",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.0025,
+              0.004,
+              0.0025,
+              0.004
+            ],
+            [
+              0.0625,
+              0.0025,
+              0.004,
+              0.0025,
+              0.004
+            ],
+            [
+              0.09375,
+              -0.0025,
+              0.004,
+              -0.0025,
+              0.004
+            ],
+            [
+              0.125,
+              -0.0025,
+              0.004,
+              -0.0025,
+              0.004
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 6,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deviation_equal",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.0025,
+              0.004,
+              0.0025
+            ],
+            [
+              0.0625,
+              0.004,
+              0.0025,
+              0.004,
+              0.0025
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.0025,
+              -0.004,
+              0.0025
+            ],
+            [
+              0.125,
+              -0.004,
+              0.0025,
+              -0.004,
+              0.0025
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 6,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "insufficient_first_sum",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 6,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "short_waits_for_minimum",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.015625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.046875,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.078125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.09375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.109375,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 6,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "long_candidate_rescan",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.1875,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.21875,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.25,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.28125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.3125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.34375,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.375,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.40625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.4375,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.46875,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.5,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.53125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.5625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.59375,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.65625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.6875,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.71875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.75,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.78125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.8125,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 6,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 8,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 9,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 10,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 11,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 12,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 13,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 14,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 15,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 16,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 17,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 18,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 19,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 20,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 21,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 22,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 23,
+              "count": 1.0,
+              "totalDuration": 0.375,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    6,
+                    22,
+                    0.5,
+                    0.016
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.375
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    6,
+                    22,
+                    0.5,
+                    0.016
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.375
+                }
+              ],
+              "emissions": [
+                0.375
+              ]
+            },
+            {
+              "frame": 24,
+              "count": 1.0,
+              "totalDuration": 0.375,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 25,
+              "count": 1.0,
+              "totalDuration": 0.375,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 26,
+              "count": 1.0,
+              "totalDuration": 0.375,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rejected_rescan_then_valid",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.1875,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.25,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.28125,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 6,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    2,
+                    6,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    2,
+                    6,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": [
+                0.1875
+              ]
+            },
+            {
+              "frame": 8,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 9,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two_bilateral",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.125,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.25,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.28125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.3125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.34375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.40625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.4375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.46875,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.5,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.53125,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.5625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.59375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.65625,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": [
+                0.1875
+              ]
+            },
+            {
+              "frame": 6,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 8,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 9,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 10,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 11,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 12,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 13,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 14,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 15,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 16,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 17,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 18,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 19,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    14,
+                    18,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 2.0,
+                  "durationAfter": 0.3125
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    14,
+                    18,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 2.0,
+                  "durationAfter": 0.3125
+                }
+              ],
+              "emissions": [
+                0.125
+              ]
+            },
+            {
+              "frame": 20,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 21,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "staggered",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.125,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              -0.004,
+              0.004
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.25,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": [
+                0.1875
+              ]
+            },
+            {
+              "frame": 6,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 1,
+                  "values": [
+                    1,
+                    5,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 8,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two_events_same_frame",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.125,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.15625,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.25,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.28125,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.3125,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.34375,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.375,
+              -0.004,
+              0.004,
+              0,
+              0
+            ],
+            [
+              0.40625,
+              -0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.4375,
+              -0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.46875,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.5,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.53125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.5625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.59375,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 6,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 8,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 9,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 10,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 11,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 12,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 13,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 14,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 15,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 16,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 17,
+              "count": 2.0,
+              "totalDuration": 0.6875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    16,
+                    0.5,
+                    0.05600000000000002
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.375
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    12,
+                    16,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 2.0,
+                  "durationAfter": 0.6875
+                }
+              ],
+              "emissions": [
+                0.375,
+                0.3125
+              ]
+            },
+            {
+              "frame": 18,
+              "count": 2.0,
+              "totalDuration": 0.6875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 19,
+              "count": 2.0,
+              "totalDuration": 0.6875,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "restart_keeps_previous",
+      "sessions": [
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.125,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.25,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.28125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.3125,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.34375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.40625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.4375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.46875,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.5,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.53125,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.5625,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.59375,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.65625,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 0.0,
+              "totalDuration": 0.0,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 1.0,
+                  "durationAfter": 0.1875
+                }
+              ],
+              "emissions": [
+                0.1875
+              ]
+            },
+            {
+              "frame": 6,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 8,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 9,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 10,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 11,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 12,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 13,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 14,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 15,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 16,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 17,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 18,
+              "count": 1.0,
+              "totalDuration": 0.1875,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 19,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    14,
+                    18,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 2.0,
+                  "durationAfter": 0.3125
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    14,
+                    18,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 2.0,
+                  "durationAfter": 0.3125
+                }
+              ],
+              "emissions": [
+                0.125
+              ]
+            },
+            {
+              "frame": 20,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 21,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        },
+        {
+          "frames": [
+            [
+              0.0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.03125,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.0625,
+              0.004,
+              0.004,
+              0.004,
+              0.004
+            ],
+            [
+              0.09375,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.125,
+              -0.004,
+              0.004,
+              -0.004,
+              0.004
+            ],
+            [
+              0.15625,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.1875,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0.21875,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "results": [
+            {
+              "frame": 0,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 1,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 2,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 3,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 4,
+              "count": 2.0,
+              "totalDuration": 0.3125,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 5,
+              "count": 3.0,
+              "totalDuration": 0.4375,
+              "candidates": [
+                {
+                  "eye": 0,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 3.0,
+                  "durationAfter": 0.4375
+                },
+                {
+                  "eye": 1,
+                  "values": [
+                    0,
+                    4,
+                    0.125,
+                    0.008
+                  ],
+                  "countAfter": 3.0,
+                  "durationAfter": 0.4375
+                }
+              ],
+              "emissions": [
+                0.125
+              ]
+            },
+            {
+              "frame": 6,
+              "count": 3.0,
+              "totalDuration": 0.4375,
+              "candidates": [],
+              "emissions": []
+            },
+            {
+              "frame": 7,
+              "count": 3.0,
+              "totalDuration": 0.4375,
+              "candidates": [],
+              "emissions": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Temporal blocks only;not full image/ROI/camera pipeline"
+  ]
+}

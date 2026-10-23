@@ -1,0 +1,38 @@
+--- a/modules/imgproc/src/resize.cpp
++++ b/modules/imgproc/src/resize.cpp
+@@ -2735,7 +2735,34 @@
+ typedef ResizeAreaFastNoVec<uchar, uchar> ResizeAreaFastVec_SIMD_8u;
+ typedef ResizeAreaFastNoVec<ushort, ushort> ResizeAreaFastVec_SIMD_16u;
+ typedef ResizeAreaFastNoVec<short, short> ResizeAreaFastVec_SIMD_16s;
+-typedef ResizeAreaFastNoVec<float, float> ResizeAreaFastVec_SIMD_32f;
++// Preserve the four-lane legacy SIMD reduction order in scalar builds.
++// Exact half-scale INTER_LINEAR dispatches here through INTER_AREA.  The
++// generic left-associated sum differs from (a+b)+(c+d) at float precision.
++struct ResizeAreaFastVec_SIMD_32f
++{
++    ResizeAreaFastVec_SIMD_32f(int scale_x, int scale_y, int channels, int row_step) :
++        cn(channels), step(row_step), fast_mode(scale_x == 2 && scale_y == 2 && (cn == 1 || cn == 4)) {}
++
++    int operator()(const float* S, float* D, int w) const
++    {
++        if (!fast_mode)
++            return 0;
++        const float* S1 = (const float*)((const uchar*)S + step);
++        int dx = 0;
++        // Leave the tail to the upstream scalar loop, just as four-lane SIMD does.
++        for (; dx <= w - 4; dx += 4)
++            for (int lane = 0; lane < 4; ++lane)
++            {
++                const int i = dx + lane;
++                const int sx = cn == 1 ? i * 2 : (i / 4) * 8 + i % 4;
++                D[i] = ((S[sx] + S[sx + cn]) + (S1[sx] + S1[sx + cn])) * 0.25f;
++            }
++        return dx;
++    }
++
++    int cn, step;
++    bool fast_mode;
++};
+ 
+ #endif
+ 

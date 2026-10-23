@@ -1,0 +1,85 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "executedRange": "0x10014055f..0x10014059b",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "qtSignalInvoked": false,
+  "cases": [
+    {
+      "id": "empty",
+      "durations": [],
+      "count": 0,
+      "totalDuration": 0,
+      "frequency": 0.0,
+      "durationMilliseconds": 0
+    },
+    {
+      "id": "rounding_order",
+      "durations": [
+        0.09,
+        0.09,
+        0.12
+      ],
+      "count": 3,
+      "totalDuration": 0.3,
+      "frequency": 1.0,
+      "durationMilliseconds": 99
+    },
+    {
+      "id": "one",
+      "durations": [
+        0.125
+      ],
+      "count": 1,
+      "totalDuration": 0.125,
+      "frequency": 0.3333333432674408,
+      "durationMilliseconds": 125
+    },
+    {
+      "id": "seven",
+      "durations": [
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "count": 7,
+      "totalDuration": 0.875,
+      "frequency": 2.3333332538604736,
+      "durationMilliseconds": 125
+    },
+    {
+      "id": "ten",
+      "durations": [
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "count": 10,
+      "totalDuration": 1.25,
+      "frequency": 3.3333332538604736,
+      "durationMilliseconds": 125
+    },
+    {
+      "id": "same_frame",
+      "durations": [
+        0.375,
+        0.3125
+      ],
+      "count": 2,
+      "totalDuration": 0.6875,
+      "frequency": 0.6666666865348816,
+      "durationMilliseconds": 343
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "mainExecuted": false,
+  "cameraOpenedOrRead": false,
+  "cases": [
+    {
+      "width": 640,
+      "height": 1,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 0,
+      "cnnCalls": 0,
+      "quarterSize": null,
+      "throws": [
+        {
+          "type": "N2cv9ExceptionE",
+          "code": -215,
+          "errorText": "!dsize.empty()",
+          "function": "resize",
+          "stack": [
+            "__cxa_throw",
+            "cv::error(cv::Exception const&)",
+            "cv::error(int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*, char const*, int)",
+            "cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)",
+            "Model::detectBestNearestFace2(cv::Mat const&, cv::Rect_<int>*, float*, float*, int*, float*, float*, int*)",
+            "Model::startBlinkDetection()",
+            "::re_eyeblink_catch_model(void (*)(void *), void *, unsigned long *)",
+            null,
+            "___lldb_unnamed_symbol4767"
+          ]
+        }
+      ],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": true
+    },
+    {
+      "width": 640,
+      "height": 2,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 0,
+      "cnnCalls": 0,
+      "quarterSize": null,
+      "throws": [
+        {
+          "type": "N2cv9ExceptionE",
+          "code": -215,
+          "errorText": "!dsize.empty()",
+          "function": "resize",
+          "stack": [
+            "__cxa_throw",
+            "cv::error(cv::Exception const&)",
+            "cv::error(int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*, char const*, int)",
+            "cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)",
+            "Model::detectBestNearestFace2(cv::Mat const&, cv::Rect_<int>*, float*, float*, int*, float*, float*, int*)",
+            "Model::startBlinkDetection()",
+            "::re_eyeblink_catch_model(void (*)(void *), void *, unsigned long *)",
+            null,
+            "___lldb_unnamed_symbol4767"
+          ]
+        }
+      ],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": true
+    },
+    {
+      "width": 640,
+      "height": 3,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 1,
+      "cnnCalls": 1,
+      "quarterSize": [
+        160,
+        1
+      ],
+      "throws": [],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": false
+    },
+    {
+      "width": 640,
+      "height": 4,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 1,
+      "cnnCalls": 1,
+      "quarterSize": [
+        160,
+        1
+      ],
+      "throws": [],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": false
+    },
+    {
+      "width": 1,
+      "height": 640,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 0,
+      "cnnCalls": 0,
+      "quarterSize": null,
+      "throws": [
+        {
+          "type": "N2cv9ExceptionE",
+          "code": -215,
+          "errorText": "!dsize.empty()",
+          "function": "resize",
+          "stack": [
+            "__cxa_throw",
+            "cv::error(cv::Exception const&)",
+            "cv::error(int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*, char const*, int)",
+            "cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)",
+            "Model::detectBestNearestFace2(cv::Mat const&, cv::Rect_<int>*, float*, float*, int*, float*, float*, int*)",
+            "Model::startBlinkDetection()",
+            "::re_eyeblink_catch_model(void (*)(void *), void *, unsigned long *)",
+            null,
+            "___lldb_unnamed_symbol4767"
+          ]
+        }
+      ],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": true
+    },
+    {
+      "width": 2,
+      "height": 640,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 0,
+      "cnnCalls": 0,
+      "quarterSize": null,
+      "throws": [
+        {
+          "type": "N2cv9ExceptionE",
+          "code": -215,
+          "errorText": "!dsize.empty()",
+          "function": "resize",
+          "stack": [
+            "__cxa_throw",
+            "cv::error(cv::Exception const&)",
+            "cv::error(int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*, char const*, int)",
+            "cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)",
+            "Model::detectBestNearestFace2(cv::Mat const&, cv::Rect_<int>*, float*, float*, int*, float*, float*, int*)",
+            "Model::startBlinkDetection()",
+            "::re_eyeblink_catch_model(void (*)(void *), void *, unsigned long *)",
+            null,
+            "___lldb_unnamed_symbol4767"
+          ]
+        }
+      ],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": true
+    },
+    {
+      "width": 3,
+      "height": 640,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 1,
+      "cnnCalls": 1,
+      "quarterSize": [
+        1,
+        160
+      ],
+      "throws": [],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": false
+    },
+    {
+      "width": 4,
+      "height": 640,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 1,
+      "cnnCalls": 1,
+      "quarterSize": [
+        1,
+        160
+      ],
+      "throws": [],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": false
+    },
+    {
+      "width": 1,
+      "height": 1,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 0,
+      "cnnCalls": 0,
+      "quarterSize": null,
+      "throws": [
+        {
+          "type": "N2cv9ExceptionE",
+          "code": -215,
+          "errorText": "!dsize.empty()",
+          "function": "resize",
+          "stack": [
+            "__cxa_throw",
+            "cv::error(cv::Exception const&)",
+            "cv::error(int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*, char const*, int)",
+            "cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)",
+            "Model::detectBestNearestFace2(cv::Mat const&, cv::Rect_<int>*, float*, float*, int*, float*, float*, int*)",
+            "Model::startBlinkDetection()",
+            "::re_eyeblink_catch_model(void (*)(void *), void *, unsigned long *)",
+            null,
+            "___lldb_unnamed_symbol4767"
+          ]
+        }
+      ],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": true
+    },
+    {
+      "width": 2,
+      "height": 2,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 0,
+      "cnnCalls": 0,
+      "quarterSize": null,
+      "throws": [
+        {
+          "type": "N2cv9ExceptionE",
+          "code": -215,
+          "errorText": "!dsize.empty()",
+          "function": "resize",
+          "stack": [
+            "__cxa_throw",
+            "cv::error(cv::Exception const&)",
+            "cv::error(int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, char const*, char const*, int)",
+            "cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)",
+            "Model::detectBestNearestFace2(cv::Mat const&, cv::Rect_<int>*, float*, float*, int*, float*, float*, int*)",
+            "Model::startBlinkDetection()",
+            "::re_eyeblink_catch_model(void (*)(void *), void *, unsigned long *)",
+            null,
+            "___lldb_unnamed_symbol4767"
+          ]
+        }
+      ],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": true
+    },
+    {
+      "width": 3,
+      "height": 3,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 1,
+      "cnnCalls": 1,
+      "quarterSize": [
+        1,
+        1
+      ],
+      "throws": [],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": false
+    },
+    {
+      "width": 4,
+      "height": 4,
+      "stubbedIsOpened": 1,
+      "stubbedRead": 1,
+      "nonexpiredMeasurementGuardBypassed": 1,
+      "normalReturnBeforeQtInvoke": 1,
+      "cnnCalls": 1,
+      "quarterSize": [
+        1,
+        1
+      ],
+      "throws": [],
+      "errorSignals": [],
+      "successSignals": 0,
+      "forbiddenStops": [],
+      "escapedModelToScratchCatch": false
+    }
+  ],
+  "limitations": [
+    "isOpened/read/nonexpired deadline stubbed in scratch Model;not physical camera orcomplete loop",
+    "Input is normalized-boundary withscale cache1,not fresh rawcamera normalization",
+    "Original processing/exception unwind actual;outer catch belongs toprobe,not original application handler",
+    "Valid control returns before Qt scheduling;no controller/UI acceptance"
+  ]
+}

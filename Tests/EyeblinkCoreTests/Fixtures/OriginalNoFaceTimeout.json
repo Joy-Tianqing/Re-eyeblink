@@ -1,0 +1,305 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "qtCoreSHA256": "3941dcd1efb8c227e2fbc408c1f079215efde1f881a4968764bcec80bd2467db",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "featureParameters": [
+    {
+      "feature": "training",
+      "parameterMilliseconds": 3000,
+      "featureCode": 1
+    },
+    {
+      "feature": "measurement",
+      "parameterMilliseconds": 10000,
+      "featureCode": 2
+    },
+    {
+      "feature": "preview",
+      "parameterMilliseconds": -1,
+      "featureCode": 3
+    }
+  ],
+  "timerRestartCases": [
+    {
+      "id": "firstMissing",
+      "frameCounter": 1,
+      "currentFace": false,
+      "previousFace": false,
+      "parameterMilliseconds": 3000,
+      "timerRestarted": true
+    },
+    {
+      "id": "continuousMissing",
+      "frameCounter": 2,
+      "currentFace": false,
+      "previousFace": false,
+      "parameterMilliseconds": 3000,
+      "timerRestarted": false
+    },
+    {
+      "id": "lostAfterFace",
+      "frameCounter": 17,
+      "currentFace": false,
+      "previousFace": true,
+      "parameterMilliseconds": 3000,
+      "timerRestarted": true
+    },
+    {
+      "id": "firstMissingMeasurement",
+      "frameCounter": 1,
+      "currentFace": false,
+      "previousFace": false,
+      "parameterMilliseconds": 10000,
+      "timerRestarted": true
+    },
+    {
+      "id": "continuousMissingMeasurement",
+      "frameCounter": 2,
+      "currentFace": false,
+      "previousFace": false,
+      "parameterMilliseconds": 10000,
+      "timerRestarted": false
+    },
+    {
+      "id": "faceRecovered",
+      "frameCounter": 19,
+      "currentFace": true,
+      "previousFace": false,
+      "parameterMilliseconds": 3000,
+      "timerRestarted": false
+    },
+    {
+      "id": "faceStillPresent",
+      "frameCounter": 20,
+      "currentFace": true,
+      "previousFace": true,
+      "parameterMilliseconds": 10000,
+      "timerRestarted": false
+    },
+    {
+      "id": "previewDisabled",
+      "frameCounter": 1,
+      "currentFace": false,
+      "previousFace": false,
+      "parameterMilliseconds": -1,
+      "timerRestarted": false
+    },
+    {
+      "id": "probeDisabled",
+      "frameCounter": 1,
+      "currentFace": false,
+      "previousFace": true,
+      "parameterMilliseconds": 0,
+      "timerRestarted": false
+    }
+  ],
+  "qtConversions": [
+    {
+      "nanoseconds": 999999999,
+      "elapsedMilliseconds": 999
+    },
+    {
+      "nanoseconds": 1000000000,
+      "elapsedMilliseconds": 1000
+    },
+    {
+      "nanoseconds": 1000000001,
+      "elapsedMilliseconds": 1000
+    },
+    {
+      "nanoseconds": 1000500000,
+      "elapsedMilliseconds": 1000
+    },
+    {
+      "nanoseconds": 1000999999,
+      "elapsedMilliseconds": 1000
+    },
+    {
+      "nanoseconds": 1001000000,
+      "elapsedMilliseconds": 1001
+    },
+    {
+      "nanoseconds": 7999999999,
+      "elapsedMilliseconds": 7999
+    },
+    {
+      "nanoseconds": 8000000000,
+      "elapsedMilliseconds": 8000
+    },
+    {
+      "nanoseconds": 8000000001,
+      "elapsedMilliseconds": 8000
+    },
+    {
+      "nanoseconds": 8000500000,
+      "elapsedMilliseconds": 8000
+    },
+    {
+      "nanoseconds": 8000999999,
+      "elapsedMilliseconds": 8000
+    },
+    {
+      "nanoseconds": 8001000000,
+      "elapsedMilliseconds": 8001
+    }
+  ],
+  "thresholdCases": [
+    {
+      "nanoseconds": 999999999,
+      "elapsedMilliseconds": 999,
+      "parameterMilliseconds": 3000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 999999999,
+      "elapsedMilliseconds": 999,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000000000,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000000000,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000000001,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000000001,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000500000,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000500000,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000999999,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1000999999,
+      "elapsedMilliseconds": 1000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 1001000000,
+      "elapsedMilliseconds": 1001,
+      "parameterMilliseconds": 3000,
+      "wouldStop": true
+    },
+    {
+      "nanoseconds": 1001000000,
+      "elapsedMilliseconds": 1001,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 7999999999,
+      "elapsedMilliseconds": 7999,
+      "parameterMilliseconds": 3000,
+      "wouldStop": true
+    },
+    {
+      "nanoseconds": 7999999999,
+      "elapsedMilliseconds": 7999,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 8000000000,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": true
+    },
+    {
+      "nanoseconds": 8000000000,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 8000000001,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": true
+    },
+    {
+      "nanoseconds": 8000000001,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 8000500000,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": true
+    },
+    {
+      "nanoseconds": 8000500000,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 8000999999,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 3000,
+      "wouldStop": true
+    },
+    {
+      "nanoseconds": 8000999999,
+      "elapsedMilliseconds": 8000,
+      "parameterMilliseconds": 10000,
+      "wouldStop": false
+    },
+    {
+      "nanoseconds": 8001000000,
+      "elapsedMilliseconds": 8001,
+      "parameterMilliseconds": 3000,
+      "wouldStop": true
+    },
+    {
+      "nanoseconds": 8001000000,
+      "elapsedMilliseconds": 8001,
+      "parameterMilliseconds": 10000,
+      "wouldStop": true
+    }
+  ],
+  "ranges": [
+    "0x100140e53..0x1001412ee timer gate/actualstart",
+    "QtCore0x25aba3..0x25abc2 integer-ns-to-ms",
+    "0x1001412fd..0x100141311 or0x100140e61",
+    "feature field stores beforestartBlinkDetection"
+  ],
+  "limitations": [
+    "Bounded components only;ns are injected afterQt Machtimebase conversion andms injected afterelapsed call,no wall-clock delays manufactured",
+    "Original restart calls actualQElapsedTimer.start;elapsed wall-clock source/timer phase relative toCNN/flow not fully executed",
+    "Stop beforeflow/capture release/error/training/measurement signal delivery",
+    "No physical camera,no-face UI oraccuracy acceptance;native frame timestamp versuspost-tracking no-face timer phase remains separate live/pipeline concern"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "re-eyeblink",
+  "version": "1.0.0",
+  "private": true,
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "description": "Native arm64 macOS eyeblink reconstruction and behavior evidence",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "generate": "node --experimental-strip-types scripts/catalog.ts generate",
+    "check": "node --experimental-strip-types scripts/catalog.ts check"
+  }
+}

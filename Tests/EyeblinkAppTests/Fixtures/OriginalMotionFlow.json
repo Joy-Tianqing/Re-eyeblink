@@ -1,0 +1,181 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "inputSHA256": "a2a05f866b0ccd570334b3e572dbfbda2361a47877e59bc4eca157ab1cdb86f6",
+  "executedRanges": [
+    "0x1001407b0..0x10014089a",
+    "0x100140e53..0x100141a8e (or missing-face gate to0x100141b9c)",
+    "0x100142cec..0x100142d6a",
+    "0x100141a8e..0x100141ab2 via temporal scanner/merge blocks"
+  ],
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "suppliedTrackedEyes": true,
+  "syntheticFrameInterval": 0.03125,
+  "preReadGraySeed": "zero;ignored by first no-previous-face branch",
+  "cases": [
+    {
+      "frame": 0,
+      "time": 0.0,
+      "emissions": [],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "candidates": [],
+      "flowSkippedForMissingPreviousFace": true,
+      "leftStats": [
+        0.0,
+        0.0
+      ],
+      "rightStats": [
+        0.0,
+        0.0
+      ],
+      "currentPlainSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb",
+      "previousAfterBlurSHA256": "7818f5542a0404157573be6cffc0e0c8e68ce3c0f5d17d07ccdd9313fb700baf",
+      "cachedPreviousSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb"
+    },
+    {
+      "frame": 1,
+      "time": 0.03125,
+      "emissions": [],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "candidates": [],
+      "flowSkippedForMissingPreviousFace": false,
+      "leftStats": [
+        0.009862964597537112,
+        0.010745793301259772
+      ],
+      "rightStats": [
+        0.00938742310648515,
+        0.010337452875150857
+      ],
+      "currentPlainSHA256": "1c95cdf239f5cfbf23ac9e034de69742e8e1b5257a0136a5fad56b719085bfdc",
+      "previousAfterBlurSHA256": "ed51331730d565e455d23fb4bc575e3f340cc8d9cab8baddaf7995e50bdf07a2",
+      "cachedPreviousSHA256": "1c95cdf239f5cfbf23ac9e034de69742e8e1b5257a0136a5fad56b719085bfdc"
+    },
+    {
+      "frame": 2,
+      "time": 0.0625,
+      "emissions": [],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "candidates": [],
+      "flowSkippedForMissingPreviousFace": false,
+      "leftStats": [
+        -0.011153870473019339,
+        0.010967334320864162
+      ],
+      "rightStats": [
+        -0.010148433260054919,
+        0.010391897890190271
+      ],
+      "currentPlainSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb",
+      "previousAfterBlurSHA256": "75ac78712263764f8ea5e854dc445c20a1e15504987dc95af6020a1c98b59ad8",
+      "cachedPreviousSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb"
+    },
+    {
+      "frame": 3,
+      "time": 0.09375,
+      "emissions": [],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "candidates": [],
+      "flowSkippedForMissingPreviousFace": false,
+      "leftStats": [
+        -1.8515681887836317e-06,
+        0.00015067368510723934
+      ],
+      "rightStats": [
+        -3.0551949703334616e-05,
+        0.00013820984711729821
+      ],
+      "currentPlainSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb",
+      "previousAfterBlurSHA256": "ed51331730d565e455d23fb4bc575e3f340cc8d9cab8baddaf7995e50bdf07a2",
+      "cachedPreviousSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb"
+    },
+    {
+      "frame": 4,
+      "time": 0.125,
+      "emissions": [],
+      "count": 0.0,
+      "totalDuration": 0.0,
+      "candidates": [],
+      "flowSkippedForMissingPreviousFace": false,
+      "leftStats": [
+        -1.8515681887836317e-06,
+        0.00015067368510723934
+      ],
+      "rightStats": [
+        -3.0551949703334616e-05,
+        0.00013820984711729821
+      ],
+      "currentPlainSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb",
+      "previousAfterBlurSHA256": "ed51331730d565e455d23fb4bc575e3f340cc8d9cab8baddaf7995e50bdf07a2",
+      "cachedPreviousSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb"
+    },
+    {
+      "frame": 5,
+      "time": 0.15625,
+      "emissions": [
+        0.1875
+      ],
+      "count": 1.0,
+      "totalDuration": 0.1875,
+      "candidates": [
+        {
+          "eye": 0,
+          "values": [
+            1,
+            5,
+            0.125,
+            0.010967334320864162
+          ]
+        },
+        {
+          "eye": 1,
+          "values": [
+            1,
+            5,
+            0.125,
+            0.010391897890190271
+          ]
+        }
+      ],
+      "flowSkippedForMissingPreviousFace": false,
+      "leftStats": [
+        -1.8515681887836317e-06,
+        0.00015067368510723934
+      ],
+      "rightStats": [
+        -3.0551949703334616e-05,
+        0.00013820984711729821
+      ],
+      "currentPlainSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb",
+      "previousAfterBlurSHA256": "ed51331730d565e455d23fb4bc575e3f340cc8d9cab8baddaf7995e50bdf07a2",
+      "cachedPreviousSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb"
+    },
+    {
+      "frame": 6,
+      "time": 0.1875,
+      "emissions": [],
+      "count": 1.0,
+      "totalDuration": 0.1875,
+      "candidates": [],
+      "flowSkippedForMissingPreviousFace": false,
+      "leftStats": [
+        -1.8515681887836317e-06,
+        0.00015067368510723934
+      ],
+      "rightStats": [
+        -3.0551949703334616e-05,
+        0.00013820984711729821
+      ],
+      "currentPlainSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb",
+      "previousAfterBlurSHA256": "ed51331730d565e455d23fb4bc575e3f340cc8d9cab8baddaf7995e50bdf07a2",
+      "cachedPreviousSHA256": "94f12ec7d3f757f8d7f0f74a7b12979e03e75565d4bdd395b9b0aa0218c582bb"
+    }
+  ],
+  "limitations": [
+    "Fresh Model downstream frame processing only;no camera/read/resize/CNN/predictor/no-face-recovery or real device timestamps"
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "probeSHA256": "ae273aa5f955768ebafc8fe97d42bd451870943b4b31efc275eef5202900fd0b",
+  "modelSHA256": "c4b1e9804792707d3a405c2c16a80a20269e6675021f64a41d30fffafbc41888",
+  "deserializerConstructorVA": "0x100144a70",
+  "deserializerOperatorVA": "0x100145030",
+  "shapePredictorVA": "0x100143680",
+  "modelOffset": "0x61ea0",
+  "mainExecuted": false,
+  "modelInitCalled": false,
+  "cameraStarted": false,
+  "cases": [
+    {
+      "fixture": 0,
+      "graySHA256": "743d340475a74e4a96742ede0c5dc112049d5265925caee096107b3e72499615",
+      "rectangle": [
+        40,
+        20,
+        260,
+        220
+      ],
+      "points": [
+        [
+          192,
+          72
+        ],
+        [
+          165,
+          73
+        ],
+        [
+          98,
+          78
+        ],
+        [
+          125,
+          76
+        ],
+        [
+          153,
+          125
+        ]
+      ]
+    },
+    {
+      "fixture": 1,
+      "graySHA256": "e2cc2a1fa6131cf4d86faa3baf78851f35a36853e2467c257b3df9d89e85cce5",
+      "rectangle": [
+        40,
+        20,
+        260,
+        220
+      ],
+      "points": [
+        [
+          206,
+          95
+        ],
+        [
+          172,
+          95
+        ],
+        [
+          94,
+          94
+        ],
+        [
+          127,
+          95
+        ],
+        [
+          149,
+          156
+        ]
+      ]
+    },
+    {
+      "fixture": 2,
+      "graySHA256": "346f35f53418575db0d5e1040ffe640700a7f8837d4a76c410532c6d6148fad3",
+      "rectangle": [
+        40,
+        20,
+        260,
+        220
+      ],
+      "points": [
+        [
+          234,
+          136
+        ],
+        [
+          202,
+          105
+        ],
+        [
+          136,
+          20
+        ],
+        [
+          160,
+          58
+        ],
+        [
+          97,
+          159
+        ]
+      ]
+    },
+    {
+      "fixture": 3,
+      "graySHA256": "960aa88d2bf51524766b51a1ee91e2299b3c08c52a72dccca2b26265b20dfcfa",
+      "rectangle": [
+        40,
+        20,
+        260,
+        220
+      ],
+      "points": [
+        [
+          216,
+          78
+        ],
+        [
+          187,
+          76
+        ],
+        [
+          111,
+          68
+        ],
+        [
+          143,
+          71
+        ],
+        [
+          164,
+          128
+        ]
+      ]
+    },
+    {
+      "fixture": 4,
+      "graySHA256": "743d340475a74e4a96742ede0c5dc112049d5265925caee096107b3e72499615",
+      "rectangle": [
+        -20,
+        -10,
+        210,
+        200
+      ],
+      "points": [
+        [
+          146,
+          70
+        ],
+        [
+          118,
+          68
+        ],
+        [
+          48,
+          75
+        ],
+        [
+          75,
+          70
+        ],
+        [
+          90,
+          119
+        ]
+      ]
+    },
+    {
+      "fixture": 5,
+      "graySHA256": "e2cc2a1fa6131cf4d86faa3baf78851f35a36853e2467c257b3df9d89e85cce5",
+      "rectangle": [
+        -20,
+        -10,
+        210,
+        200
+      ],
+      "points": [
+        [
+          154,
+          69
+        ],
+        [
+          118,
+          69
+        ],
+        [
+          36,
+          68
+        ],
+        [
+          71,
+          69
+        ],
+        [
+          94,
+          133
+        ]
+      ]
+    },
+    {
+      "fixture": 6,
+      "graySHA256": "346f35f53418575db0d5e1040ffe640700a7f8837d4a76c410532c6d6148fad3",
+      "rectangle": [
+        -20,
+        -10,
+        210,
+        200
+      ],
+      "points": [
+        [
+          204,
+          125
+        ],
+        [
+          179,
+          96
+        ],
+        [
+          120,
+          12
+        ],
+        [
+          144,
+          49
+        ],
+        [
+          88,
+          145
+        ]
+      ]
+    },
+    {
+      "fixture": 7,
+      "graySHA256": "3fc099b8b0e7139688b1abcd8bbbf387fc80173cfe0d977caccc425ce0b93517",
+      "rectangle": [
+        -20,
+        -10,
+        210,
+        200
+      ],
+      "points": [
+        [
+          153,
+          68
+        ],
+        [
+          125,
+          62
+        ],
+        [
+          58,
+          49
+        ],
+        [
+          87,
+          53
+        ],
+        [
+          92,
+          103
+        ]
+      ]
+    }
+  ],
+  "limitations": [
+    "Eight frozen synthetic grayscale images and explicit rectangles",
+    "No live camera or complete original gray/flow/blink sequence acceptance"
+  ]
+}

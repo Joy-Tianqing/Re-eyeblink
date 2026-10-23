@@ -1,0 +1,66 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "inputSHA256": "52e7a0f275f4452216caeca24eec6c94af33a6c7a1e844fe68fc2e88ae347978",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "ranges": [
+    "0x100140142..0x1001401e5",
+    "0x1001402c1..0x1001402cd",
+    "0x100140712..0x1001407a4",
+    "0x1001407a4..0x1001407b0",
+    "0x100140df5..0x100140e53"
+  ],
+  "cameraOpenBaselineTickBounded": true,
+  "samples": [
+    {
+      "frameCounter": 1,
+      "normalizedDimensions": [
+        640,
+        480
+      ],
+      "tickBeforeSampling": 988614182218125,
+      "tickStored": 988614187481833,
+      "tickAfterSampling": 988614201366791,
+      "previousTick": 988613476018083,
+      "frequency": 1000000000.0,
+      "storedDelta": 0.71146375,
+      "expectedDelta": 0.71146375,
+      "currentGrayStillEmptyAtTick": true
+    },
+    {
+      "frameCounter": 2,
+      "normalizedDimensions": [
+        640,
+        480
+      ],
+      "tickBeforeSampling": 988614994384208,
+      "tickStored": 988614999428208,
+      "tickAfterSampling": 988615014343916,
+      "previousTick": 988614187481833,
+      "frequency": 1000000000.0,
+      "storedDelta": 0.811946375,
+      "expectedDelta": 0.811946375,
+      "currentGrayStillEmptyAtTick": true
+    },
+    {
+      "frameCounter": 3,
+      "normalizedDimensions": [
+        640,
+        480
+      ],
+      "tickBeforeSampling": 988615793689958,
+      "tickStored": 988615798518000,
+      "tickAfterSampling": 988615811769375,
+      "previousTick": 988614999428208,
+      "frequency": 1000000000.0,
+      "storedDelta": 0.799089792,
+      "expectedDelta": 0.799089792,
+      "currentGrayStillEmptyAtTick": true
+    }
+  ],
+  "limitations": [
+    "Actual local monotonic ticks vary between runs;only order/bounds/formula asserted",
+    "No real camera/read,gray/tracking/flow/event or startup-frame cadence acceptance",
+    "Tick end-of-frame previous slot updated explicitly by probe;does not execute full end block"
+  ]
+}

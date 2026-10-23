@@ -1,0 +1,409 @@
+{
+  "originalSHA256": "bd6808caee828c068c8d6614a96e9dabb9c02ecdc397d5be09da953cc6d134db",
+  "inputSHA256": "75518f3e95798508647459687a79b6544525dd112bba62d75aaf971dc6034116",
+  "modelSHA256": "c4b1e9804792707d3a405c2c16a80a20269e6675021f64a41d30fffafbc41888",
+  "mainExecuted": false,
+  "cameraStarted": false,
+  "ranges": [
+    "0x1001407b0..0x100140de5",
+    "0x100142cec..0x100142d94"
+  ],
+  "sequences": [
+    {
+      "name": "initialFace",
+      "frames": [
+        {
+          "frame": 0,
+          "faceInput": true,
+          "cnnCalls": 1,
+          "predictorPoints": [
+            [
+              221,
+              254
+            ],
+            [
+              204,
+              254
+            ],
+            [
+              160,
+              255
+            ],
+            [
+              177,
+              255
+            ],
+            [
+              191,
+              286
+            ]
+          ],
+          "predictorRectangle": [
+            136,
+            208,
+            236,
+            336
+          ],
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            212.5,
+            254.0,
+            34
+          ],
+          "rightEye": [
+            168.5,
+            255.0,
+            34
+          ]
+        },
+        {
+          "frame": 1,
+          "faceInput": true,
+          "cnnCalls": 0,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            212.5,
+            254.0,
+            34
+          ],
+          "rightEye": [
+            168.5,
+            255.0,
+            34
+          ]
+        },
+        {
+          "frame": 2,
+          "faceInput": true,
+          "cnnCalls": 0,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            212.5,
+            254.0,
+            34
+          ],
+          "rightEye": [
+            168.5,
+            255.0,
+            34
+          ]
+        },
+        {
+          "frame": 3,
+          "faceInput": true,
+          "cnnCalls": 0,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            212.5,
+            254.0,
+            34
+          ],
+          "rightEye": [
+            168.5,
+            255.0,
+            34
+          ]
+        },
+        {
+          "frame": 4,
+          "faceInput": true,
+          "cnnCalls": 1,
+          "predictorPoints": [
+            [
+              221,
+              254
+            ],
+            [
+              204,
+              254
+            ],
+            [
+              160,
+              255
+            ],
+            [
+              177,
+              255
+            ],
+            [
+              191,
+              286
+            ]
+          ],
+          "predictorRectangle": [
+            136,
+            208,
+            236,
+            336
+          ],
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            212.5,
+            254.0,
+            34
+          ],
+          "rightEye": [
+            168.5,
+            255.0,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "name": "delayedRecovery",
+      "frames": [
+        {
+          "frame": 0,
+          "faceInput": false,
+          "cnnCalls": 1,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": false
+        },
+        {
+          "frame": 1,
+          "faceInput": true,
+          "cnnCalls": 1,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            164.0,
+            252.0,
+            50
+          ],
+          "rightEye": [
+            208.0,
+            252.0,
+            50
+          ]
+        },
+        {
+          "frame": 2,
+          "faceInput": true,
+          "cnnCalls": 0,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            164.0,
+            252.0,
+            50
+          ],
+          "rightEye": [
+            208.0,
+            252.0,
+            50
+          ]
+        },
+        {
+          "frame": 3,
+          "faceInput": true,
+          "cnnCalls": 0,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            164.0,
+            252.0,
+            50
+          ],
+          "rightEye": [
+            208.0,
+            252.0,
+            50
+          ]
+        },
+        {
+          "frame": 4,
+          "faceInput": false,
+          "cnnCalls": 1,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": false
+        },
+        {
+          "frame": 5,
+          "faceInput": true,
+          "cnnCalls": 1,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            164.0,
+            252.0,
+            50
+          ],
+          "rightEye": [
+            208.0,
+            252.0,
+            50
+          ]
+        },
+        {
+          "frame": 6,
+          "faceInput": true,
+          "cnnCalls": 0,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            164.0,
+            252.0,
+            50
+          ],
+          "rightEye": [
+            208.0,
+            252.0,
+            50
+          ]
+        },
+        {
+          "frame": 7,
+          "faceInput": true,
+          "cnnCalls": 0,
+          "predictorPoints": null,
+          "predictorRectangle": null,
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            164.0,
+            252.0,
+            50
+          ],
+          "rightEye": [
+            208.0,
+            252.0,
+            50
+          ]
+        },
+        {
+          "frame": 8,
+          "faceInput": true,
+          "cnnCalls": 1,
+          "predictorPoints": [
+            [
+              221,
+              254
+            ],
+            [
+              204,
+              254
+            ],
+            [
+              160,
+              255
+            ],
+            [
+              177,
+              255
+            ],
+            [
+              191,
+              286
+            ]
+          ],
+          "predictorRectangle": [
+            136,
+            208,
+            236,
+            336
+          ],
+          "selected": true,
+          "rect": [
+            136,
+            208,
+            100,
+            128
+          ],
+          "leftEye": [
+            212.5,
+            254.0,
+            34
+          ],
+          "rightEye": [
+            168.5,
+            255.0,
+            34
+          ]
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Fixed public face derivative and black frames only",
+    "No camera/normalization/flow/temporal/UI acceptance"
+  ]
+}
